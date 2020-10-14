@@ -1,33 +1,264 @@
-*{
-    margin: 0;
+/*---------- OVERIDES ----------*/
+
+h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+a{
+    /* FILL ME UP */
+}
+
+
+.col-md-6, .col-sm-6, .col-sm-4, .col-sm-3{
+    padding: 0px;
+}
+
+.container-fluid, .container, html{
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+body {
     padding: 0;
-    font-family: 'Titillium Web', sans-serif;
+    margin: 0;   
 }
 
-.navbar-brand{
-    height: 50px;
-    width: 220px;
-    background-repeat: no-repeat;
-    background-image: url(../assets/logo/artemisDesktop.png);
-    background-size: 110px 25px;
-    margin-top: 30px;
-    margin-left: 185px;
-    
+
+li{
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    letter-spacing: 1.08px;
+
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+
+    color: #FFFFFF;
 }
 
-.navbar-nav{
-    margin-right: 50px;
+li:hover{
+    color: #FFFFFF;
+    opacity: 0.75;
 }
 
-.nav-item{
-    margin-right: 200px;
+.nav-link, .nav-link:hover{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-family: Titillium Web;
+    font-weight: 400;
+    letter-spacing: 1.08px;
+    margin-top: 22px;
+    padding-left: 86px;
+    padding-right: 86px;
+    opacity: 0.5;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar-brand{
-        background-image: url(../assets/logo/artemisTablet.png);
-        background-size: 40px 40px;
-        margin-left: 220px;
+.active{
+    color: rgb(255, 255, 255);
+    font-weight: Bold;
+    opacity: 1;
+}
+
+
+/*---------- LABEL THIS ----------*/
+
+
+
+/* Medium Nav for Tablet */
+@media screen and (min-width: 1200px) { /* Between Tablet and Mobile */
+
+
+    .logo-container-full {
+        display: block;
     }
+
+    .logo-container-medium {
+        display: none;
+    }
+
+    .logo-container-short {
+        display: none;
+    }
+
+    .sign-in-button-large {
+        display: block;
+    }
+
+    .sign-in-button-small {
+        display: none;
+    }
+}
+
+/* Medium Nav for Tablet */
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Between Tablet and Mobile */
+
+
+    .logo-container-full {
+        display: none;
+    }
+
+    .logo-container-short {
+        display: block;
+    }
+
+
+    .sign-in-button-large {
+        display: none;
+    }
+
+    .sign-in-button-small {
+        display: block;
+    }
+}
+
+
+/* Medium Nav for Tablet */
+@media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
     
+    .nav-link{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .logo-container-full {
+        display: none;
+    }
+
+    .logo-container-short {
+        display: block;
+        float: left;
+        float: left;
+        margin-left: none;
+    }
+
+    .sign-in-button-large {
+        display: none;
+    }
+
+    .sign-in-button-small {
+        display: block;
+        float: right;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 544px) { /* Between Tablet and Mobile */
+
+    .logo-container-full {
+        display: none;
+    }
+
+    .logo-container-short {
+        display: block;
+    }
+
+    .sign-in-button-large {
+        display: none;
+    }
+
+    .sign-in-button-small {
+        display: block;
+    }
+
+    .nav-button {
+        display: none;
+    }
+}
+
+
+
+
+
+
+.nav{
+    height: 77px;
+    background: rgba(21, 22, 22, 0.8);
+    backdrop-filter: blur(61px);
+}
+
+.test{
+    width: 75%;
+    margin-left: 12.5%;
+    height: 220px;
+    background-color: aquamarine;
+    float: left;
+}
+
+
+
+.logo-container-full{
+    width: 170px;
+    height: flex;
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Full.svg);
+    /* background-size: 40px 40px; */
+    margin-right: 4.6%;
+    margin-top: 20px;
+}
+
+.logo-container-short{
+    width: 28px;
+    height: flex;
+
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Short.svg);
+    /* background-size: 40px 40px; */
+    float: left;    
+    margin-left: 10px;
+    margin-right: 80px;
+    margin-top: 22px;
+}
+
+
+
+
+
+
+.sign-in-button-large{
+    width: 94px;
+    height: 30px;  
+    margin-left: 4.6%;
+    background-color: royalblue;
+    margin-right: 83px;
+    margin-left: 73px + 4.6%;
+    margin-top: 23px;
+    /*      position: absolute; */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.sign-in-button-small{
+    width: 28px;
+    height: flex;
+    margin-left: 4.6%;
+    background-color: royalblue;
+    padding-right: 10px;
+    margin-left: 80px;
+}
+
+
+
+
+.bye-padding-left{
+    padding-left: 0px;
+}
+
+.bye-padding-right{
+    padding-right: 0px;
 }
