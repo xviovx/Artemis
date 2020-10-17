@@ -4,6 +4,39 @@
     padding: 0;
 }
 
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 700px;
+    background-color: turquoise;
+}
+
+.carousel-caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box.flex {
+    display: flex;
+    justify-content: center;
+  }
+
+.top-ten{
+    padding: 15px 0 0 25px; 
+    margin: 0;
+    width: 100%;
+    height: 1080px;
+    background-color: rgb(0, 0, 0);
+}
+
 h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
     margin: 0px;
     padding: 0px;
@@ -91,6 +124,20 @@ li{
     outline: none;
 }
 
+.carousel-caption{
+    display: none;
+}
+
+#artemisImg{
+    width: 1000px;
+    height: 200px;
+}
+
+#artemisSlogan{
+    font-size: 30px;
+}
+
+
 
 /*---------- LABEL THIS ----------*/
 
@@ -142,6 +189,16 @@ li{
     .sign-in-button-small {
         display: block;
     }
+
+    #artemisImg{
+        width: 800px;
+        height: 140px;
+    }
+    
+    #artemisSlogan{
+        font-size: 24px;
+    }
+
 }
 
 
@@ -174,6 +231,20 @@ li{
         margin-right: 10px;
     }
 
+    #artemisImg{
+        width: 600px;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #artemisSlogan{
+        font-size: 0px;
+        
+    }
+
+
 }
 
 @media screen and (max-width: 544px) { /* mobile */
@@ -201,6 +272,17 @@ li{
 
     .nav-link {
         display: none;
+    }
+
+    #artemisImg{
+        width: 210px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    #artemisSlogan{
+        font-size: 0px;
+        display: block;
     }
     
 }
