@@ -137,6 +137,42 @@ li{
     font-size: 30px;
 }
 
+.heading-section{
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    /*background-color: blue;*/
+}
+
+#main-heading{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 8.46087px;
+    display: block;
+    font-family: URW Dock, Titillium Web;
+
+}
+
+#topten-text{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    display: block;
+    font-family: URW Dock, Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 8.46087px;
+    text-transform: uppercase;
+    color: #9DA3A9;
+    opacity: 0.7;
+}
+
+
 
 
 /*---------- LABEL THIS ----------*/
@@ -170,7 +206,7 @@ li{
 }
 
 /* Medium Nav for Tablet */
-@media screen and (min-width: 992px) and (max-width: 1200px) { /* Between Tablet and Mobile */
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
 
 
     .logo-container-full {
@@ -197,6 +233,16 @@ li{
     
     #artemisSlogan{
         font-size: 24px;
+    }
+
+    #main-heading{
+        font-size: 48px;
+    
+    }
+    
+    #topten-text{
+        font-size: 13px;
+        
     }
 
 }
@@ -244,6 +290,16 @@ li{
         
     }
 
+    #main-heading{
+        font-size: 48px;
+    
+    }
+    
+    #topten-text{
+        font-size: 13px;
+        
+    }
+
 
 }
 
@@ -284,6 +340,17 @@ li{
         font-size: 0px;
         display: block;
     }
+
+    #main-heading{
+        font-size: 30px;
+    
+    }
+    
+    #topten-text{
+        font-size: 10px;
+        
+    }
+
     
 }
 
