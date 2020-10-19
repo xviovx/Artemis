@@ -366,6 +366,8 @@ li{
     height: 77px;
     background: rgba(21, 22, 22, 0.8);
     backdrop-filter: blur(61px);
+    mix-blend-mode: normal;
+    width: 100%;
 }
 
 .test{
@@ -428,8 +430,7 @@ li{
 .sign-in-button-large:hover{
     cursor: pointer;
     opacity: 0.9;
-    background: rgba(255, 255, 255, 0.2);
-    
+    background: rgba(255, 255, 255, 0.2);    
 }
 
 .sign-in-button-small{
@@ -462,3 +463,44 @@ li{
     padding-right: 0px;
 }
 
+/*------ FOOTER ------*/
+
+.footer-background{
+    width: 100%;
+    height: auto;
+    background-color: #1E1E20;
+    margin-top: 80px;
+}
+
+.footer-content{
+    background-image: url(../assets/temporary/footer-large.png);
+    height: 314px;
+    width: 1558px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: auto 100% ;
+}
+
+@media screen and (max-width: 1560px) { /* Between Tablet and Mobile */
+
+
+    .footer-content{
+        background-image: url(../assets/temporary/footer-medium.png);
+        width: 738px;
+        overflow: hidden;
+        height: 356px;
+    }
+
+}
+
+@media screen and (max-width: 740px) { /* Between Tablet and Mobile */
+
+
+    .footer-content{
+        background-image: url(../assets/temporary/footer-small.png);
+        width: 335px;
+        overflow: hidden;
+        height: 610px;
+    }
+
+}
