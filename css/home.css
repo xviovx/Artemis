@@ -1,4 +1,41 @@
 /*---------- OVERIDES ----------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 700px;
+    background-color: turquoise;
+}
+
+.carousel-caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box.flex {
+    display: flex;
+    justify-content: center;
+  }
+
+.top-ten{
+    padding: 15px 0 0 25px; 
+    margin: 0;
+    width: 100%;
+    height: 1080px;
+    background-color: rgb(0, 0, 0);
+}
 
 h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
     margin: 0px;
@@ -49,12 +86,7 @@ li{
     color: #FFFFFF;
 }
 
-li:hover{
-    color: #FFFFFF;
-    opacity: 0.75;
-}
-
-.nav-link, .nav-link:hover{
+.nav-link{
     font-size: 14px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -69,11 +101,81 @@ li:hover{
     opacity: 0.5;
 }
 
+.nav-link:hover{
+    color: white;
+    opacity: 0.9;
+}
+
 .active{
     color: rgb(255, 255, 255);
     font-weight: Bold;
     opacity: 1;
 }
+
+.ham-button{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+.ham-button:focus{
+    outline: none;
+}
+
+.carousel-caption{
+    display: none;
+}
+
+#artemisImg{
+    width: 1000px;
+    height: 200px;
+}
+
+#artemisSlogan{
+    font-size: 30px;
+}
+
+.heading-section{
+    width: 100%;
+    padding-top: 7%;
+    /*background-color: blue;*/
+    padding-bottom: 7%;
+    
+}
+
+#main-heading{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 8.46087px;
+    display: block;
+    font-family: URW Dock, Titillium Web;
+
+}
+
+#topten-text{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+
+    font-family: URW Dock, Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 8.46087px;
+    text-transform: uppercase;
+    color: #9DA3A9;
+    opacity: 0.7;
+}
+
+
 
 
 /*---------- LABEL THIS ----------*/
@@ -103,10 +205,11 @@ li:hover{
     .sign-in-button-small {
         display: none;
     }
+
 }
 
 /* Medium Nav for Tablet */
-@media screen and (min-width: 992px) and (max-width: 1200px) { /* Between Tablet and Mobile */
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
 
 
     .logo-container-full {
@@ -125,6 +228,26 @@ li:hover{
     .sign-in-button-small {
         display: block;
     }
+
+    #artemisImg{
+        width: 800px;
+        height: 140px;
+    }
+    
+    #artemisSlogan{
+        font-size: 24px;
+    }
+
+    #main-heading{
+        font-size: 48px;
+    
+    }
+    
+    #topten-text{
+        font-size: 13px;
+        
+    }
+
 }
 
 
@@ -156,9 +279,34 @@ li:hover{
         float: right;
         margin-right: 10px;
     }
+
+    #artemisImg{
+        width: 600px;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #artemisSlogan{
+        font-size: 0px;
+        
+    }
+
+    #main-heading{
+        font-size: 48px;
+    
+    }
+    
+    #topten-text{
+        font-size: 13px;
+        
+    }
+
+
 }
 
-@media screen and (max-width: 544px) { /* Between Tablet and Mobile */
+@media screen and (max-width: 544px) { /* mobile */
 
     .logo-container-full {
         display: none;
@@ -176,9 +324,37 @@ li:hover{
         display: block;
     }
 
-    .nav-button {
+    .ham-button{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .nav-link {
         display: none;
     }
+
+    #artemisImg{
+        width: 210px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    #artemisSlogan{
+        font-size: 0px;
+        display: block;
+    }
+
+    #main-heading{
+        font-size: 30px;
+    
+    }
+    
+    #topten-text{
+        font-size: 10px;
+        
+    }
+
+    
 }
 
 
@@ -190,6 +366,8 @@ li:hover{
     height: 77px;
     background: rgba(21, 22, 22, 0.8);
     backdrop-filter: blur(61px);
+    mix-blend-mode: normal;
+    width: 100%;
 }
 
 .test{
@@ -233,23 +411,45 @@ li:hover{
 .sign-in-button-large{
     width: 94px;
     height: 30px;  
-    margin-left: 4.6%;
+    margin-left: 6%;
+    padding-top: 2px;
     background-color: royalblue;
     margin-right: 83px;
-    margin-left: 73px + 4.6%;
+    margin-left: 80px + 4.6%;
     margin-top: 23px;
     /*      position: absolute; */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+    text-align: center;
+    font-family: 'Titillium Web'; 
+    color: white;
+    font-weight: 400;
+    opacity: 0.75;
+}
+
+.sign-in-button-large:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.2);    
 }
 
 .sign-in-button-small{
     width: 28px;
     height: flex;
     margin-left: 4.6%;
-    background-color: royalblue;
+    /*background-color: royalblue;*/
+    background-image: url(../assets/logo/account-icon.svg);
+    background-repeat: no-repeat;
     padding-right: 10px;
-    margin-left: 80px;
+    margin-left: 100px;
+    float: right;
+    margin-top: 30px;
+    opacity: 0.75;
+}
+
+.sign-in-button-small:hover{
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 
@@ -261,4 +461,46 @@ li:hover{
 
 .bye-padding-right{
     padding-right: 0px;
+}
+
+/*------ FOOTER ------*/
+
+.footer-background{
+    width: 100%;
+    height: auto;
+    background-color: #1E1E20;
+    margin-top: 80px;
+}
+
+.footer-content{
+    background-image: url(../assets/temporary/footer-large.png);
+    height: 314px;
+    width: 1558px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: auto 100% ;
+}
+
+@media screen and (max-width: 1560px) { /* Between Tablet and Mobile */
+
+
+    .footer-content{
+        background-image: url(../assets/temporary/footer-medium.png);
+        width: 738px;
+        overflow: hidden;
+        height: 356px;
+    }
+
+}
+
+@media screen and (max-width: 740px) { /* Between Tablet and Mobile */
+
+
+    .footer-content{
+        background-image: url(../assets/temporary/footer-small.png);
+        width: 335px;
+        overflow: hidden;
+        height: 610px;
+    }
+
 }

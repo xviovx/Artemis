@@ -1,0 +1,77 @@
+.poster-4-grid-desktop {
+  width: 100%;
+  background: rgb(73,164,255);
+  border-radius: 10px;
+  padding-top: 147.7124183%;
+  z-index: 1;
+  box-shadow: 0 28px 29px 0 rgba(0,0,0,.8);
+}
+
+.poster-4-grid-desktop-shadow {
+  width: 100%;
+  background: rgba(0,0,0,.4);
+  border-radius: 10px;
+  padding-top: 147.7124183%;
+}
+
+@media (max-width: 515px) {
+  .col-sm-6.col-md-4.col-lg-3.grid-4-desktop {
+    padding: 10px;
+  }
+
+  p.top-10-label{
+    font-size: 110px;
+    line-height: 126px;
+  
+    margin-right: -28px;
+    height: 86px;
+    margin-top: -86px;
+  }
+}
+
+.col-sm-6.col-md-4.col-lg-3.grid-4-desktop {
+  padding: 26px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.row.no-gutters.d-xl-flex.justify-content-xl-start.now-showing {
+  min-width: 360px;
+  max-width: 1430px;
+  width: 1430px;
+}
+
+@media (max-width: 1430px) {
+  .row.no-gutters.d-xl-flex.justify-content-xl-start.now-showing {
+    width: 900px;
+  }
+}
+
+body {
+  background-color: #131414;
+}
+
+.top-10-label{
+  font-style: normal; /*      Maybe Change to Avenir     */
+  font-weight: 700;
+  font-size: 170px;
+  line-height: 195px;
+  letter-spacing: 8.46087px;
+
+  width: auto;
+  float:right;
+
+  margin-top: -145px;
+  margin-right: -33px;
+  text-align: right;
+  height: 145px;
+
+  color: rgb(255,255,255);
+  /* color: linear-gradient(90deg, rgba(255,255,255,1) 38%, rgba(112,112,112,1) 100%); */    /*  FIX ME  */     
+
+  text-shadow: 0px 6px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* HEADING STYLES */
+
+/* h1, h2, h3, p, span? or whatever */

@@ -1,1 +1,3 @@
-console.log("files linked!");
+$(document).ready(function(){
+    
+});

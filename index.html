@@ -12,56 +12,191 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <!--local-files-->
 
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div class="container-fluid">
 
-    <!--
-    <div class="container-fluid">
-                <div class="nav-buttons container">
-                    <ul>
-                        <a href="index.html" class="active"><li:hover>Home</li:hover></a>
-                        <a href=""><li>Movies</li></a>
-                        <a href=""><li>My List</li></a>
-                        <a><li>About Us</li></a>
-                    </ul>
+<!----------------- NAV BAR ----------------->
+
+    <div class="nav-bar">
+    
+        <ul class="nav justify-content-center"> <!-- nav-justified -->
+    
+            <button id="ham-button" class="ham-button mr-auto">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!--fix hamburger button for mobile-->
+        
+            <a class="logo-container-full" href="index.html"></a>
+            <a class="logo-container-short mx-auto" href="index.html"></a>
+            
+            <li class="nav-button">
+                <a class="nav-link active bye-padding-left" href="">Home</a>
+            </li>
+            <li class="nav-button">
+                <a class="nav-link" href="">Movies</a>
+            </li>
+            <li class="nav-button">
+                <a class="nav-link" href="">My List</a>
+            </li>
+            <li class="nav-button">
+                <a class="nav-link bye-padding-right" href="">About Us</a>
+            </li>
+    
+            <div class="sign-in-button-large">SIGN IN</div>
+            <div class="sign-in-button-small"></div>
+    
+        </ul>
+    </div><!--nav-bar-->
+
+<!----------------- SLIDER ----------------->
+
+    <div id="slider-container" class="container col-sm-12">
+
+        <!-- SLIDER HEADER -->
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/homepage/slider/1.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block d-flex h-50 align-items-center justify-content-center">
+                            <img id="artemisImg" src="assets/logo/artemis_silver.png" style="opacity: 0.8; text-align: center;">
+                            <p id="artemisSlogan">Experience is everything. Thats why we provide the Best Cinematic Experience in South Africa. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/homepage/slider/2.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block d-flex h-50 align-items-center justify-content-center">
+                            <img id="artemisImg" src="assets/logo/artemis_silver.png" style="opacity: 0.8; text-align: center;">
+                            <p id="artemisSlogan">Experience is everything. Thats why we provide the Best Cinematic Experience in South Africa. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/homepage/slider/3.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block d-flex h-50 align-items-center justify-content-center">
+                            <img id="artemisImg" src="assets/logo/artemis_silver.png" style="opacity: 0.8; text-align: center;">
+                            <p id="artemisSlogan">Experience is everything. Thats why we provide the Best Cinematic Experience in South Africa. </p>
+                        </div>
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        
+    </div><!-- END SLIDER CONTAINER -->
 
-        <div class="test"></div>
+<!----------------- HEADING SECTION ----------------->
 
-    </div>-->
-    
-    <!--container-fluid-->
-    
+    <div class="heading-section">
+            <div id="main-heading">POPULAR MOVIES</div>
+            
+            <div id="topten-text">Top 10 movies right now</div>
+    </div>
+
+<!------------- TOP TEN MOVIES SECTION ------------->
+
+    <!------ Top 3 Most Popular ------>
+
+    <!------ 4-10 Most Popular ------>
+
+    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
+        <div class="row no-gutters d-xl-flex justify-content-xl-start now-showing">
+
+            <!-- COLUMNS -->
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop">
+                <div class="poster-4-grid-desktop">
+                    <div id="row-1-poster-4" class="poster-4-image-container">
+                        <p class="top-10-label">4</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop">
+                <div class="poster-4-grid-desktop">
+                    <div id="row-1-poster-5" class="poster-4-image-container">
+                        <p class="top-10-label">5</p>
+                    </div>
+                </div>
+            </div>
 
 
-    <ul class="nav justify-content-center"> <!-- nav-justified -->
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop">
+                <div class="poster-4-grid-desktop">
+                    <div id="row-1-poster-6" class="poster-4-image-container">
+                        <p class="top-10-label">6</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="logo-container-full"></div>
-        <div class="logo-container-short"></div>
 
-        <li class="nav-button">
-            <a class="nav-link active bye-padding-left" href="">Home</a>
-        </li>
-        <li class="nav-button">
-            <a class="nav-link" href="">Movies</a>
-        </li>
-        <li class="nav-button">
-            <a class="nav-link" href="">My List</a>
-        </li>
-        <li class="nav-button">
-            <a class="nav-link bye-padding-right" href="">About Us</a>
-        </li>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop">
+                <div class="poster-4-grid-desktop">
+                    <div id="row-1-poster-7" class="poster-4-image-container">
+                        <p class="top-10-label">7</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="sign-in-button-large"></div>
-        <div class="sign-in-button-small"></div>
 
-    </ul>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop">
+                <div class="poster-4-grid-desktop">
+                    <div id="row-1-poster-8" class="poster-4-image-container">
+                        <p class="top-10-label">8</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop">
+                <div class="poster-4-grid-desktop">
+                    <div id="row-1-poster-9" class="poster-4-image-container">
+                        <p class="top-10-label">9</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop">
+                <div class="poster-4-grid-desktop">
+                    <div id="row-1-poster-10" class="poster-4-image-container">
+                        <p class="top-10-label">10</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+<!------------- FOOTER ------------->
+
+    <div class="footer-background">
+        <div class="footer-content 
+        d-sm-flex d-md-flex d-lg-flex d-xl-flex
+        mx-auto"></div>
+    </div>
+
+</div><!--container-fluid-->
 
 </body>
 </html>
 
-<!--    GET RID OF HOVER UNDERLINE  -->
