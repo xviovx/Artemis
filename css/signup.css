@@ -11,26 +11,10 @@ html,body {
     overflow-x: hidden; 
 }
 
-.header{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 700px;
-    background-color: turquoise;
-}
-
 .box.flex {
     display: flex;
     justify-content: center;
   }
-
-.top-ten{
-    padding: 15px 0 0 25px; 
-    margin: 0;
-    width: 100%;
-    height: 1080px;
-    background-color: rgb(0, 0, 0);
-}
 
 h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
     margin: 0px;
@@ -123,22 +107,103 @@ li{
     display: none;
 }
 
-#artemisImg{
-    width: 1000px;
-    height: 200px;
-}
 
-#artemisSlogan{
-    font-size: 30px;
-}
+/*---------------MAIN CONTENT SECTION---------------*/
 
-.heading-section{
+.header{
+    margin: 0;
+    padding: 0;
     width: 100%;
-    padding-top: 7%;
-    /*background-color: blue;*/
-    padding-bottom: 7%;
-    
+    height: 100vh;
+    background-color: turquoise;
 }
+
+.sign_up_left_con{
+    background-color: blueviolet;
+    background-image: url(../assets/signUpPoster.png);
+    padding: 0;
+    margin: 0;
+}
+
+.sign_up_form_con{
+    background-color: cadetblue;
+    background-image: url(../assets/signUpSectionBackground.png);
+
+}
+
+.form-container{
+    color: white;
+    margin-top: 10%;
+
+}
+
+.form-container h4{
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.form-container .intro-text{
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+form{
+    margin-top: 10%;
+}
+
+form p{
+    margin-top: 10%;
+    opacity: 0.8;
+}
+
+form label{
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+
+form .form-control{
+    border: none;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.btn{
+    margin-top: 10%;
+    background-color: #0255F7;
+    color: white;
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    width: 7rem;
+    padding: 3%;
+}
+
+#header-text{
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 25%;
+    padding-left: 25%;
+    display: block;
+}
+
+.dark-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+/*--------------- END OF MAIN CONTENT SECTION---------------*/
+
 
 
 /*---------- LABEL THIS ----------*/
@@ -201,21 +266,20 @@ li{
         font-size: 24px;
     }
 
-    #main-heading{
-        font-size: 48px;
-    
+    .sign_up_left_con{
+        background-color: blueviolet;
+        /*background-image: url(../assets/signUpPoster.png);*/
+        padding: 0;
+        margin: 0;
     }
+
     
-    #topten-text{
-        font-size: 13px;
-        
-    }
 
 }
 
 
 /* Medium Nav for Tablet */
-@media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
+@media screen and (min-width: 544px) and (max-width: 992px) { /* tablet */
     
     .nav-link{
         padding-left: 40px;
@@ -251,20 +315,84 @@ li{
         align-items: center;
     }
 
-    #artemisSlogan{
-        font-size: 0px;
-        
+    #header-text{
+        display: none;
     }
 
-    #main-heading{
-        font-size: 48px;
-    
+    .sign_up_left_con{
+        background-color: blueviolet;
+        background-image: ;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sign_up_form_con{
+        background-color: cadetblue;
+        background-image: url(../assets/signUpSectionBackground.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form-container{
+        color: white;
+        margin-top: 10%;
+        height: 900px;
+    }
+
+    form{
+        margin-top: 0px;
+    }
+
+    .form-container h4{
+        font-size: 52px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-align: center;
     }
     
-    #topten-text{
-        font-size: 13px;
-        
+    .form-container .intro-text{
+        font-size: 20px;
+        opacity: 0.7;
+        text-align: center;
     }
+    
+    form{
+        margin-top: 10%;
+    }
+
+    .btn{
+        margin-top: 4%;
+        background-color: #0255F7;
+        color: white;
+        font-family: 'Titillium Web';
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        width: 8rem;
+        padding: 2%;
+    }
+    
+    form p{
+        margin-top: 5%;
+        opacity: 0.8;
+    }
+    
+    form label{
+        text-transform: uppercase;
+        font-size: 14px;
+        opacity: 0.7;
+        letter-spacing: 2px;
+    }
+    
+    form .form-control{
+        border: none;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    
 
 
 }
@@ -302,20 +430,84 @@ li{
         display: block;
         margin: 0 auto;
     }
-    #artemisSlogan{
-        font-size: 0px;
-        display: block;
+
+    #header-text{
+        display: none;
     }
 
-    #main-heading{
-        font-size: 30px;
-    
+    .sign_up_left_con{
+        background-color: blueviolet;
+        background-image: ;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sign_up_form_con{
+        background-color: cadetblue;
+        background-image: url(../assets/signUpSectionBackground.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form-container{
+        color: white;
+        margin-top: 10%;
+        height: 900px;
+    }
+
+    form{
+        margin-top: 0px;
+    }
+
+    .form-container h4{
+        font-size: 52px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-align: center;
     }
     
-    #topten-text{
-        font-size: 10px;
-        
+    .form-container .intro-text{
+        font-size: 20px;
+        opacity: 0.7;
+        text-align: center;
     }
+    
+    form{
+        margin-top: 10%;
+    }
+
+    .btn{
+        margin-top: 4%;
+        background-color: #0255F7;
+        color: white;
+        font-family: 'Titillium Web';
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        width: 8rem;
+        padding: 2%;
+    }
+    
+    form p{
+        margin-top: 5%;
+        opacity: 0.8;
+    }
+    
+    form label{
+        text-transform: uppercase;
+        font-size: 14px;
+        opacity: 0.7;
+        letter-spacing: 2px;
+    }
+    
+    form .form-control{
+        border: none;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
 
     
 }
@@ -432,6 +624,10 @@ li{
     background-size: auto 100% ;
 }
 
+
+
+
+
 @media screen and (max-width: 1560px) { /* Between Tablet and Mobile */
 
 
@@ -455,3 +651,5 @@ li{
     }
 
 }
+
+/*try keep future code in existing media queries*/
