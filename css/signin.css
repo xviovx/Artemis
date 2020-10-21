@@ -120,14 +120,14 @@ li{
 
 .sign_up_left_con{
     background-color: blueviolet;
-    background-image: url(../assets/signUpPoster.png);
+    background-image: url(../assets/signInPoster.png);
     padding: 0;
     margin: 0;
 }
 
 .sign_up_form_con{
     background-color: cadetblue;
-    background-image: url(../assets/signUpSectionBackground.png);
+    background-image: url(../assets/signinSectionBackground.png);
 
 }
 

@@ -452,6 +452,7 @@ li{
     color: white;
     font-weight: 400;
     opacity: 0.75;
+    text-decoration: none;
 }
 
 .sign-in-button-large:hover{
