@@ -19,11 +19,6 @@ html,body {
     background-color: turquoise;
 }
 
-.carousel-caption{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .box.flex {
     display: flex;
     justify-content: center;
@@ -144,62 +139,6 @@ li{
     padding-bottom: 7%;
     
 }
-
-#main-heading{
-    text-align: center;
-    color: white;
-    font-weight: 900;
-    font-size: 60px;
-    letter-spacing: 8.46087px;
-    display: block;
-    font-family: URW Dock, Titillium Web;
-
-}
-
-#topten-text{
-    color: white;
-    text-align: center;
-    margin-top: 5px;
-    display: block;
-
-    font-family: URW Dock, Titillium Web;
-    font-style: normal;
-    font-weight: bold;
-
-    font-size: 16px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 8.46087px;
-    text-transform: uppercase;
-    color: #9DA3A9;
-    opacity: 0.7;
-}
-
-#image_Poster_One{
-    height: 1080px;
-    width: 100%;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-}
-
-#image_Poster_Two{
-    height: 1080px;
-    width: 100%;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-}
-
-#image_Poster_Three{
-    height: 1080px;
-    width: 100%;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-}
-
-
 
 
 /*---------- LABEL THIS ----------*/
@@ -382,10 +321,6 @@ li{
 }
 
 
-
-
-
-
 .nav{
     height: 77px;
     background: rgba(21, 22, 22, 0.8);
@@ -426,11 +361,6 @@ li{
     margin-right: 80px;
     margin-top: 22px;
 }
-
-
-
-
-
 
 .sign-in-button-large{
     width: 94px;
@@ -475,9 +405,6 @@ li{
     cursor: pointer;
     opacity: 0.9;
 }
-
-
-
 
 .bye-padding-left{
     padding-left: 0px;
