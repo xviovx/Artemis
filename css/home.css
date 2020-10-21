@@ -437,15 +437,18 @@ li{
     height: 30px;  
     margin-left: 6%;
     padding-top: 2px;
-    background-color: royalblue;
+
     margin-right: 83px;
     margin-left: 80px + 4.6%;
     margin-top: 23px;
+    padding-top: 4px;
     /*      position: absolute; */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+
     text-align: center;
-    font-family: 'Titillium Web'; 
+    font-family: 'Rubik'; 
+    letter-spacing: 1px;
     color: white;
     font-weight: 400;
     opacity: 0.75;
@@ -454,7 +457,9 @@ li{
 .sign-in-button-large:hover{
     cursor: pointer;
     opacity: 0.9;
-    background: rgba(255, 255, 255, 0.2);    
+    background: rgba(255, 255, 255, .2);
+    color: rgb(255, 255, 255);
+    border: rgba(255, 255, 255, 1);
 }
 
 .sign-in-button-small{
