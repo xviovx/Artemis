@@ -27,7 +27,7 @@ html,body {
 .box.flex {
     display: flex;
     justify-content: center;
-  }
+}
 
 .top-ten{
     padding: 15px 0 0 25px; 
@@ -300,9 +300,7 @@ li{
     
     #topten-text{
         font-size: 13px;
-        
     }
-
 
 }
 
@@ -458,7 +456,7 @@ li{
 }
 
 
-
+/*------ PADDING STUFF ------*/
 
 .bye-padding-left{
     padding-left: 0px;
@@ -466,6 +464,14 @@ li{
 
 .bye-padding-right{
     padding-right: 0px;
+}
+
+.mo-padding-left{ /* Not in Use */
+    padding-left: 20%;
+}
+
+.mo-padding-right{ /* Not in Use */
+    padding-right: 2%;
 }
 
 /*------ FOOTER ------*/
