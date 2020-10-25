@@ -20,6 +20,11 @@
     padding: 10px;
   }
 
+  /* Less Padding */
+  .col-sm-6.col-md-4.col-lg-3.grid-4-desktop, .col-sm-6.col-md-3.grid-4-desktop-stacked {
+    padding: 10px;
+  }
+
   p.top-10-label{
     font-size: 110px;
     line-height: 126px;
@@ -36,6 +41,13 @@
   padding: 13.5px;
   padding-top: 34px;
   padding-bottom: 34px;
+}
+
+/* Less Padding */
+.col-sm-6.col-md-4.col-lg-3.grid-4-desktop, .col-sm-6.col-md-3.grid-4-desktop-stacked {
+  padding: 13.5px;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
 }
 
 .col-md-4.grid-3-desktop {
@@ -225,6 +237,7 @@ $container-max-widths: (
   .section-heading.container-1440px{
     padding-top: 56px;
     padding-bottom: 12px;
+    width: 500px;
   }
 
 }
