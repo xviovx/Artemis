@@ -68,6 +68,8 @@ body {
 }
 
 
+/* DELETE ME???????
+
 li{
     display: inline;
     text-decoration: none;
@@ -86,43 +88,11 @@ li{
     color: #FFFFFF;
 }
 
-.nav-link{
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    text-decoration: none;
 
-    font-family: Titillium Web;
-    font-weight: 400;
-    letter-spacing: 1.08px;
-    margin-top: 22px;
-    padding-left: 86px;
-    padding-right: 86px;
-    opacity: 0.5;
-}
+*/
 
-.nav-link:hover{
-    color: white;
-    opacity: 0.9;
-}
 
-.active{
-    color: rgb(255, 255, 255);
-    font-weight: Bold;
-    opacity: 1;
-}
 
-.ham-button{
-    background-color: transparent;
-    border: 0;
-    color: white;
-    font-size: 20px;
-    display: none;
-}
-
-.ham-button:focus{
-    outline: none;
-}
 
 .carousel-caption{
     display: none;
@@ -183,51 +153,7 @@ li{
 
 
 /* Medium Nav for Tablet */
-@media screen and (min-width: 1200px) { /* Between Tablet and Mobile */
-
-
-    .logo-container-full {
-        display: block;
-    }
-
-    .logo-container-medium {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: none;
-    }
-
-    .sign-in-button-large {
-        display: block;
-    }
-
-    .sign-in-button-small {
-        display: none;
-    }
-
-}
-
-/* Medium Nav for Tablet */
 @media screen and (min-width: 992px) and (max-width: 1200px) { 
-
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-    }
-
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-    }
 
     #artemisImg{
         width: 800px;
@@ -253,32 +179,6 @@ li{
 
 /* Medium Nav for Tablet */
 @media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
-    
-    .nav-link{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-        float: left;
-        float: left;
-        margin-left: none;
-    }
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-        float: right;
-        margin-right: 10px;
-    }
 
     #artemisImg{
         width: 600px;
@@ -305,31 +205,6 @@ li{
 }
 
 @media screen and (max-width: 544px) { /* mobile */
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-    }
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-    }
-
-    .ham-button{
-        display: block;
-        margin-left: 20px;
-    }
-
-    .nav-link {
-        display: none;
-    }
 
     #artemisImg{
         width: 210px;
@@ -360,81 +235,10 @@ li{
 
 
 
-.nav{
-    height: 77px;
-    background: rgba(21, 22, 22, 0.8);
-    backdrop-filter: blur(61px);
-    mix-blend-mode: normal;
-    width: 100%;
-}
-
-.test{
-    width: 75%;
-    margin-left: 12.5%;
-    height: 220px;
-    background-color: aquamarine;
-    float: left;
-}
+/* MOVE ME */
 
 
 
-.logo-container-full{
-    width: 170px;
-    height: flex;
-    background-repeat: no-repeat;
-    background-image: url(../assets/logo/Artemis-Full.svg);
-    /* background-size: 40px 40px; */
-    margin-right: 4.6%;
-    margin-top: 20px;
-}
-
-.logo-container-short{
-    width: 28px;
-    height: flex;
-
-    background-repeat: no-repeat;
-    background-image: url(../assets/logo/Artemis-Short.svg);
-    /* background-size: 40px 40px; */
-    float: left;    
-    margin-left: 10px;
-    margin-right: 80px;
-    margin-top: 22px;
-}
-
-
-
-
-
-
-.sign-in-button-large{
-    width: 94px;
-    height: 30px;  
-    margin-left: 6%;
-    padding-top: 2px;
-
-    margin-right: 83px;
-    margin-left: 80px + 4.6%;
-    margin-top: 23px;
-    padding-top: 4px;
-    /*      position: absolute; */
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-
-    text-align: center;
-    font-family: 'Rubik'; 
-    letter-spacing: 1px;
-    color: white;
-    font-weight: 400;
-    opacity: 0.75;
-}
-
-.sign-in-button-large:hover{
-    cursor: pointer;
-    opacity: 0.9;
-    background: rgba(255, 255, 255, .2);
-    color: rgb(255, 255, 255);
-    border: rgba(255, 255, 255, 1);
-}
 
 .sign-in-button-small{
     width: 28px;
@@ -456,7 +260,18 @@ li{
 }
 
 
-/*------ PADDING STUFF ------*/
+
+
+
+
+
+
+
+
+
+
+
+/*------ STUFF TO REMOVES???????  ------*/
 
 .bye-padding-left{
     padding-left: 0px;
@@ -473,6 +288,19 @@ li{
 .mo-padding-right{ /* Not in Use */
     padding-right: 2%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------ FOOTER ------*/
 

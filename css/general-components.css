@@ -1,0 +1,289 @@
+@media (max-width: 1199px) {
+  .centred-smol-logo {
+    width: 40px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Short.svg);
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding-top: 40px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    letter-spacing: 1.5px;
+  }
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  margin-top: 20px;
+}
+
+.sign-in-button-smol-background {
+  background-color: rgba(255,255,255,0.1);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-image: url(../assets/account-icon.svg);
+  background-position: center; /* was centre */
+}
+
+.sign-in-mobile {
+  width: 56px;
+  height: 48px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #ffffff;
+  opacity: 1;
+  
+}
+
+.navbar-light .navbar-toggler {
+  border-radius: 0px;
+  width: 50px;
+
+
+    /* IM HERE TO TEST */
+    background: none;
+    background-color: none;
+    color: none;
+}
+
+@media (max-width: 576px) {
+  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    /*font-family: Rubik;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*font-size: 19px;*/
+    /*line-height: 17px;*/
+    /*text-transform: uppercase;*/
+    /*color: #FFFFFF;*/
+    /*opacity: 1;*/
+    padding-top: 60px;
+  }
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-style: normal;
+
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-family: Titillium Web;
+  font-weight: 400;
+  letter-spacing: 1.08px;
+  opacity: 0.5;
+
+    /* WHAT IS THE MEANING */
+    background: none;
+    background-color: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  opacity: 1;
+
+
+    /* WHAT IS THE MEANING */
+    background: none;
+    background-color: none;
+}
+
+@media (max-width: 767px) {
+  .navbar-dark .navbar-nav .nav-link {
+    /*font-weight: 400;*/
+    /*font-size: 19px;*/
+    /*line-height: 17px;*/
+    /*text-transform: uppercase;*/
+    /*color: #FFFFFF;*/
+    /*opacity: 0.4;*/
+    padding-top: 30px;
+
+      /* WHAT IS THE MEANING */
+  background: none;
+  background-color: none;
+  }
+}
+
+
+
+
+/* THIS THING IS MISBEHAVING */
+
+/*    BACKGROUND COLOR FOR NAV    */
+.navbar.navbar-dark.navbar-expand-md.fixed-top.flex-grow-1.justify-content-between{
+  backdrop-filter: blur(61px);
+  min-width: 360px;
+  min-height: 77px auto;
+  background-color: rgba(21, 22, 22, 0.8);
+}
+
+.navbar.navbar-dark.navbar-expand-md.fixed-top {
+ /* Check if auto makes a difference*/
+
+    /* IM HERE TO TEST */
+    background: none;
+    background-color: none;
+    color: none;
+
+      /* WHAT IS THE MEANING */
+   
+}
+
+
+
+/*DELETE ME*/
+
+#iDontWantToListen {
+  /* Check if auto makes a difference*/
+ 
+
+
+
+      /* GIVES COLOUR */
+    
+}
+
+
+
+
+
+
+
+
+
+
+#bottom-link {
+  /*margin-bottom: 40px;*/
+}
+
+.navbar-dark .navbar-toggler {
+  border: 0px;
+  
+}
+
+@media (min-width: 767px) {
+  .d-flex.justify-content-center.align-items-center.sign-in-mobile-right {
+    width: 56px;
+    height: 48px;
+  }
+}
+
+.d-flex.justify-content-center.align-items-center.sign-in-mobile {
+  width: 56px;
+  height: 48px;
+}
+
+@media (min-width: 768px) {
+  .nav.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+}
+
+.left-full-logo {
+  height: 46px;
+  width: 216px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/logo/Artemis-Full.svg);
+  background-position: center; /* was centre */
+}
+
+.sign-in-large-container {
+  height: 46px;
+  width: 216px;
+  background-position: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.nav.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between {
+
+    /* MIGHT NOT NEED */
+ 
+}
+
+/*
+.nav{
+    height: 77px;
+    background: rgba(21, 22, 22, 0.8);
+    backdrop-filter: blur(61px);
+    mix-blend-mode: normal;
+    width: 100%;
+}
+*/
+
+.sign-in-button-large{
+  width: 94px;
+  height: 30px;  
+
+  /*      position: absolute; */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-top: 8px;
+  padding-top: 4px;
+}
+
+.sign-in-button-text{
+  text-align: center;
+  font-family: 'Rubik'; 
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+
+/* DELETE ME? */
+.sign-in-button-text:hover{
+  text-align: center;
+  font-family: 'Rubik'; 
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.sign-in-button-large:hover{
+  cursor: pointer;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, .2);
+  color: rgb(255, 255, 255);
+}
+
+.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between{
+ /* max-width: 1440px; */
+  max-width: 1040px;
+
+    /* IM HERE TO TEST */
+    background: none;
+    background-color: none;
+    color: none;
+}
+
+/* Make float adjustments to pink divs*/
+
+/*
+
+backdrop-filter: blur(61px);
+background: rgba(21, 22, 22, 0.8);
+opacity: 0.8;
+
+*/

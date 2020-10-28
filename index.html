@@ -31,6 +31,8 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/general-components.css">
+
 
     <!--scripts-->
     <script src="./js/functions.js"></script>
@@ -44,37 +46,31 @@
 
 <!----------------- NAV BAR ----------------->
 
-    <div class="nav-bar">
-    
-        <ul class="nav justify-content-center"> <!-- nav-justified -->
-    
-            <button id="ham-button" class="ham-button mr-auto">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <!--fix hamburger button for mobile-->
-        
-            <a class="logo-container-full" href="index.html"></a>
-            <a class="logo-container-short mx-auto" href="index.html"></a>
-            
-            <li class="nav-button">
-                <a class="nav-link active bye-padding-left" href="index.html">Home</a>
-            </li>
-            <li class="nav-button">
-                <a class="nav-link" href="movie-library.html">Movies</a>
-            </li>
-            <li class="nav-button">
-                <a class="nav-link" href="">My List</a>
-            </li>
-            <li class="nav-button">
-                <a class="nav-link bye-padding-right" href="">About Us</a>
-            </li>
-    
-            <div class="sign-in-button-large">SIGN IN</div>
-            <div class="sign-in-button-small"></div>
-    
-        </ul>
-    </div><!--nav-bar-->
+<nav class="navbar navbar-dark navbar-expand-md fixed-top flex-grow-1 justify-content-between">
+    <div class="container-fluid" id="iDontWantToListen"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
+        <div class="d-lg-none centred-smol-logo"></div>
+        <div class="d-none d-lg-block left-full-logo"></div>
+        <a href="pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile" href="#">
+            <div class="sign-in-button-smol-background"></div>
+        </a>
+        <div class="collapse navbar-collapse d-md-flex d-xl-flex flex-grow-0 flex-md-grow-1 justify-content-md-center" id="navcol-1">
+            <ul class="nav navbar-nav d-flex d-md-flex flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./movie-library.html">Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+                <li class="nav-item"><a class="nav-link" href="#bottom-link">About Us</a></li>
+            </ul>
+        </div>
+        <a href="pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
+            <div class="sign-in-button-smol-background"></div>
+        </a>
+        <div class="d-none d-lg-block sign-in-large-container">
+            <div class="sign-in-button-large d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">
+                <a href="pages/signin.html" class="sign-in-button-text d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">SIGN IN</a>
+            </div>
+        </div>
+    </div>
+</nav>
 
 <!----------------- SLIDER ----------------->
 
