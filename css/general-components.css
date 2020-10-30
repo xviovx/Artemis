@@ -1,27 +1,4 @@
-@media (max-width: 1199px) {
-  .centred-smol-logo {
-    width: 40px;
-    height: 46px;
-    background-repeat: no-repeat;
-    background-image: url(../assets/logo/Artemis-Short.svg);
-    background-position: center;
-  }
-}
 
-@media (max-width: 576px) {
-  .navbar-light .navbar-nav .nav-link {
-    padding-top: 40px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    opacity: 0.5;
-    letter-spacing: 1.5px;
-  }
-}
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   margin-top: 20px;
@@ -91,10 +68,6 @@
   font-weight: 400;
   letter-spacing: 1.08px;
   opacity: 0.5;
-
-    /* WHAT IS THE MEANING */
-    background: none;
-    background-color: none;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -135,43 +108,12 @@
   background-color: rgba(21, 22, 22, 0.8);
 }
 
-.navbar.navbar-dark.navbar-expand-md.fixed-top {
- /* Check if auto makes a difference*/
-
-    /* IM HERE TO TEST */
-    background: none;
-    background-color: none;
-    color: none;
-
-      /* WHAT IS THE MEANING */
-   
-}
 
 
 
-/*DELETE ME*/
-
-#iDontWantToListen {
-  /* Check if auto makes a difference*/
- 
-
-
-
-      /* GIVES COLOUR */
-    
-}
-
-
-
-
-
-
-
-
-
-
+/*  NOT WORKING YET   */
 #bottom-link {
-  /*margin-bottom: 40px;*/
+  /* padding-bottom: 190px; */
 }
 
 .navbar-dark .navbar-toggler {
@@ -186,16 +128,156 @@
   }
 }
 
-.d-flex.justify-content-center.align-items-center.sign-in-mobile {
-  width: 56px;
-  height: 48px;
-}
-
 @media (min-width: 768px) {
   .nav.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between {
     padding-right: 6%;
     padding-left: 6%;
   }
+
+  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  .footer-legal-text{
+    width: 300px;
+    margin-top: -6px;
+  }
+
+  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .payment-logos-container.d-flex.d-sm-flex.d-md-flex.d-lg-flex.d-xl-flex.flex-grow-1.justify-content-between.justify-content-center
+  {
+    padding-left: 0px;
+    padding-right: 40px;
+  }
+
+  #facebook.social-item, #instagram.social-item, #twitter.social-item{
+    height: 22px;
+    width: 22px;
+    background-size: 22px 22px;
+  }
+
+  .social-media-icons.col-12.col-sm-3.d-flex.mx-auto.justify-content-center{
+    max-width: 200px;
+    padding-left: 20px;
+  }
+
+  .payment-item#MasterCard{
+    height: 26px;
+    background-size: 26px auto;
+  }
+  
+  .payment-item#PayPal{
+    background-size: 70px auto;
+    width: 80px;
+  }
+  
+  .payment-item#Visa{
+    background-size: 50px auto;
+    width: 50px;
+  }
+  
+}
+
+@media (max-width: 575px) {
+
+  .footer-logo-container{
+    margin-left: 10px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 16px;
+  }
+
+  .footer-background .footer-content{
+    background-color: red;
+    padding: 0px;
+  }
+
+  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
+    padding-left: 20px;
+    padding-right: 0px;
+    height: auto;
+    width: 100%;
+  }
+
+  /* Social Media, Legal Text, P*/
+
+  /* Fix Me x3 */
+  .social-media-icons{
+    height: 100%;
+  }
+
+  .legal-text{
+    height: 66px;
+  }
+
+  .payment-logos{
+    height: 66px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  .navbar-dark .navbar-nav .nav-link.footer{
+    font-size: 14px;
+    letter-spacing: 1.08px;
+    padding-top: 2px;
+  }
+
+  p.footer-legal-text{
+    font-size: 10px;
+    width: 240px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+  .centred-smol-logo {
+    width: 40px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Short.svg);
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding-top: 40px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    letter-spacing: 1.5px;
+  }
+}
+
+.footer-navbar{
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+
+.d-flex.justify-content-center.align-items-center.sign-in-mobile {
+  width: 56px;
+  height: 48px;
 }
 
 .left-full-logo {
@@ -213,22 +295,6 @@
   align-content: center;
   justify-content: center;
 }
-
-.nav.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between {
-
-    /* MIGHT NOT NEED */
- 
-}
-
-/*
-.nav{
-    height: 77px;
-    background: rgba(21, 22, 22, 0.8);
-    backdrop-filter: blur(61px);
-    mix-blend-mode: normal;
-    width: 100%;
-}
-*/
 
 .sign-in-button-large{
   width: 94px;
@@ -269,21 +335,184 @@
 }
 
 .navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between{
- /* max-width: 1440px; */
   max-width: 1040px;
-
-    /* IM HERE TO TEST */
-    background: none;
-    background-color: none;
-    color: none;
 }
 
-/* Make float adjustments to pink divs*/
 
-/*
 
-backdrop-filter: blur(61px);
-background: rgba(21, 22, 22, 0.8);
-opacity: 0.8;
 
-*/
+
+/*------ FOOTER ------*/
+
+.footer-background{
+  width: 100%;
+  height: auto;
+  background-color: #1E1E20;
+  margin-top: 80px;
+}
+
+
+.footer-content{
+  height: auto;
+  max-width: 1502px;
+  padding: 0px;
+}
+
+
+
+/*  footer content  */
+
+.footer-line{
+  width: 100%;
+  height: 2px;
+  background-color: #2A2A2A;
+}
+
+.footer-logo-container{
+  height: 80px;
+  width: 160px;
+  max-width: 160px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/logo/Artemis-Full.svg);
+  background-position: center; /* was centre */
+  background-size: auto 40%;
+}
+
+.footer-link-bar.col-12{
+  height: 76px;
+  width: auto;
+  background-color: red;
+}
+
+
+
+
+.footer-bottom-section{
+  height: 84px; /* FIX ME */
+  width: 100%;
+}
+
+
+  .social-media-icons{
+    height: 100%;
+    width: auto;
+  }
+
+  .legal-text{
+    height: 100%;
+    width: auto;
+  }
+
+      .footer-legal-text{
+      max-width: 500px;
+      height: 16px;
+      padding-top: 36px;
+
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      opacity: 0.3;
+      text-align: center;
+      }
+
+  .payment-logos{
+    height: 100%;
+    width: auto;
+  }
+
+.social-item{
+  height: 28px;
+  width: 28px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px 28px;
+}
+
+a.social-link footer{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.social-item:hover{
+  opacity: .5;
+}
+
+.payment-item{
+  height: 28px;
+  width: auto;
+
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px auto;
+}
+
+
+
+li.social-item, li.payment-item{
+  list-style: none;
+}
+
+.social-media-icons-container{
+  max-width: 180px;
+  padding-top: 30px;
+}
+
+.payment-logos-container{
+  max-width: 280px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.col-12{
+  padding: 0;
+}
+
+
+
+/*  SOCIAL MEDIA ICONS  */
+
+#facebook{
+  background-image: url(../assets/social-media-icons/facebook.svg);
+}
+
+#instagram{
+  background-image: url(../assets/social-media-icons/instagram.svg);
+}
+
+#twitter{
+  background-image: url(../assets/social-media-icons/twitter.svg);
+}
+
+
+
+/*  PAYMENT LOGOS  */
+
+#MasterCard{
+  background-image: url(../assets/payment-methods/Master-Card.svg);
+  background-size: 36px auto;
+  width: 36px;
+}
+
+#PayPal{
+  background-image: url(../assets/payment-methods/PayPal.svg);
+  background-size: 100px auto;
+  width: 110px;
+}
+
+#Visa{
+  background-image: url(../assets/payment-methods/Visa.svg);
+  background-size: 60px auto;
+  width: 60px;
+}
+

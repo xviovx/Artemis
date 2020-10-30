@@ -47,7 +47,7 @@
 <!----------------- NAV BAR ----------------->
 
 <nav class="navbar navbar-dark navbar-expand-md fixed-top flex-grow-1 justify-content-between">
-    <div class="container-fluid" id="iDontWantToListen"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
+    <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
         <div class="d-lg-none centred-smol-logo"></div>
         <div class="d-none d-lg-block left-full-logo"></div>
         <a href="pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile" href="#">
@@ -58,7 +58,7 @@
                 <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./movie-library.html">Movies</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
-                <li class="nav-item"><a class="nav-link" href="#bottom-link">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="#bottom-link">About Us</a></li>
             </ul>
         </div>
         <a href="pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
@@ -122,7 +122,6 @@
 
     <div class="heading-section">
             <div id="main-heading">POPULAR MOVIES</div>
-            
             <div id="topten-text">Top 10 movies right now</div>
     </div>
 
@@ -196,10 +195,63 @@
 
 <!------------- FOOTER ------------->
 
-    <div class="footer-background">
-        <div class="footer-content 
-        d-sm-flex d-md-flex d-lg-flex d-xl-flex
-        mx-auto"></div>
+    <div class="footer-background d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
+        <!--    Centre Align Footer    -->
+        <div class="row footer-content no-gutters d-xl-flex justify-content-xl-start">
+            <div class="col-12 d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
+                <div class="footer-logo-container col-12"></div>
+            </div>
+            <div class="footer-line col-12"></div>
+
+            <!--    LINKS   -->
+            
+            <nav class="footer-navbar navbar navbar-dark navbar-expand-sm flex-grow-1 justify-content-between justify-content-center">
+                <div class="d-md-flex d-xl-flex flex-grow-0 flex-sm-grow-1 justify-content-sm-center">
+                    <ul class="nav navbar-nav d-flex d-sm-flex flex-grow-1 justify-content-between">
+                        <li class="nav-item"><a class="nav-link footer" href="#">Book a Movie</a></li>
+                        <li class="nav-item"><a class="nav-link footer" href="#">Find a Cinema</a></li>
+                        <li class="nav-item"><a class="nav-link footer" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link footer" href="#">View Your Booking</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footer-line col-12"></div>
+    
+            <div class="row footer-bottom-section no-gutters d-flex justify-content-centre">
+                
+                <!--    Social Media Icons -->
+                <div class="social-media-icons col-12 col-sm-3 d-flex mx-auto justify-content-center">
+                    <ul class="social-media-icons-container d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 justify-content-between justify-content-center">
+                        <a class="social-link footer" href="https://www.facebook.com/"><li class="social-item" id="facebook"></li></a>
+                        <a class="social-link footer" href="https://www.instagram.com"><li class="social-item" id="instagram"></li></a>
+                        <a class="social-link footer" href="https://www.twitter.com"><li class="social-item" id="twitter"></li></a>
+                    </ul>
+                </div>
+
+                <!--    Legal Text  -->
+                <div class="legal-text col-12 col-sm-6 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
+                    <p class="footer-legal-text">copyright © Artemis Cinemas 2020. All Rights reserved.</p>
+                </div>
+                
+                <div class="footer-line col-12 d-sm-none"></div>
+
+                <!--    Payment Logos -->
+
+                <div class="payment-logos col-12 col-sm-3 d-flex mx-auto justify-content-center">
+                    <ul class="payment-logos-container d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 justify-content-between justify-content-center">
+                        <li class="payment-item" id="MasterCard"></li>
+                        <li class="payment-item" id="PayPal"></li>
+                        <li class="payment-item" id="Visa"></li>
+                    </ul>
+                </div>
+
+            </div><!--  bottom section of footer    -->
+
+
+        </div>
+
+
     </div>
 
 </div><!--container-fluid-->

@@ -24,6 +24,7 @@ html,body {
     align-items: center;
     justify-content: center;
 }
+
 .box.flex {
     display: flex;
     justify-content: center;
@@ -45,12 +46,6 @@ h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
     font-style: normal;
     font-weight: 400;
 }
-
-
-a{
-    /* FILL ME UP */
-}
-
 
 .col-md-6, .col-sm-6, .col-sm-4, .col-sm-3{
     padding: 0px;
@@ -302,44 +297,3 @@ li{
 
 
 
-/*------ FOOTER ------*/
-
-.footer-background{
-    width: 100%;
-    height: auto;
-    background-color: #1E1E20;
-    margin-top: 80px;
-}
-
-.footer-content{
-    background-image: url(../assets/temporary/footer-large.png);
-    height: 314px;
-    width: 1558px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: auto 100% ;
-}
-
-@media screen and (max-width: 1560px) { /* Between Tablet and Mobile */
-
-
-    .footer-content{
-        background-image: url(../assets/temporary/footer-medium.png);
-        width: 738px;
-        overflow: hidden;
-        height: 356px;
-    }
-
-}
-
-@media screen and (max-width: 740px) { /* Between Tablet and Mobile */
-
-
-    .footer-content{
-        background-image: url(../assets/temporary/footer-small.png);
-        width: 335px;
-        overflow: hidden;
-        height: 610px;
-    }
-
-}

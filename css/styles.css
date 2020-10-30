@@ -69,14 +69,14 @@
 }
 
 body {
-  background-color: #131414;s
+  background-color: #131414;
 }
 
 .top-10-label{
   font-style: normal; /*      Maybe Change to Avenir     */
   font-family: Rubik;
   font-weight: 700;
-  font-size: 170px;
+  font-size: 160px;
   line-height: 195px;
   letter-spacing: 8.46087px;
 
