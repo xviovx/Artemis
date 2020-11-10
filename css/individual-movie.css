@@ -1,0 +1,227 @@
+#individual-movie-page{
+    height: 1700px;
+    margin-top: 62px;
+}
+
+.trailer-header{
+    width: 100%; 
+    padding-top: 50.25%;
+    background-color: red;
+    align-content: center;
+}
+
+
+/* WHY DONT U WORK */
+.trailer-header-gradient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #131414 100%);
+    float: left;
+    background-color: lightcoral;
+
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+
+
+
+
+/* Movie Information */
+
+.movie-content-container{
+    width: 1190px;
+    height: 700px;
+    margin-top: -116px;
+}
+
+#individual-movie-header{
+
+
+    height: 170px;
+
+    font-style: normal;
+
+    font-family: rubik;
+    font-weight: 600;
+    font-size: 74px;
+    line-height: 85px;
+    letter-spacing: 8.46087px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    float: left;
+    margin-left: 43px;
+
+}
+
+#genre-label-text-xl{
+
+    width: 100%;
+    height: 29px;
+
+
+    font-family: rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    /* identical to box height */
+    letter-spacing: 8.46087px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    opacity: 0.54;
+    float: left;
+
+    margin-top: 10px;
+    margin-left: 43px;
+}
+
+.movie-info-container{
+    width: 100%;
+    height: inherit;
+    align-content: left;
+}
+
+.body-text{
+  
+    
+    height: auto;
+    left: 1260px;
+    top: 291px;
+  
+    font-style: normal;
+    font-family: rubik;
+    font-weight: 300;
+  
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 1.46087px;
+  
+    color: #D1D1D1;
+  
+    float: left;
+
+    margin-top: 10px;
+    margin-left: 43px;
+
+}
+
+.director-and-actors{
+  
+    
+    height: auto;
+    left: 1260px;
+    top: 291px;
+  
+    font-style: normal;
+    font-family: rubik;
+    font-weight: 300;
+  
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 1.46087px;
+  
+    color: #505454;
+
+    float: left;
+    margin-top: 10px;
+    margin-left: 43px;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0px;
+}
+
+.star-rating-container{
+    width: 200px;
+    height: 31px;
+    margin-left: 43px;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.star-symbol{
+    width: 31px;
+    height: 31px;
+    margin-right: 6px;
+
+
+    background-image: url(../assets/star.svg);
+    background-repeat: no-repeat;
+    float: left;
+    opacity: .2;
+}
+
+.individual-movie-buttons{
+    width: 90%;
+    height: 58px;
+    margin-top: 40px;
+    margin-left: 43px;
+    margin-bottom: 14px;
+    float: left;
+}
+
+.button-large{
+    width: auto;
+    height: 58px;
+    padding: 18px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 5px;
+    border: none;
+}
+
+.book-now{
+    background: #0255F7;
+    box-shadow: 0 12px 29px 0 rgba(0,0,0,.6);
+}
+
+.book-now:hover{
+    box-shadow: 0 28px 29px 0 rgba(0,0,0,.6);
+}
+
+.add-to-list{
+    background: #42341F;
+    color: #FFB649;
+    margin-left: 18px;
+}
+
+button{
+    font-family: rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    float: left;
+}
+
+button:hover{
+    opacity: .8;  
+}
+
+button:focus{
+    border: none;
+    text-decoration: none;
+}
+
+button:active{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
