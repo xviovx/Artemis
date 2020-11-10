@@ -47,6 +47,29 @@ h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
     font-weight: 400;
 }
 
+<<<<<<< HEAD
+
+a{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.08px;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;    
+}
+
+a:hover {
+    text-decoration: none;    
+    color: #FFFFFF;    
+}
+
+
+=======
+>>>>>>> Ronald-McDonald-the-Sequel
 .col-md-6, .col-sm-6, .col-sm-4, .col-sm-3{
     padding: 0px;
 }
@@ -140,6 +163,30 @@ li{
     opacity: 0.7;
 }
 
+#image_Poster_One{
+    height: 1080px;
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+#image_Poster_Two{
+    height: 1080px;
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+#image_Poster_Three{
+    height: 1080px;
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 
@@ -230,10 +277,81 @@ li{
 
 
 
+<<<<<<< HEAD
+.nav{
+    height: 77px;
+    background: rgba(21, 22, 22, 0.8);
+    backdrop-filter: blur(61px);
+    mix-blend-mode: normal;
+    width: 100%;
+}
+
+.test{
+    width: 75%;
+    margin-left: 12.5%;
+    height: 220px;
+    background-color: aquamarine;
+    float: left;
+}
+
+
+
+.logo-container-full{
+    width: 170px;
+    height: flex;
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Full.svg);
+    /* background-size: 40px 40px; */
+    margin-right: 4.6%;
+    margin-top: 20px;
+}
+
+.logo-container-short{
+    width: 28px;
+    height: flex;
+
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Short.svg);
+    /* background-size: 40px 40px; */
+    float: left;    
+    margin-left: 10px;
+    margin-right: 80px;
+    margin-top: 22px;
+}
+
+
+
+
+
+
+.sign-in-button-large{
+    width: 94px;
+    height: 31px;  
+    margin-left: 6%;
+    padding-top: 2px;
+
+    margin-right: 83px;
+    margin-left: 80px + 4.6%;
+    margin-top: 23px;
+    padding-top: 3px;
+    /*      position: absolute; */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.sign-in-button-large:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, .2);
+}
+=======
 /* MOVE ME */
 
 
 
+>>>>>>> Ronald-McDonald-the-Sequel
 
 .sign-in-button-small{
     width: 28px;
@@ -259,30 +377,6 @@ li{
 
 
 
-
-
-
-
-
-
-
-/*------ STUFF TO REMOVES???????  ------*/
-
-.bye-padding-left{
-    padding-left: 0px;
-}
-
-.bye-padding-right{
-    padding-right: 0px;
-}
-
-.mo-padding-left{ /* Not in Use */
-    padding-left: 20%;
-}
-
-.mo-padding-right{ /* Not in Use */
-    padding-right: 2%;
-}
 
 
 

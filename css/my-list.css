@@ -1,0 +1,151 @@
+.my-list-heading{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 8.46087px;
+    display: block;
+    font-family: URW Dock, Titillium Web;
+    margin-top: 15px;
+}
+
+.my-list-text{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+
+    font-family: URW Dock, Titillium Web;
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 8.46087px;
+    text-transform: uppercase;
+    color: #9DA3A9;
+    opacity: 0.7;
+}
+
+.one{
+    background-color: red;
+    height: 25em;
+    margin-top: 15px;
+}
+
+.poster-container{
+    height: 95%;
+    background-color: rosybrown;
+    width: 19em;
+    margin-left: 30%;
+    float: left;
+    
+}
+
+.text-container-list{
+    height: 100%;
+    background-color: springgreen;
+    float: left;
+    width: 21em;
+    
+}
+
+.p-text-for-mobile{
+    width: 0;
+    height: 0;
+    color: white;
+    display: none;
+}
+
+/*WAS TOO LAZY FOR BOOTSTRAP SO I MADE MY LIFE 1000x HARDER WITH THESE SEXY MEDIA QUERIES*/
+@media screen and (min-width: 1200px) and (max-width: 1879px) {
+    .poster-container{
+        margin-left: 5em;
+        width: 17em;
+
+
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    .poster-container{
+        margin-left: 15em;
+        width: 17em;
+
+
+    }
+
+    .text-container-list{
+        height: 100%;
+        background-color: springgreen;
+        float: left;
+        width: 19em;  
+    }
+   
+
+}
+
+
+/* Medium Nav for Tablet */
+@media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
+    .one{
+        background-color: red;
+        width: 100%;
+    }
+
+    .poster-container{
+        margin-left: 15em;
+        width: 17em;
+    }
+
+    .text-container-list{
+        height: 100%;
+        background-color: springgreen;
+        float: left;
+        width: 19em;  
+    }
+   
+}
+/*le fucky one*/
+@media screen and (min-width: 545px) and (max-width: 841px) {
+    .poster-container{
+        margin-left: 0px;
+        width: 17em;
+    }
+
+    .text-container-list{
+        height: 100%;
+        background-color: springgreen;
+        float: left;
+        width: 15em;  
+    }
+}
+
+@media screen and (max-width: 544px) { /* mobile */
+    .poster-container{
+        margin-left: 0px;
+        width: 15em;
+    }
+
+    .text-container-list{
+        height: 100%;
+        background-color: springgreen;
+        float: left;
+        width: 15em;  
+    }
+    
+    .p-text-for-mobile{
+        display: inline-flex;
+        width: 100%;
+        height: 10em;
+        background-color: purple;
+        color: white;
+        
+    }
+
+    .one{
+        margin-bottom: 80px;
+    }
+}

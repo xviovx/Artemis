@@ -1,0 +1,103 @@
+.filter-section{
+    width: 73%;
+    height: 60px;
+}
+
+form{
+    background-color: #212223;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: Titillium Web;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+#choose-a-genre{
+    font-size: 21px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+#genres{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+option{
+    color: black;
+}
+
+#go-button{
+    margin-left: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: #0057FF;
+    border: none;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+#go-button:hover{
+    background-color: #00205f;
+}
+
+.poster-ratio button{
+    border: none;
+    width: 48%;
+    margin-left: 3px;
+    margin-top: 5px;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid #000c25;
+    background-color: #0057FF;
+    color: white;
+    float: left;
+}
+
+.poster-ratio button:hover{
+    color: rgba(255, 255, 255, 0.486);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    .poster-ratio button{
+       font-size: 14px;
+       padding: 5px;
+    }
+    
+
+}
+
+
+/* Medium Nav for Tablet */
+@media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
+    .poster-ratio button{
+        font-size: 14px;
+        padding: 5px;
+     }
+}
+
+@media screen and (max-width: 544px) { /* mobile */
+
+    .poster-ratio button{
+        font-size: 14px;
+        padding: 5px;
+        float: none;
+        width: 100%;
+     }
+
+    
+}
