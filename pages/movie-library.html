@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artemis - Home</title>
+
+    <!--meta-informatiton-->
+    <meta name="authors" content="George and Kyle">
+    <meta name="assessment" content="Term 4 Group Project">
+    <meta name="company" content="Artemis Cinemas">
+    <meta name="subject" content="Movies, Film, Cinemas, Entertainment">
+    <meta name="description" content="Artemis Cinemas. Experience is everything. Thats why we provide the Best Cinematic Experience in South Africa.">
+
+    <!--library-files-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/yvs2slb.css">
+        <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+    <!--local-files-->
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/general-components.css">
+    <link rel="stylesheet" href="../css/movie-library-filter.css">
+
+    <!--scripts-->
+    <script src="../js/functions.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container-fluid" id="movies-page">
+
+    <!--------- NAV BAR (To be added once fixed completely with Bootsrap)------------>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top flex-grow-1 justify-content-between">
+        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
+            <a href="../index.html"><div class="d-lg-none centred-smol-logo"></div></a>
+            <a href="../index.html"><div class="d-none d-lg-block left-full-logo"></div></a>
+            <a href="pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile" href="#">
+                <div class="sign-in-button-smol-background"></div>
+            </a>
+            <div class="collapse navbar-collapse d-md-flex d-xl-flex flex-grow-0 flex-md-grow-1 justify-content-md-center" id="navcol-1">
+                <ul class="nav navbar-nav d-flex d-md-flex flex-grow-1 justify-content-between">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html" style="opacity: 0.6;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movie-library.html" style="opacity: 1;">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" id="#bottom-link">About Us</a></li>
+                </ul>
+            </div>
+            <a href="pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
+                <div class="sign-in-button-smol-background"></div>
+            </a>
+            <div class="d-none d-lg-block sign-in-large-container">
+                <div class="sign-in-button-large d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">
+                    <a href="signin.html" class="sign-in-button-text d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">SIGN IN</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!------------- TOP MOVIES SECTION ------------->
+
+        <div class="centre-align-stuff d-flex justify-content-center">
+            <div class="section-heading container-1440px">
+                <h2>Top Movies</h2>
+            </div>
+        </div>
+
+        <!------ Top 3 Movies Posters ------>
+
+        <div id="top-three-section" class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
+            <!--DO NOT ADD CONTENT TO THIS SECTION!!!!!!!!!!-->
+
+            <!--CONTENT DYNAMICALLY GENERATED WITH AN API-->
+        </div>
+
+
+    <!------------- MOVIES NOW SHOWING SECTION ------------->
+
+    <div class="centre-align-stuff d-flex justify-content-center">
+        <div class="section-heading container-1440px">
+            <h2>Now Showing</h2>
+            <p class="sub-section-heading-info"></p>
+        </div>
+    </div>
+
+    <!------ Movies Now Showing Posters ------>
+    <div class="filter-section mx-auto">
+        <form>
+            <label for="genres" id="choose-a-genre">Choose a genre:</label>
+            <select id="genres" name="genres">
+                <option value="all" id="all-movies">All</option>
+                <option value="action" id="action-movies">Action</option>
+                <option value="adventure" id="adventure-movies">Adventure</option>
+                <option value="animation" id="animation-movies">Animation</option>
+                <option value="comedy" id="comedy-movies">Comedy</option>
+                <option value="crime" id="crime-movies">Crime</option>
+                <option value="documentary" id="documentary-movies">Documentary</option>
+                <option value="drama" id="drama-movies">Drama</option>
+                <option value="family" id="family-movies">Family</option>
+                <option value="fantasy" id="fantasy-movies">Fantasy</option>
+                <option value="history" id="history-movies">History</option>
+                <option value="sci-fi" id="sci-fi-movies">Sci-Fi</option>
+            </select>
+            <input type="submit" value="go" id="go-button">
+        </form>
+    </div>
+    <br>
+    
+    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
+        
+        
+
+        <div class="row no-gutters d-xl-flex justify-content-xl-start container-1440px">
+
+            <!-- COLUMNS -->
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-1" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                    <button class="add-to-list">Add to list</button>
+                    <button class="view-more">View more</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-2" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-3" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-4" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-5" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-6" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-7" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-8" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-9" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-10" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-11" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-12" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-13" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-14" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-15" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-16" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-13" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-14" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-15" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
+                <div class="poster-ratio">
+                    <img id="now-showing-poster-16" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    
+
+    <!------------- FOOTER ------------->
+
+    <div class="footer-background d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
+        <!--    Centre Align Footer    -->
+        <div class="row footer-content no-gutters d-xl-flex justify-content-xl-start">
+            <div class="col-12 d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
+                <div class="footer-logo-container col-12"></div>
+            </div>
+            <div class="footer-line col-12"></div>
+
+            <!--    LINKS   -->
+            
+            <nav class="footer-navbar navbar navbar-dark navbar-expand-sm flex-grow-1 justify-content-between justify-content-center">
+                <div class="d-md-flex d-xl-flex flex-grow-0 flex-sm-grow-1 justify-content-sm-center">
+                    <ul class="nav navbar-nav d-flex d-sm-flex flex-grow-1 justify-content-between">
+                        <li class="nav-item"><a class="nav-link footer" href="#">Book a Movie</a></li>
+                        <li class="nav-item"><a class="nav-link footer" href="#">Find a Cinema</a></li>
+                        <li class="nav-item"><a class="nav-link footer" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link footer" href="#">View Your Booking</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footer-line col-12"></div>
+    
+            <div class="row footer-bottom-section no-gutters d-flex justify-content-centre">
+                
+                <!--    Social Media Icons -->
+                <div class="social-media-icons col-12 col-sm-3 d-flex mx-auto justify-content-center">
+                    <ul class="social-media-icons-container d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 justify-content-between justify-content-center">
+                        <a class="social-link footer" href="https://www.facebook.com/"><li class="social-item" id="facebook"></li></a>
+                        <a class="social-link footer" href="https://www.instagram.com"><li class="social-item" id="instagram"></li></a>
+                        <a class="social-link footer" href="https://www.twitter.com"><li class="social-item" id="twitter"></li></a>
+                    </ul>
+                </div>
+
+                <!--    Legal Text  -->
+                <div class="legal-text col-12 col-sm-6 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
+                    <p class="footer-legal-text">copyright © Artemis Cinemas 2020. All Rights reserved.</p>
+                </div>
+                
+                <div class="footer-line col-12 d-sm-none"></div>
+
+                <!--    Payment Logos -->
+
+                <div class="payment-logos col-12 col-sm-3 d-flex mx-auto justify-content-center">
+                    <ul class="payment-logos-container d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 justify-content-between justify-content-center">
+                        <li class="payment-item" id="MasterCard"></li>
+                        <li class="payment-item" id="PayPal"></li>
+                        <li class="payment-item" id="Visa"></li>
+                    </ul>
+                </div>
+
+            </div><!--  bottom section of footer    -->
+
+
+        </div>
+
+
+    </div>
+
+    </div> <!-- END OF CONTAINER FLUID-->
+</body>
+</html>
