@@ -29,27 +29,82 @@
 }
 
 .one{
-    background-color: red;
+    background-color: #171919;
     height: 25em;
     margin-top: 15px;
 }
 
 .poster-container{
     height: 95%;
+    margin-top: 1%;
     background-color: rosybrown;
     width: 19em;
     margin-left: 30%;
     float: left;
-    
+    border-radius: 10px;
 }
 
 .text-container-list{
     height: 100%;
-    background-color: springgreen;
+    /*background-color: springgreen;*/
     float: left;
     width: 21em;
     
 }
+
+.poster-title-x{
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.genre-text-display{
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 23px;
+}
+
+.cast-names{
+    margin-top: 10px;
+    color: white;
+    font-size: 14px
+}
+
+.synopsis-text{
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    display: block;
+}
+
+.remove-from-list-button{
+    border: none;
+    margin-top: 37%;
+    background-color: #0057FF;
+    color: white;
+    padding: 15px;
+    font-family: URW Dock, Titillium Web;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.remove-from-list-button:hover{
+    background-color: #00205f;
+}
+
+
+
+.poster-container img{
+    width: 100%;
+    height: auto;
+  }
+  @supports(object-fit: cover){
+      .poster-container img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
 
 .p-text-for-mobile{
     width: 0;
@@ -63,9 +118,12 @@
     .poster-container{
         margin-left: 5em;
         width: 17em;
-
-
     }
+
+    .remove-from-list-button{
+        margin-top: 29%;
+    }
+    
 
 }
 
@@ -79,9 +137,12 @@
 
     .text-container-list{
         height: 100%;
-        background-color: springgreen;
         float: left;
         width: 19em;  
+    }
+
+    .remove-from-list-button{
+        margin-top: 27%;
     }
    
 
@@ -91,7 +152,7 @@
 /* Medium Nav for Tablet */
 @media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
     .one{
-        background-color: red;
+        
         width: 100%;
     }
 
@@ -102,9 +163,13 @@
 
     .text-container-list{
         height: 100%;
-        background-color: springgreen;
+        
         float: left;
         width: 19em;  
+    }
+
+    .remove-from-list-button{
+        margin-top: 29%;
     }
    
 }
@@ -117,9 +182,18 @@
 
     .text-container-list{
         height: 100%;
-        background-color: springgreen;
+        
         float: left;
         width: 15em;  
+    }
+
+    .poster-title-x{
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .genre-text-display{
+        font-size: 20px;
     }
 }
 
@@ -131,7 +205,7 @@
 
     .text-container-list{
         height: 100%;
-        background-color: springgreen;
+        
         float: left;
         width: 15em;  
     }
@@ -147,5 +221,26 @@
 
     .one{
         margin-bottom: 80px;
+    }
+
+    .remove-from-list-button{
+        margin-top: 68%;
+    }
+
+    .poster-title-x{
+        font-size: 34px;
+        text-align: left;
+    }
+    
+    .genre-text-display{
+        font-size: 22px;
+    }
+    
+    .cast-names{
+        font-size: 16px;
+    }
+    
+    .synopsis-text{
+        display: none;
     }
 }
