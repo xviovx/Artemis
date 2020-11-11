@@ -52,6 +52,26 @@ option{
     background-color: #00205f;
 }
 
+.view-more a{
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+}
+
+.view-more:hover{
+    background-color: #00205f;
+}
+
+.add-to-list a{
+    text-decoration: none;
+    opacity: 1;
+    color: white;
+}
+
+.add-to-list:hover{
+    background-color: #00205f;
+}
+
 .poster-ratio button{
     border: none;
     width: 48%;

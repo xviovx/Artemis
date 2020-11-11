@@ -7,6 +7,10 @@ function storeUsername(){
 
 console.log(localStorage)
 
+console.log("Users name: " + localStorage.username);
+
+//alert(localStorage.username);
+
 
 
 $(function(){
@@ -37,34 +41,13 @@ $(function(){
     imagePosterNine = api_result.results[8].poster_path; // popularity: 898.868
     imagePosterTen = api_result.results[9].poster_path; // popularity: 806.945
 
-    //PATHS TO USE FOR NOW SHOWING - 16
-    nowShowingOne = api_result.results[3].poster_path; 
-    nowShowingTwo = api_result.results[4].poster_path; 
-    nowShowingThree = api_result.results[5].poster_path; 
-    nowShowingFour = api_result.results[6].poster_path; 
-    nowShowingFive = api_result.results[7].poster_path; 
-    nowShowingSix = api_result.results[8].poster_path; 
-    nowShowingSeven = api_result.results[9].poster_path;
-    nowShowingEight = api_result.results[10].poster_path;
-    nowShowingNine = api_result.results[11].poster_path;
-    nowShowingTen = api_result.results[12].poster_path;
-    nowShowingEleven = api_result.results[13].poster_path;
-    nowShowingTwelve = api_result.results[14].poster_path;
-    nowShowingThirteen = api_result.results[15].poster_path;
-    nowShowingFourteen = api_result.results[16].poster_path;
-    nowShowingFifteen = api_result.results[17].poster_path;
-    nowShowingSixteen = api_result.results[18].poster_path;
-    nowShowingSixteen = api_result.results[19].poster_path;
-
-
+        //DYNAMIC SLIDER HEADER
     $("#slider-container").append("<div id='carouselExampleIndicators2' class='carousel slide' data-ride='carousel'><ol class='carousel-indicators'><li data-target='#carouselExampleIndicators2' data-slide-to='0' class='active'></li><li data-target='#carouselExampleIndicators2' data-slide-to='1'></li><li data-target='#carouselExampleIndicators2' data-slide-to='2'></li></ol><div class='carousel-inner'><div class='carousel-item active'><img class='d-block w-100' src='https://image.tmdb.org/t/p/w500/"+backdropPosterOne+"' alt='First slide' id='image_Poster_One'><div class='carousel-caption d-none d-md-block d-flex h-50 align-items-center justify-content-center'><img id='artemisImg' src='assets/logo/artemis_silver.png' style='opacity: 0.8; text-align: center;'><p id='artemisSlogan'>Experience is everything. Thats why we provide the Best Cinematic Experience in South Africa. <br> (MOVIE 1)</p></div></div><div class='carousel-item'><img class='d-block w-100' src='https://image.tmdb.org/t/p/w500/"+backdropPosterTwo+"' alt='Second slide' id='image_Poster_Two'><div class='carousel-caption d-none d-md-block d-flex h-50 align-items-center justify-content-center'><img id='artemisImg' src='assets/logo/artemis_silver.png' style='opacity: 0.8; text-align: center;'><p id='artemisSlogan'>Experience is everything. Thats why we provide the Best Cinematic Experience in South Africa. <br> (MOVIE 2)</p></div></div><div class='carousel-item'><img class='d-block w-100' src='https://image.tmdb.org/t/p/w500/"+backdropPosterThree+"' alt='Third slide' id='image_Poster_Three'><div class='carousel-caption d-none d-md-block d-flex h-50 align-items-center justify-content-center'><img id='artemisImg' src='assets/logo/artemis_silver.png' style='opacity: 0.8; text-align: center;'><p id='artemisSlogan'>Experience is everything. Thats why we provide the Best Cinematic Experience in South Africa. <br> (MOVIE 3)</p></div></div></div><a class='carousel-control-prev' href='#carouselExampleIndicators2' role='button' data-slide='prev'><span class='carousel-control-prev-icon' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carouselExampleIndicators2' role='button' data-slide='next'><span class='carousel-control-next-icon' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>");
-
+        //REST OF POSTERS ON HOME PAGE
     $("#restOfPosters").append("<div class='row no-gutters d-xl-flex justify-content-xl-start container-1440px'><div class='col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop'><div class='poster-ratio'><p class='top-10-label'>4</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterFour+"' class='poster-ratio-image-container'></div></div><div class='col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop'><div class='poster-ratio'><p class='top-10-label'>5</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterFive+"' class='poster-ratio-image-container'></div></div><div class='col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop'><div class='poster-ratio'><p class='top-10-label'>6</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterSix+"' class='poster-ratio-image-container'></div></div><div class='col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop'><div class='poster-ratio'><p class='top-10-label'>7</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterSeven+"' class='poster-ratio-image-container'></div>'</div><div class='col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop'><div class='poster-ratio'><p class='top-10-label'>8</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterEight+"' class='poster-ratio-image-container'></div></div><div class='col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop'><div class='poster-ratio'><p class='top-10-label'>9</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterNine+"' class='poster-ratio-image-container'></div></div><div class='col-6 col-sm-6 col-md-4 col-lg-3 d-xl-flex grid-4-desktop'><div class='poster-ratio'><p class='top-10-label'>10</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterTen+"' class='poster-ratio-image-container'></div></div></div>");
 
     //MOVIE LIBRARY PAGE DYNAMIC CONTENT
     $("#top-three-section").append("<div class='row no-gutters d-xl-flex justify-content-xl-start container-1440px'><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='poster-ratio'><p class='top-10-label'>1</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterOne+"' class='poster-ratio-image-container'></div></div><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='poster-ratio'><p class='top-10-label'>2</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterTwo+"' class='poster-ratio-image-container'></div></div><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='poster-ratio'><p class='top-10-label'>3</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterThree+"' class='poster-ratio-image-container'></div></div></div>");
-
-    
 
 
     for(i = 0; i < api_result.results.length; i++){

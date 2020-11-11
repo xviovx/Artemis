@@ -28,13 +28,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
     <!--local-files-->
-    <script src="../js/main.js"></script>
+    <script src="../js/movie-library-functionality.js"></script>
+    <script src="../js/individual_page.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/general-components.css">
     <link rel="stylesheet" href="../css/movie-library-filter.css">
+    
 
     <!--scripts-->
-    <script src="../js/functions.js"></script>
+    <!--<script src="../js/functions.js"></script>-->
 
 </head>
 
@@ -123,146 +125,11 @@
         
         
 
-        <div class="row no-gutters d-xl-flex justify-content-xl-start container-1440px">
+        <div id="now-showing-movies" class="row no-gutters d-xl-flex justify-content-xl-start container-1440px">
 
-            <!-- COLUMNS -->
+            <!--CONTENT DYNAMICALLY GENERATED WITH APPEND FUNCTION-->
 
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-1" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-2" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-3" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-4" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-5" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-6" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-7" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-8" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-9" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-10" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-11" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-12" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-13" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-14" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-15" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-16" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked">
-                <div class="poster-ratio">
-                    <img id="now-showing-poster-13" src="../assets/place-holder.png" class="poster-ratio-image-container">
-                    <button class="add-to-list">Add to list</button>
-                    <button class="view-more">View more</button>
-                </div>
-            </div>
-
+            <!--DO NOT ADD CONTENT HERE-->
             
 
 
