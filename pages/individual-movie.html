@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/yvs2slb.css">
         <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!--local-files-->
     <script src="../js/movie-library-functionality.js"></script>
@@ -104,17 +105,20 @@
                 <div class="col-sm-7 col-md-7 movie-info-container">
 
                     <div class="bottom">
-                        <p id="individual-movie-header">Men In Black: International</p>
-                        <p id="genre-label-text-xl">Action, comedy</p> <!-- check for mobile -->
-                        <div class="star-rating-container">
-                            <div id="star-1" class="star-symbol"></div>
-                            <div id="star-2" class="star-symbol"></div>
-                            <div id="star-3" class="star-symbol"></div>
-                            <div id="star-4" class="star-symbol"></div>
-                            <div id="star-5" class="star-symbol"></div>
+                        <p id="header-text" class="individual-movie-header">Men In Black: International</p>
+                        <p id="genre-text" class="genre-label-text-xl">Action, comedy</p> <!-- check for mobile -->
+                        <div class="rating-date-con">
+                            <div class="date-con">
+                                <p><b>Release date: </b><span id="release-date">2020-01-01</span></p>
+                            </div>
+                            <div class="rating-con">
+                                <p><b>Average vote: </b><span id="average-vote">6.1</span></p>
+                            </div>
+                            
                         </div>
-                        <p class="body-text">When aliens that have the ability to shape-shift into humans arrive on Earth, Agent H joins forces with Agent M, a new recruit, to save the planet.</p>
-                        <p class="director-and-actors">Director: Rian Johnson - Actors: Daisey Ridely, John Boyega</p>
+                        
+                        <p id="description_text" class="body-text">When aliens that have the ability to shape-shift into humans arrive on Earth, Agent H joins forces with Agent M, a new recruit, to save the planet.</p>
+                        <p class="original-language-text"><b>Original language: </b><span id="og-lang-text">English</span></p>
                         <div class="individual-movie-buttons">
                             <button type="button" class="button-large book-now">Book Now</button>
                             <button type="button" class="button-large add-to-list">Add to List</button>
@@ -132,3 +136,9 @@
     </div> <!-- END OF CONTAINER FLUID-->
 </body>
 </html>
+
+                            <!--<div id="star-1" class="star-symbol"></div>
+                            <div id="star-2" class="star-symbol"></div>
+                            <div id="star-3" class="star-symbol"></div>
+                            <div id="star-4" class="star-symbol"></div>
+                            <div id="star-5" class="star-symbol"></div>-->

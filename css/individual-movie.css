@@ -37,7 +37,7 @@
     margin-top: -116px;
 }
 
-#individual-movie-header{
+.individual-movie-header{
 
 
     height: 170px;
@@ -57,11 +57,10 @@
 
 }
 
-#genre-label-text-xl{
+.genre-label-text-xl{
 
     width: 100%;
     height: 29px;
-
 
     font-family: rubik;
     font-style: normal;
@@ -85,6 +84,7 @@
     width: 100%;
     height: inherit;
     align-content: left;
+    margin-top: 20px;
 }
 
 .body-text{
@@ -111,7 +111,7 @@
 
 }
 
-.director-and-actors{
+.original-language-text{
   
     
     height: auto;
@@ -129,7 +129,7 @@
     color: #505454;
 
     float: left;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 43px;
 }
 
@@ -138,13 +138,39 @@
     bottom: 0px;
 }
 
-.star-rating-container{
-    width: 200px;
-    height: 31px;
+.rating-date-con{
+    font-family: 'Rubik', sans-serif;
+    width: 700px;
+    height: 50px;
     margin-left: 43px;
     float: left;
-    margin-top: 25px;
+    margin-top: 35px;
     margin-bottom: 25px;
+    letter-spacing: 2px;
+
+}
+
+
+.date-con{
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #D1D1D1;
+    font-family: 'Rubik', sans-serif;
+}
+
+.rating-con{
+    width: 50%;
+    height: 80%;
+    float: left;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #D1D1D1;
+    font-family: rubik;
+    border-left: 3px solid white;
+    padding-left: 17px;
 }
 
 .star-symbol{
