@@ -3,6 +3,7 @@
   /* background: rgb(73,164,255); */
   border-radius: 10px;
   padding-top: 147.7124183%;
+  margin-bottom: 10px;
   /*box-shadow: 0 28px 29px 0 rgba(0,0,0,.8);*/
   position: relative;
 }
@@ -156,14 +157,6 @@ $container-max-widths: (
 #movies-page{
   padding-top: 77px;
   /* Space For Nav Bar */
-}
-
-.section-heading.container-1440px{
-  height: auto;
-  padding-top: 120px;
-  padding-bottom: 50px;
-  padding-left: 36px;
-
 }
 
 .centre-align-stuff{
