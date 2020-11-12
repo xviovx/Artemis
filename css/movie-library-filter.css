@@ -1,6 +1,50 @@
 .filter-section{
     width: 73%;
-    height: 90px;
+    height: 80px;
+    background-color: #212223;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+label{
+    font-family: rubik, sans-serif;
+    color: white;
+}
+
+select{
+    margin-left: 5px;
+}
+
+#release-label{
+    margin-left: 15px;
+}
+
+#vote-label{
+    margin-left: 15px;
+}
+
+#genres{
+    width: 8em;
+    height: 50px;
+    background-color: turquoise;
+}
+
+#release-year{
+    width: 8em;
+    height: 50px;
+    background-color: turquoise;
+}
+
+#average_vote{
+    width: 8em;
+    height: 50px;
+    background-color: turquoise;
+}
+
+#title_search{
+    width: 8em;
+    height: 50px;
+    background-color: turquoise;
 }
 
 .big-top-three{
