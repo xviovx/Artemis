@@ -30,6 +30,7 @@
     <!--local-files-->
     <script src="../js/movie-library-functionality.js"></script>
     <script src="../js/individual_page.js"></script>
+    <script src="../js/movie-list.js"></script>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/general-components.css">
@@ -72,26 +73,42 @@
             <div class="my-list-heading">MY LIST</div>
             <div class="my-list-text">MOVIES YOU'VE BEEN WANTING TO SEE</div>
         </div>
-        <div class="row my-list-display">
-            <div class="col col-sm-12 col-md-12 col-xl-6 set one">
-                <div class="poster-container col-md-5"> 
-                    <img src="../assets/place-holder.png" style="border-radius: 10px;">
+        <div id='my-list-content-con' class='row my-list-display'>
+            <!--template posters -- content on page-->
+            <div class='col col-sm-12 col-md-12 col-xl-6 set one'>
+                <div class='poster-container col-md-5'> 
+                    <img src='../assets/posters/doorman.jpg' style='border-radius: 10px;'>
                 </div>
     
-                <div class="text-container-list col-lg-5">
-                    <h2 class="poster-title-x">The doorman</h2>
-                    <h4 class="genre-text-display">Thriller, Mystery</h4>
-                    <p class="cast-names">Freddie Mercury, Albert Sanders</p>
-                    <p class="synopsis-text">A long time ago in a galaxy far far away there was a big fat toad who smoked a big fat blunt</p>
-                    <button class="remove-from-list-button">REMOVE FROM LIST</button>
+                <div class='text-container-list col-lg-5'>
+                    <h2 class='poster-title-x'>The doorman</h2>
+                    <h4 class='genre-text-display'>Thriller, Mystery</h4>
+                    <p class='release-date-display'><b>Release date: </b><span id='list-release-date'>2020-08-01</span></p>
+                    <p class='synopsis-text'>A former soldier must save her niece and nephew from armed thieves planning to steal priceless art from a building in New York City.</p>
+                    <button class='remove-from-list-button'>REMOVE FROM LIST</button>
                 </div>
 
-                <div class="p-text-for-mobile col-sm-12">
-                    <p>A long time ago in a galaxy far far away there was a big fat toad who smoked a big fat blunt</p>
+                <div class='p-text-for-mobile col-sm-12'>
+                    <p class='synopsis-text-mobile'>A former soldier must save her niece and nephew from armed thieves planning to steal priceless art from a building in New York City.</p>
                 </div>
             </div>
+            <div class='col col-sm-12 col-md-12 col-xl-6 set one'>
+                <div class='poster-container col-md-5'> 
+                    <img src='../assets/posters/dark-knight.jpg' style='border-radius: 10px;'>
+                </div>
+    
+                <div class='text-container-list col-lg-5'>
+                    <h2 class='poster-title-x'>The Dark Knight</h2>
+                    <h4 class='genre-text-display'>Action, Adventure</h4>
+                    <p class='release-date-display'><b>Release date: </b><span id='list-release-date'>2020-07-25</span></p>
+                    <p class='synopsis-text'>After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who offers to kill Batman and bring the city to its knees.</p>
+                    <button class='remove-from-list-button'>REMOVE FROM LIST</button>
+                </div>
 
-            
+                <div class='p-text-for-mobile col-sm-12'>
+                    <p class='synopsis-text-mobile'>After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who offers to kill Batman and bring the city to its knees.</p>
+                </div>
+            </div>
         </div>
         
 

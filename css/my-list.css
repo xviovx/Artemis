@@ -37,7 +37,7 @@
 .poster-container{
     height: 95%;
     margin-top: 1%;
-    background-color: rosybrown;
+    /*background-color: rosybrown;*/
     width: 19em;
     margin-left: 30%;
     float: left;
@@ -53,25 +53,26 @@
 }
 
 .poster-title-x{
-    font-size: 42px;
+    font-size: 28px;
     line-height: 1.2;
+    margin-bottom: 32px;
 }
 
 .genre-text-display{
-    margin-top: 30px;
+    margin-top: 10px;
     text-transform: uppercase;
     color: white;
     font-size: 23px;
 }
 
-.cast-names{
+.release-date-display{
     margin-top: 10px;
     color: white;
-    font-size: 14px
+    font-size: 16px
 }
 
 .synopsis-text{
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 16px;
     color: white;
     display: block;
@@ -79,13 +80,14 @@
 
 .remove-from-list-button{
     border: none;
-    margin-top: 37%;
+    margin-top: 3%;
     background-color: #0057FF;
     color: white;
     padding: 15px;
     font-family: URW Dock, Titillium Web;
     font-weight: 700;
     border-radius: 10px;
+    position: absolute;
 }
 
 .remove-from-list-button:hover{
@@ -214,7 +216,7 @@
         display: inline-flex;
         width: 100%;
         height: 10em;
-        background-color: purple;
+        /*background-color: purple;*/
         color: white;
         
     }
