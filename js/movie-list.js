@@ -12,7 +12,7 @@ $(function(){
         for(i = 0; i < result.results.length; i++) {
             if(result.results[i].id === pageID){
                 var poster = result.results[i].poster_path;
-                var title = result.results[i].title;
+                var title = result.results[i].title.substr(0, 30);
                 var genre = result.results[i].genre_ids;//WORK OUT GENRE BASED ON IDS!!!!!
                 var releaseDate = result.results[i].release_date;
                 var description = result.results[i].overview;
@@ -47,12 +47,14 @@ $(function(){
 
                 $("#my-list-content-con").append("<div class='col col-sm-12 col-md-12 col-xl-6 set one'><div class='poster-container col-md-5'> <img src='https://image.tmdb.org/t/p/w500/"+poster+"' style='border-radius: 10px;'></div><div class='text-container-list col-lg-5'><h2 class='poster-title-x'>"+title+"</h2><h4 class='genre-text-display'>"+genreName+"</h4><p class='release-date-display'><b>Release date: </b><span id='list-release-date'>"+releaseDate+"</span></p><p class='synopsis-text'>"+description+"</p><button class='remove-from-list-button'>REMOVE FROM LIST</button></div><div class='p-text-for-mobile col-sm-12'><p class='synopsis-text-mobile'>"+description+"</p></div></div>")
 
-                    //REMOVE FROM LIST
-                    $(".remove-from-list-button").click(function(){
-                    $(this).closest(".set").fadeOut(500);
-    });
+                    
             };
         };
+
+        //REMOVE FROM LIST
+        $(".remove-from-list-button").click(function(){
+            $(this).closest(".set").fadeOut(500);
+});
 
     });
 })

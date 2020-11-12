@@ -30,9 +30,9 @@ $(function(){
         nowShowingSixteen = result.results[19].poster_path;*/
 
         //append for top three
-        $("#top-three-section").append("<div class='row no-gutters d-xl-flex justify-content-xl-start container-1440px'><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='poster-ratio'><p class='top-10-label'>1</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterOne+"' class='poster-ratio-image-container'></div></div><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='poster-ratio'><p class='top-10-label'>2</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterTwo+"' class='poster-ratio-image-container'></div></div><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='poster-ratio'><p class='top-10-label'>3</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterThree+"' class='poster-ratio-image-container'></div></div></div>");
+        $("#top-three-section").append("<div class='row no-gutters d-xl-flex justify-content-xl-start container-1440px'><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='big-top-three'><p class='top-10-label'>1</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterOne+"' class='poster-ratio-image-container'></div></div><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='big-top-three'><p class='top-10-label'>2</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterTwo+"' class='poster-ratio-image-container'></div></div><div class='col-md-4 d-xl-flex grid-3-desktop'><div class='big-top-three'><p class='top-10-label'>3</p><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+imagePosterThree+"' class='poster-ratio-image-container'></div></div></div>");
 
-        for (i = 0; i < result.results.length; i++){
+        for (i = 3; i < result.results.length; i++){
 
             var movieID = result.results[i].id;
 

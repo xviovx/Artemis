@@ -28,6 +28,16 @@
     opacity: 0.7;
 }
 
+.footer-background{
+    width: 100%;
+    height: auto;
+    background-color: #1E1E20;
+    margin-top: 80px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+  }
+
 .one{
     background-color: #171919;
     height: 25em;
