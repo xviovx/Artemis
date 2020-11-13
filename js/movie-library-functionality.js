@@ -40,6 +40,10 @@ $(function(){
 
             var genreCode = result.results[i].genre_ids[0];
 
+            var releaseDate = result.results[i].release_date;
+
+            var avgVote = toString(result.results[i].vote_average);
+
             if (genreCode === 28){
                 genreName = "Action";
             } else if (genreCode === 12){
@@ -66,13 +70,88 @@ $(function(){
                 genreName = "Unknown";
             };
 
-            $("#now-showing-movies").append("<div class='col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked'><div class='poster-ratio "+genreName+"'><img id='now-showing-poster-1' src='https://image.tmdb.org/t/p/w500/"+moviePoster+"' class='poster-ratio-image-container'><button class='add-to-list'><a href='my-list.html?id="+ movieID +"'>Add to list</a></button><button class='view-more'><a href='../pages/individual-movie.html?id="+ movieID +"'>View more</a></button></div></div>")
+            if (releaseDate === "2020-08-14"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-23"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-30"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-26"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-01"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-23"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-08-26"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-09-29"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-09-02"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-16"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-09-23"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-16"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-14"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-09-04"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-23"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-07-15"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-09-29"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-07-02"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-06-30"){
+                releaseYear = "2020";
+            } else if (releaseDate === "2020-10-30"){
+                releaseYear = "2020";
+            };
+
+            /*
+            switch (avgVote) {
+                case '8.2' || '7.5' || '7.7':
+                    voteCount = '8';
+                    break;
+
+                case '5' || '4.8':
+                    voteCount = '5';
+                    break;
+
+                case '6.3' || '6.2' || '6.1' || '5.7':
+                    voteCount = '6';
+                    break;
+
+                case '6.7' || '7' || '7.2' || '7.4' || '6.7' || '7' || '7.2' || '7.4' || '6.7' || '6.5':
+                    voteCount = '7';
+                    break;
+            };
+            */
+
+            
+            if (avgVote === "8.2" || "7.5" || "7.7"){
+                voteCount = "8";
+            } else if (avgVote === "5" || "4.8"){
+                voteCount = "5";
+            } else if (avgVote === "6.3" || "6.2" || "6.1" || "6.7" || "5.7"){
+                voteCount = "6";
+            } else if (avgVote === "7" || "7.2" || "7.4" || "6.7" || "6.5"){
+                voteCount = "7";
+            };
+            
+        
+            
+            $("#now-showing-movies").append("<div class='col-6 col-sm-6 col-md-3 d-xl-flex grid-4-desktop-stacked'><div class='poster-ratio "+genreName+" "+releaseYear+" "+voteCount+"'><img id='now-showing-poster-1' src='https://image.tmdb.org/t/p/w500/"+moviePoster+"' class='poster-ratio-image-container'><button class='add-to-list'><a href='my-list.html?id="+ movieID +"'>Add to list</a></button><button class='view-more'><a href='../pages/individual-movie.html?id="+ movieID +"'>View more</a></button></div></div>")
             
     
         };
 
-        //FILTER FUNCTIONALITY
-
+        //FILTER FUNCTIONALITY FOR ORIGINAL FILTER
+        /*
         $(".btn").on("click", function(){
             if ($(this).hasClass("all-movies")){
                 $(".poster-ratio").fadeIn();
@@ -111,6 +190,136 @@ $(function(){
                 $(".Sci-Fi").fadeIn();
             };
         });
+
+        */
+        //FILTER FOR GENRE DROPDOWN
+        $("#genres").change(function(){
+            var filterValue = $(this).val();
+            var poster = $(".poster-ratio");
+
+            if(filterValue === "All"){
+                poster.fadeIn();
+            } else if(filterValue === "Action"){
+                poster.hide();
+                $(".Action").fadeIn();
+            } else if(filterValue === "Adventure"){
+                poster.hide();
+                $('.Adventure').fadeIn();
+            } else if(filterValue === "Animation"){
+                poster.hide();
+                $('.Animation').fadeIn();
+            } else if(filterValue === "Comedy"){
+                poster.hide();
+                $('.Comedy').fadeIn();
+            } else if (filterValue === "Crime"){
+                poster.hide();
+                $('.Crime').fadeIn();
+            } else if (filterValue === "Documentary"){
+                poster.hide();
+                $('.Documentary').fadeIn();
+            } else if (filterValue === "Drama"){
+                poster.hide();
+                $('.Drama').fadeIn();
+            } else if (filterValue === "Family"){
+                poster.hide();
+                $('.Family').fadeIn();
+            } else if (filterValue === "Fantasy"){
+                poster.hide();
+                $('.Fantasy').fadeIn();
+            } else if (filterValue === "History"){
+                poster.hide();
+                $('.History').fadeIn();
+            } else if (filterValue === "Sci-Fi"){
+                poster.hide();
+                $('.Sci-Fi').fadeIn();
+            };
+        });
+
+        //FILTER FOR RELEASE YEAR
+
+        $("#release-year").change(function(){
+            var filterValue = $(this).val();
+            var poster = $(".poster-ratio");
+
+            if (filterValue === "2020"){
+                poster.hide();
+                $('.2020').fadeIn();
+            } else if (filterValue === "2019"){
+                poster.hide();
+                $('.2019').fadeIn();
+            } else if (filterValue === "2018"){
+                poster.hide();
+                $('.2018').fadeIn();
+            } else if (filterValue === "2017"){
+                poster.hide();
+                $('.2017').fadeIn();
+            } else if (filterValue === "2016"){
+                poster.hide();
+                $('.2016').fadeIn();
+            } else if (filterValue === "2015"){
+                poster.hide();
+                $('.2015').fadeIn();
+            } else if (filterValue === "2014"){
+                poster.hide();
+                $('.2014').fadeIn();
+            } else if (filterValue === "2013"){
+                poster.hide();
+                $('.2013').fadeIn();
+            } else if (filterValue === "2012"){
+                poster.hide();
+                $('.2012').fadeIn();
+            } else if (filterValue === "2011"){
+                poster.hide();
+                $('.2011').fadeIn();
+            } else if (filterValue === "2010"){
+                poster.hide();
+                $('.2010').fadeIn();
+            } else if (filterValue === "2009"){
+                poster.hide();
+                $('.2009').fadeIn();
+            };
+        });
+
+        // WHY IS THIS NOT WORKING!!!!!!!!!!!!! :'(
+
+        $("#average_vote").change(function(){
+            var filterValue = $(this).val();
+            var poster = $(".poster-ratio");
+
+            if (filterValue === "1"){
+                poster.hide();
+                $('.1').fadeIn();
+            } else if (filterValue === "2"){
+                poster.hide();
+                $('.2').fadeIn();
+            } else if (filterValue === "3"){
+                poster.hide();
+                $('.3').fadeIn();
+            } else if (filterValue === "4"){
+                poster.hide();
+                $('.4').fadeIn();
+            } else if (filterValue === "5"){
+                poster.hide();
+                $('.5').fadeIn();
+            } else if (filterValue === "6"){
+                poster.hide();
+                $('.6').fadeIn();
+            } else if (filterValue === "7"){
+                poster.hide();
+                $('.7').fadeIn();
+            } else if (filterValue === "8"){
+                poster.hide();
+                $('.8').fadeIn();
+            } else if (filterValue === "9"){
+                poster.hide();
+                $('.9').fadeIn();
+            } else if (filterValue === "10"){
+                poster.hide();
+                $('.10').fadeIn();
+            };
+        });
+
+        
 
         
     });

@@ -2,17 +2,27 @@
     width: 73%;
     height: 80px;
     background-color: #212223;
-    padding-top: 10px;
+    padding-top: 13px;
     padding-left: 10px;
+    border-radius: 10px;
 }
 
 label{
     font-family: rubik, sans-serif;
     color: white;
+    font-size: 20px;
+    display: none;
 }
 
 select{
     margin-left: 5px;
+    font-family: rubik, sans-serif;
+    border: none;
+    border-radius: 10px;
+}
+
+#genre-label{
+    margin-left: 15px;
 }
 
 #release-label{
@@ -23,28 +33,18 @@ select{
     margin-left: 15px;
 }
 
-#genres{
-    width: 8em;
+#genres, #release-year, #average_vote{
+    width: 12em;
     height: 50px;
-    background-color: turquoise;
+    background-color: #002369;
+    color: white;
+    margin-right: 25px;
+    font-size: 17px;
 }
 
-#release-year{
-    width: 8em;
-    height: 50px;
-    background-color: turquoise;
-}
-
-#average_vote{
-    width: 8em;
-    height: 50px;
-    background-color: turquoise;
-}
-
-#title_search{
-    width: 8em;
-    height: 50px;
-    background-color: turquoise;
+#genres:hover, #release-year:hover, #average_vote:hover{
+    background-color: #002c85;
+    cursor: pointer;
 }
 
 .big-top-three{
@@ -56,8 +56,8 @@ select{
   /*box-shadow: 0 28px 29px 0 rgba(0,0,0,.8);*/
   position: relative;
 }
-
-.btn{
+/*REVERT BACK TO THIS FILTER IF THE NEW ONE DOESNT WORK*/
+/*.btn{
     width: 120px;
     height: 30px;
     border-radius: 10px;
@@ -69,7 +69,7 @@ select{
     font-family: rubik, sans-serif;
     font-weight: 400;
 }
-
+*/
 .section-heading.container-1440px{
     height: auto;
     padding-top: 120px;
@@ -194,17 +194,34 @@ option{
         height: 130px;
         padding-left: 30px;
     }
+
+    #genres, #release-year, #average_vote{
+        display: inline-flex;
+        margin-top: 25px;
+    }
+
+
 }
 
 @media screen and (min-width: 545px) and (max-width: 841px) { /*BETWEEN TABLET AND MOBILE*/
     .filter-section{
-        height: 180px;
+        height: 270px;
         padding-left: 40px;
+        text-align: center;
     }
 
     .section-heading.container-1440px{
         text-align: center;
       }
+
+      #genres, #release-year, #average_vote{
+        display: block;
+        margin-bottom: 15px;
+        margin-left: 50px;
+        width: 400px;
+    }
+
+
 }
 
 @media screen and (max-width: 544px) { /* mobile */
@@ -233,6 +250,44 @@ option{
         padding: 15px;
         padding-bottom: 35px;
     }  
+
+    .filter-section{
+        width: 60%;
+        height: 320px;
+        background-color: #212223;
+        padding-top: 30px;
+        padding-left: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    
+    label{
+        font-family: rubik, sans-serif;
+        color: white;
+        font-size: 17px;
+    }
+    
+    #release-label{
+        margin-left: 15px;
+    }
+    
+    #vote-label{
+        margin-left: 15px;
+    }
+
+    #genre-label{
+        line-break: auto;
+    }
+    
+    #genres, #release-year, #average_vote{
+        width: 13em;
+        height: 50px;
+        background-color: #002369;
+        color: white;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
     
 
     

@@ -61,7 +61,7 @@ $(function(){
                 $("#genre-text").text(genreName);
                 $("#release-date").text(releaseDate);
                 $("#average-vote").text(avgVote);
-                $("#description_text").text(description);
+                $("#description_text").text(description.substr(0, 200));
                 $("#og-lang-text").text(ogLang);
 
             };
