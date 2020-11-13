@@ -44,32 +44,33 @@
 <body>
     <div class="container-fluid" id="movies-page">
 
-    <!--------- NAV BAR (To be added once fixed completely with Bootsrap)------------>
-    <nav class="navbar navbar-dark navbar-expand-md fixed-top flex-grow-1 justify-content-between">
-        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
-            <a href="../index.html"><div class="d-lg-none centred-smol-logo"></div></a>
-            <a href="../index.html"><div class="d-none d-lg-block left-full-logo"></div></a>
-            <a href="pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile" href="#">
-                <div class="sign-in-button-smol-background"></div>
-            </a>
-            <div class="collapse navbar-collapse d-md-flex d-xl-flex flex-grow-0 flex-md-grow-1 justify-content-md-center" id="navcol-1">
-                <ul class="nav navbar-nav d-flex d-md-flex flex-grow-1 justify-content-between">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html" style="opacity: 0.6;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="movie-library.html" style="opacity: 1;">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="my-list.html">My List</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" id="#bottom-link">About Us</a></li>
-                </ul>
-            </div>
-            <a href="pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
-                <div class="sign-in-button-smol-background"></div>
-            </a>
-            <div class="d-none d-lg-block sign-in-large-container">
-                <div class="sign-in-button-large d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">
-                    <a href="signin.html" class="sign-in-button-text d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">SIGN IN</a>
-                </div>
+<!----------------- NAV BAR ----------------->
+
+<nav class="navbar navbar-dark navbar-expand-md fixed-top flex-grow-1 justify-content-between">
+    <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
+        <div class="d-lg-none centred-smol-logo"></div>
+        <div class="d-none d-lg-block left-full-logo"></div>
+        <a href="../pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile">
+            <div class="sign-in-button-smol-background"></div>
+        </a>
+        <div class="collapse navbar-collapse d-md-flex d-xl-flex flex-grow-0 flex-md-grow-1 justify-content-md-center" id="navcol-1">
+            <ul class="nav navbar-nav d-flex d-md-flex flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../pages/movie-library.html">Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/my-list.html">My List</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="#bottom-link">About Us</a></li>
+            </ul>
+        </div>
+        <a href="../pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
+            <div class="sign-in-button-smol-background"></div>
+        </a>
+        <div class="d-none d-lg-block sign-in-large-container">
+            <div class="sign-in-button-large d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">
+                <a href="../pages/signin.html" class="sign-in-button-text d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">SIGN IN</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     
     <!------------- TOP MOVIES SECTION ------------->
@@ -131,31 +132,115 @@
 
             <!--DO NOT ADD CONTENT HERE-->
             
-
-
-
-
         </div>
     </div>
 
     
 
-    <!------------- FOOTER ------------->
+<!------------- MOBILE FOOTER ------------->
 
-    <div class="footer-background d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
-        <!--    Centre Align Footer    -->
-        <div class="row footer-content no-gutters d-xl-flex justify-content-xl-start">
-            <div class="col-12 d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
-                <div class="footer-logo-container col-12"></div>
+<div class="mobile-footer footer-background d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto margin-top">
+
+    <!--    Centre Align Footer - Content Container   -->
+    <div class="row footer-content no-gutters d-xl-flex justify-content-xl-start">
+        
+    <!-- - - - - LOGO AND SOCIAL MEDIA BUTTONS - - - - -->
+        <div class="col-12 first-row-mobile">
+
+            <!-- Footer Logo -->
+            <a href="index.html"><div class="footer-logo-container"></div></a>
+
+            <!--    Social Media Icons -->
+            <div class="social-media-icons-mobile">
+                <ul class="social-media-icons-container d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 justify-content-between justify-content-right">
+                    <a class="social-link footer" href="https://www.facebook.com/"><li class="social-item" id="facebook"></li></a>
+                    <a class="social-link footer" href="https://www.instagram.com"><li class="social-item" id="instagram"></li></a>
+                    <a class="social-link footer" href="https://www.twitter.com"><li class="social-item" id="twitter"></li></a>
+                </ul>
             </div>
+
+        </div><!-- End First Row Mobile -->
+
+        <div class="footer-line col-12"></div>
+
+    <!-- - - - - NAV ELEMENTS - - - - -->
+        
+        <!--    Nav Links   -->
+        <nav class="footer-navbar navbar navbar-dark navbar-expand-sm flex-grow-1 justify-content-between justify-content-center">
+            <div class="d-md-flex d-xl-flex flex-grow-0 flex-sm-grow-1 justify-content-sm-center">
+                <ul class="nav navbar-nav d-flex d-sm-flex flex-grow-1 justify-content-between">
+                    <li class="nav-item"><a class="nav-link footer" href="pages/movie-library.html">Book a Movie</a></li>
+                    <li class="nav-item"><a class="nav-link footer" href="#">Find a Cinema</a></li>
+                    <li class="nav-item"><a class="nav-link footer" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link footer" href="#">View Your Booking</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="footer-line col-12"></div>
+
+
+    <!-- - - - - PAYMENT LOGOS - - - - -->  
+
+        <div class="payment-logos col-12">
+            <div class="payment-logos-container-center-align d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="payment-logos-container d-flex flex-grow-1 justify-content-between justify-content-sm-center justify-content-center">
+                    <li class="payment-item" id="MasterCard"></li>
+                    <li class="payment-item" id="PayPal"></li>
+                    <li class="payment-item" id="Visa"></li>
+                </div>
+            </div>
+        </div>
+
+        <!--    Legal Text  -->
+        <div class="legal-text col-12 justify-content-center">
+            <p class="footer-legal-text">copyright © Artemis Cinemas 2020. All Rights reserved.</p>
+        </div>
+            
+
+        </div><!--  bottom section of footer    -->
+
+    </div><!-- end footer content -->
+
+</div><!-- end footer background -->
+
+
+
+
+<!------------- DESKTOP AND TABLET FOOTER ------------->
+
+    <div class="footer-background d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center desk-and-tab-footer margin-top">
+
+        <!--    Centre Align Footer - Content Container   -->
+        <div class="row footer-content no-gutters d-xl-flex justify-content-xl-start">
+            
+
+
+
+
+
+        <!-- - - - - FIRST ROW - - - - -->
+            <div class="col-12 d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
+
+                <!-- Footer Logo -->
+                <a href="index.html"><div class="footer-logo-container col-12"></div></a>
+
+                <!-- Mobile Social Media Icons - Only Shows on Mobile -->
+            
+
+
+            </div>
+
             <div class="footer-line col-12"></div>
 
-            <!--    LINKS   -->
+
+        <!-- - - - - SECOND ROW - - - - -->
             
+            <!--    Nav Links   -->
             <nav class="footer-navbar navbar navbar-dark navbar-expand-sm flex-grow-1 justify-content-between justify-content-center">
                 <div class="d-md-flex d-xl-flex flex-grow-0 flex-sm-grow-1 justify-content-sm-center">
                     <ul class="nav navbar-nav d-flex d-sm-flex flex-grow-1 justify-content-between">
-                        <li class="nav-item"><a class="nav-link footer" href="#">Book a Movie</a></li>
+                        <li class="nav-item"><a class="nav-link footer" href="pages/movie-library.html">Book a Movie</a></li>
                         <li class="nav-item"><a class="nav-link footer" href="#">Find a Cinema</a></li>
                         <li class="nav-item"><a class="nav-link footer" href="#">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link footer" href="#">View Your Booking</a></li>
@@ -194,6 +279,10 @@
                 </div>
 
             </div><!--  bottom section of footer    -->
+
+        </div><!-- end footer content -->
+
+    </div><!-- end footer background -->
 
 
         </div>

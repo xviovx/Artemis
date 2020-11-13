@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Artemis</title>
+    <title>Artemis - Home</title>
 
     <!--meta-informatiton-->
     <meta name="authors" content="George and Kyle">
@@ -26,66 +26,80 @@
     <link rel="stylesheet" href="https://use.typekit.net/yvs2slb.css">
         <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!--local-files-->
-    <script src="../js/movie-library-functionality.js"></script>
-    <script src="../js/individual_page.js"></script>
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/general-components.css">
-    <link rel="stylesheet" href="../css/individual-movie.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/general-components.css">
+    <link rel="stylesheet" href="css/individual-movie.css">
+
+
+
+    <!--scripts-->
+    <script src="./js/functions.js"></script>
+
+
+
 
 </head>
 
 
 <body>
     <div class="container-fluid" id="individual-movie-page">
-
-
 <!----------------- NAV BAR ----------------->
+
+
+<!--    I WORK FINE     -->
 
 <nav class="navbar navbar-dark navbar-expand-md fixed-top flex-grow-1 justify-content-between">
     <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
         <div class="d-lg-none centred-smol-logo"></div>
         <div class="d-none d-lg-block left-full-logo"></div>
-        <a href="../pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile">
+        <a href="pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile" href="#">
             <div class="sign-in-button-smol-background"></div>
         </a>
         <div class="collapse navbar-collapse d-md-flex d-xl-flex flex-grow-0 flex-md-grow-1 justify-content-md-center" id="navcol-1">
             <ul class="nav navbar-nav d-flex d-md-flex flex-grow-1 justify-content-between">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/movie-library.html">Movies</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/my-list.html">My List</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./movie-library.html">Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" id="#bottom-link">About Us</a></li>
             </ul>
         </div>
-        <a href="../pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
+        <a href="pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
             <div class="sign-in-button-smol-background"></div>
         </a>
         <div class="d-none d-lg-block sign-in-large-container">
             <div class="sign-in-button-large d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">
-                <a href="../pages/signin.html" class="sign-in-button-text d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">SIGN IN</a>
+                <a href="pages/signin.html" class="sign-in-button-text d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">SIGN IN</a>
             </div>
         </div>
     </div>
 </nav>
+        
+
+
+
+
+
+
 
     <!------ Trailer Container     ------>
 
     <div class="trailer-header">
-            <img id="backdrop-header" src="../assets/black-background.svg">
+        <div class="trailer-header-gradient"></div>
     </div>
-<!--REPLACED WITH IMAGE SO IT CAN BE DYNAMICALLY GENERATED^^^^^^^^^^^^^^^^-->
 
-    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center background-filter-cover">
+
+    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
         <div class="row no-gutters d-xl-flex justify-content-xl-start movie-content-container">
 
 
                 <!-- Poster Image -->
                 <div class="col-sm-5 col-md-5 d-xl-flex grid-4-desktop">
                     <div class="poster-ratio">
-                        <img id="movie-poster-x" src="../assets/place-holder.png" class="poster-ratio-image-container">
+                        <img id="coming-later-poster-1" src="assets/place-holder.png" class="poster-ratio-image-container">
                     </div>
                 </div>
 
@@ -93,23 +107,20 @@
                 <div class="col-sm-7 col-md-7 movie-info-container">
 
                     <div class="bottom">
-                        <p id="header-text" class="individual-movie-header">Men In Black: International</p>
-                        <p id="genre-text" class="genre-label-text-xl">Action, comedy</p> <!-- check for mobile -->
-                        <div class="rating-date-con">
-                            <div class="date-con">
-                                <p><b>Release date: </b><span id="release-date">2020-01-01</span></p>
-                            </div>
-                            <div class="rating-con">
-                                <p><b>Average vote: </b><span id="average-vote">6.1</span></p>
-                            </div>
-                            
+                        <p id="individual-movie-header">Men In Black: International</p>
+                        <p id="genre-label-text-xl">Action, comedy</p> <!-- check for mobile -->
+                        <div class="star-rating-container">
+                            <div id="star-1" class="star-symbol"></div>
+                            <div id="star-2" class="star-symbol"></div>
+                            <div id="star-3" class="star-symbol"></div>
+                            <div id="star-4" class="star-symbol"></div>
+                            <div id="star-5" class="star-symbol"></div>
                         </div>
-                        
-                        <p id="description_text" class="body-text">When aliens that have the ability to shape-shift into humans arrive on Earth, Agent H joins forces with Agent M, a new recruit, to save the planet.</p>
-                        <p class="original-language-text"><b>Original language: </b><span id="og-lang-text">English</span></p>
+                        <p class="body-text">When aliens that have the ability to shape-shift into humans arrive on Earth, Agent H joins forces with Agent M, a new recruit, to save the planet.</p>
+                        <p class="director-and-actors">Director: Rian Johnson - Actors: Daisey Ridely, John Boyega</p>
                         <div class="individual-movie-buttons">
-                            <button type="button" class="button-large book-now" id="back-home-button"><a href="movie-library.html">Back to library</a></button>
-                            <!--<button type="button" class="button-large add-to-list">Add to List</button>-->
+                            <button type="button" class="button-large book-now">Book Now</button>
+                            <button type="button" class="button-large add-to-list">Add to List</button>
                         </div>
                     </div>
                 </div>
@@ -124,9 +135,3 @@
     </div> <!-- END OF CONTAINER FLUID-->
 </body>
 </html>
-
-                            <!--<div id="star-1" class="star-symbol"></div>
-                            <div id="star-2" class="star-symbol"></div>
-                            <div id="star-3" class="star-symbol"></div>
-                            <div id="star-4" class="star-symbol"></div>
-                            <div id="star-5" class="star-symbol"></div>-->

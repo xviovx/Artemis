@@ -1,123 +1,75 @@
-/*---------- OVERIDES ----------*/
-*{
-    margin: 0;
-    padding: 0;
-}
+/* Fix Me */
 
-html,body {
+
+/* 
+
+Orignal Code
+
+
+.dark-overlay{
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.185);
 }
 
-.box.flex {
-    display: flex;
-    justify-content: center;
-  }
+*/
 
-h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    font-family: Titillium Web;
-    font-style: normal;
-    font-weight: 400;
-}
-
-
-
-
-.col-md-6, .col-sm-6, .col-sm-4, .col-sm-3{
-    padding: 0px;
-}
-
-.container-fluid, .container, html{
-    padding: 0px;
-    left: 0px;
-    right: 0px;
-}
-
-body {
-    padding: 0;
-    margin: 0;   
-}
-
-
-
-
-
-/*---------------MAIN CONTENT SECTION---------------*/
-
-.header{
-    margin: 0;
-    padding: 0;
+.dark-overlay{
     width: 100%;
-    height: 91vh;
-    background-color: turquoise;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+
+
+#header-text-signUp{
+
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 40vh;
+
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25), 0px 2px 25px rgba(0, 0, 0, 0.75);
 
 }
+
+
+
 
 .sign_up_left_con{
-    background-color: blueviolet;
+
     background-image: url(../assets/signUpPoster.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+
     padding: 0;
     margin: 0;
+
+    justify-content: center;
+    text-align: center;
 }
 
+/* Right Side of Page */
 .sign_up_form_con{
-    background-color: cadetblue;
     background-image: url(../assets/signUpSectionBackground.png);
-
+    background-size: cover;
+    background-repeat: none;
+    height: 100%;
 }
 
-.form-container{
-    color: white;
-    margin-top: 20%;
-
-}
-
-.form-container h4{
-    font-size: 52px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.form-container .intro-text{
-    font-size: 20px;
-    opacity: 0.7;
-}
-
-form{
-    margin-top: 10%;
-}
-
-form p{
-    margin-top: 10%;
-    opacity: 0.8;
-}
-
-form label{
-    text-transform: uppercase;
-    font-size: 14px;
-    opacity: 0.7;
-    letter-spacing: 2px;
-}
-
-form .form-control{
-    border: none;
-    padding-top: 6%;
-    padding-bottom: 6%;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-
-.btn{
+.btn.btn-default{
     margin-top: 10%;
     background-color: #0255F7;
     color: white;
-    font-family: 'Titillium Web';
+    font-family: Rubik;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 16px;
@@ -125,396 +77,12 @@ form .form-control{
     padding: 3%;
 }
 
-#header-text{
-    color: white;
-    font-weight: 700;
-    font-size: 70px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    padding-top: 25%;
-    padding-left: 25%;
-    display: block;
-}
-
-.dark-overlay{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.185);
-}
-
-/*--------------- END OF MAIN CONTENT SECTION---------------*/
-
-
-
-/*---------- LABEL THIS ----------*/
-
-
-
-/* Medium Nav for Tablet */
-@media screen and (min-width: 1200px) { /* Between Tablet and Mobile */
-
-
-    .logo-container-full {
-        display: block;
-    }
-
-    .logo-container-medium {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: none;
-    }
-
-    .sign-in-button-large {
-        display: block;
-    }
-
-    .sign-in-button-small {
-        display: none;
-    }
-
-}
-
-/* Medium Nav for Tablet */
-@media screen and (min-width: 992px) and (max-width: 1200px) { 
-
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-    }
-
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-    }
-
-    #artemisImg{
-        width: 800px;
-        height: 140px;
-    }
-    
-    #artemisSlogan{
-        font-size: 24px;
-    }
-
-    .sign_up_left_con{
-        background-color: blueviolet;
-        /*background-image: url(../assets/signUpPoster.png);*/
-        padding: 0;
-        margin: 0;
-    }
-
-    
-
-}
-
-
-/* Medium Nav for Tablet */
-@media screen and (min-width: 544px) and (max-width: 992px) { /* tablet */
-    
-    .nav-link{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-        float: left;
-        float: left;
-        margin-left: none;
-    }
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-        float: right;
-        margin-right: 10px;
-    }
-
-    #artemisImg{
-        width: 600px;
-        height: 110px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #header-text{
-        display: none;
-    }
-
-    .sign_up_left_con{
-        background-color: blueviolet;
-        background-image: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .sign_up_form_con{
-        background-color: cadetblue;
-        background-image: url(../assets/signUpSectionBackground.png);
-        background-position: center;
-        background-size: cover;
-    }
-
+@media screen and (max-width: 1000px){
     .form-container{
-        color: white;
         margin-top: 20%;
-        height: 900px;
     }
 
-    form{
-        margin-top: 0px;
+    .row.header{
+        height: 1000px;
     }
-
-    .form-container h4{
-        font-size: 52px;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 3px;
-        text-align: center;
-    }
-    
-    .form-container .intro-text{
-        font-size: 20px;
-        opacity: 0.7;
-        text-align: center;
-    }
-    
-    form{
-        margin-top: 10%;
-    }
-
-    .btn{
-        margin-top: 4%;
-        background-color: #0255F7;
-        color: white;
-        font-family: 'Titillium Web';
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 16px;
-        width: 8rem;
-        padding: 2%;
-    }
-    
-    form p{
-        margin-top: 5%;
-        opacity: 0.8;
-    }
-    
-    form label{
-        text-transform: uppercase;
-        font-size: 14px;
-        opacity: 0.7;
-        letter-spacing: 2px;
-    }
-    
-    form .form-control{
-        border: none;
-        padding-top: 4%;
-        padding-bottom: 4%;
-        background-color: rgba(255, 255, 255, 0.1);
-    } 
-
-    .sign_up_left_con{
-        display: none;
-    }
-
-    .header{
-        height: 100vh;
-    }
-    
-
-
 }
-
-@media screen and (max-width: 544px) { /* mobile */
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .sign_up_left_con{
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-    }
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-    }
-
-    .ham-button{
-        display: block;
-        margin-left: 20px;
-    }
-
-    .nav-link {
-        display: none;
-    }
-
-    #artemisImg{
-        width: 210px;
-        height: 50px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    #header-text{
-        display: none;
-    }
-
-    .sign_up_left_con{
-        background-color: blueviolet;
-        background-image: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .sign_up_form_con{
-        background-color: cadetblue;
-        background-image: url(../assets/signUpSectionBackground.png);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .form-container{
-        color: white;
-        margin-top: 30%;
-        height: 900px;
-    }
-
-    form{
-        margin-top: 0px;
-    }
-
-    .form-container h4{
-        font-size: 52px;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 3px;
-        text-align: center;
-    }
-    
-    .form-container .intro-text{
-        font-size: 20px;
-        opacity: 0.7;
-        text-align: center;
-    }
-    
-    form{
-        margin-top: 10%;
-    }
-
-    .btn{
-        margin-top: 4%;
-        background-color: #0255F7;
-        color: white;
-        font-family: 'Titillium Web';
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 16px;
-        width: 8rem;
-        padding: 2%;
-    }
-    
-    form p{
-        margin-top: 5%;
-        opacity: 0.8;
-    }
-    
-    form label{
-        text-transform: uppercase;
-        font-size: 14px;
-        opacity: 0.7;
-        letter-spacing: 2px;
-    }
-    
-    form .form-control{
-        border: none;
-        padding-top: 4%;
-        padding-bottom: 4%;
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .header{
-        height: 86vh;
-    
-    }
-
-    
-}
-
-
-
-
-/*------ FOOTER ------*/
-
-.footer-background{
-    width: 100%;
-    height: auto;
-    background-color: #1E1E20;
-    margin-top: 80px;
-}
-
-.footer-content{
-    background-image: url(../assets/temporary/footer-large.png);
-    height: 314px;
-    width: 1558px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: auto 100% ;
-}
-
-
-
-
-
-@media screen and (max-width: 1560px) { /* Between Tablet and Mobile */
-
-
-    .footer-content{
-        background-image: url(../assets/temporary/footer-medium.png);
-        width: 738px;
-        overflow: hidden;
-        height: 356px;
-    }
-    
-
-}
-
-@media screen and (max-width: 740px) { /* Between Tablet and Mobile */
-
-
-    .footer-content{
-        background-image: url(../assets/temporary/footer-small.png);
-        width: 335px;
-        overflow: hidden;
-        height: 610px;
-    }
-
-}
-
-/*try keep future code in existing media queries*/

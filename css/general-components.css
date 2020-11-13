@@ -1,4 +1,10 @@
+body {
+  background-color: #131414;
+}
 
+.margin-top{
+  margin-top: 60px;
+}
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   margin-top: 20px;
@@ -37,286 +43,6 @@
     color: none;
 }
 
-@media (max-width: 576px) {
-  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
-    /*font-family: Rubik;*/
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*font-size: 19px;*/
-    /*line-height: 17px;*/
-    /*text-transform: uppercase;*/
-    /*color: #FFFFFF;*/
-    /*opacity: 1;*/
-    padding-top: 60px;
-  }
-}
-
-.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
-  color: #FFFFFF;
-  opacity: 1;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  font-style: normal;
-
-  font-size: 17px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  text-decoration: none;
-
-  font-family: Titillium Web;
-  font-weight: 400;
-  letter-spacing: 1.08px;
-  opacity: 0.5;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  opacity: 1;
-
-
-    /* WHAT IS THE MEANING */
-    background: none;
-    background-color: none;
-}
-
-@media (max-width: 767px) {
-  .navbar-dark .navbar-nav .nav-link {
-    /*font-weight: 400;*/
-    /*font-size: 19px;*/
-    /*line-height: 17px;*/
-    /*text-transform: uppercase;*/
-    /*color: #FFFFFF;*/
-    /*opacity: 0.4;*/
-    padding-top: 30px;
-
-      /* WHAT IS THE MEANING */
-  background: none;
-  background-color: none;
-  }
-}
-
-
-
-
-/* THIS THING IS MISBEHAVING */
-
-/*    BACKGROUND COLOR FOR NAV    */
-.navbar.navbar-dark.navbar-expand-md.fixed-top.flex-grow-1.justify-content-between{
-  backdrop-filter: blur(61px);
-  min-width: 360px;
-  min-height: 77px auto;
-  background-color: rgba(21, 22, 22, 0.8);
-}
-
-
-
-
-/*  NOT WORKING YET   */
-#bottom-link {
-  /* padding-bottom: 190px; */
-}
-
-.navbar-dark .navbar-toggler {
-  border: 0px;
-  
-}
-
-@media (min-width: 767px) {
-  .d-flex.justify-content-center.align-items-center.sign-in-mobile-right {
-    width: 56px;
-    height: 48px;
-  }
-}
-
-@media (min-width: 768px) {
-  .nav.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between {
-    padding-right: 6%;
-    padding-left: 6%;
-  }
-
-  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-}
-
-@media (max-width: 1200px) {
-
-  .footer-legal-text{
-    width: 300px;
-    margin-top: -6px;
-  }
-
-  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .payment-logos-container.d-flex.d-sm-flex.d-md-flex.d-lg-flex.d-xl-flex.flex-grow-1.justify-content-between.justify-content-center
-  {
-    padding-left: 0px;
-    padding-right: 40px;
-  }
-
-  #facebook.social-item, #instagram.social-item, #twitter.social-item{
-    height: 22px;
-    width: 22px;
-    background-size: 22px 22px;
-  }
-
-  .social-media-icons.col-12.col-sm-3.d-flex.mx-auto.justify-content-center{
-    max-width: 200px;
-    padding-left: 20px;
-  }
-
-  .payment-item#MasterCard{
-    height: 26px;
-    background-size: 26px auto;
-  }
-  
-  .payment-item#PayPal{
-    background-size: 70px auto;
-    width: 80px;
-  }
-  
-  .payment-item#Visa{
-    background-size: 50px auto;
-    width: 50px;
-  }
-  
-}
-
-@media (max-width: 575px) {
-
-  .footer-logo-container{
-    margin-left: 10px;
-  }
-
-  .navbar-dark .navbar-nav .nav-link.footer{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: 16px;
-  }
-
-  .footer-background .footer-content{
-    background-color: red;
-    padding: 0px;
-  }
-
-  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
-    padding-left: 20px;
-    padding-right: 0px;
-    height: auto;
-    width: 100%;
-  }
-
-  /* Social Media, Legal Text, P*/
-
-  /* Fix Me x3 */
-  .social-media-icons{
-    height: 100%;
-  }
-
-  .legal-text{
-    height: 66px;
-  }
-
-  .payment-logos{
-    height: 66px;
-  }
-
-
-}
-
-@media (max-width: 768px) {
-
-  .navbar-dark .navbar-nav .nav-link.footer{
-    font-size: 14px;
-    letter-spacing: 1.08px;
-    padding-top: 2px;
-  }
-
-  p.footer-legal-text{
-    font-size: 10px;
-    width: 240px;
-    }
-
-}
-
-@media (max-width: 1199px) {
-  .centred-smol-logo {
-    width: 40px;
-    height: 46px;
-    background-repeat: no-repeat;
-    background-image: url(../assets/logo/Artemis-Short.svg);
-    background-position: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar-light .navbar-nav .nav-link {
-    padding-top: 40px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    opacity: 0.5;
-    letter-spacing: 1.5px;
-  }
-}
-
-.footer-navbar{
-  padding-left: 160px;
-  padding-right: 160px;
-}
-
-
-.d-flex.justify-content-center.align-items-center.sign-in-mobile {
-  width: 56px;
-  height: 48px;
-}
-
-.left-full-logo {
-  height: 46px;
-  width: 216px;
-  background-repeat: no-repeat;
-  background-image: url(../assets/logo/Artemis-Full.svg);
-  background-position: center; /* was centre */
-}
-
-.sign-in-large-container {
-  height: 46px;
-  width: 216px;
-  background-position: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.sign-in-button-large{
-  width: 94px;
-  height: 30px;  
-
-  /*      position: absolute; */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  margin-top: 8px;
-  padding-top: 4px;
-}
-
-.sign-in-button-text{
-  text-align: center;
-  font-family: 'Rubik'; 
-  letter-spacing: 1px;
-  color: white;
-  font-weight: 400;
-  opacity: 0.75;
-}
-
-
 /* DELETE ME? */
 .sign-in-button-text:hover{
   text-align: center;
@@ -338,6 +64,97 @@
   max-width: 1040px;
 }
 
+/* Heading Section */
+
+.heading-section{
+  width: 100%;
+    text-align: center;
+
+  padding-top: 7%;
+  /*background-color: blue;*/
+  padding-bottom: 7%;
+  
+}
+
+.main-heading{
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: 8.46087px;
+  display: block;
+  font-family: Rubik;
+  font-weight: 600;
+
+  margin: 0 auto;
+}
+
+.sub-title-text{
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  display: block;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 8.46087px;
+  text-transform: uppercase;
+  color: #9DA3A9;
+  opacity: 0.7;
+
+  margin: 0 auto;
+}
+
+/* Medium Nav for Tablet */
+@media screen and (max-width: 1200px) { 
+
+  .main-heading{
+      font-size: 44px;
+  }
+  
+  .sub-title-text{
+      font-size: 18px;
+  }
+
+}
+
+
+/* Medium Nav for Tablet */
+@media screen and (max-width: 768px) { /* Between Tablet and Mobile */
+
+  .main-heading{
+      font-size: 42px;
+  
+  }
+  
+  .sub-title-text{
+      font-size: 16px;
+      width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 515px) { /* mobile */
+
+  .main-heading{
+    font-size: 38px;
+
+}
+
+.sub-title-text{
+    font-size: 12px;
+    width: 300px;
+}
+  
+}
+
+
+
+
 
 
 
@@ -348,18 +165,14 @@
   width: 100%;
   height: auto;
   background-color: #1E1E20;
-  margin-top: 80px;
   overflow: hidden;
 }
-
 
 .footer-content{
   height: auto;
   max-width: 1502px;
   padding: 0px;
 }
-
-
 
 /*  footer content  */
 
@@ -375,7 +188,7 @@
   max-width: 160px;
   background-repeat: no-repeat;
   background-image: url(../assets/logo/Artemis-Full.svg);
-  background-position: center; /* was centre */
+  background-position: center;
   background-size: auto 40%;
 }
 
@@ -385,15 +198,10 @@
   background-color: red;
 }
 
-
-
-
 .footer-bottom-section{
   height: 84px; /* FIX ME */
   width: 100%;
 }
-
-
   .social-media-icons{
     height: 100%;
     width: auto;
@@ -456,8 +264,6 @@ a.social-link footer{
   background-size: 28px auto;
 }
 
-
-
 li.social-item, li.payment-item{
   list-style: none;
 }
@@ -473,6 +279,7 @@ li.social-item, li.payment-item{
   padding-left: 10px;
   padding-right: 10px;
 }
+
 
 
 .col-12{
@@ -517,3 +324,378 @@ li.social-item, li.payment-item{
   width: 60px;
 }
 
+
+
+/* NAV BAR */
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-style: normal;
+
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-family: Titillium Web;
+  font-weight: 400;
+  letter-spacing: 1.08px;
+  opacity: 0.5;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  opacity: 1;
+
+    /* FIX ME */
+    /* WHAT IS THE MEANING */
+    background: none;
+    background-color: none;
+}
+
+
+/*    BACKGROUND COLOR FOR NAV    */
+.navbar.navbar-dark.navbar-expand-md.fixed-top.flex-grow-1.justify-content-between{
+  backdrop-filter: blur(61px);
+  min-width: 360px;
+  min-height: 77px auto;
+  background-color: rgba(21, 22, 22, 0.8);
+}
+
+.navbar-dark .navbar-toggler {
+  border: 0px;
+}
+
+.footer-navbar{
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.d-flex.justify-content-center.align-items-center.sign-in-mobile {
+  width: 56px;
+  height: 48px;
+}
+
+.left-full-logo {
+  height: 46px;
+  width: 216px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/logo/Artemis-Full.svg);
+  background-position: center; /* was centre */
+}
+
+.sign-in-large-container {
+  height: 46px;
+  width: 216px;
+  background-position: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.sign-in-button-large{
+  width: 94px;
+  height: 30px;  
+
+  /*      position: absolute; */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-top: 8px;
+  padding-top: 4px;
+}
+
+.sign-in-button-text{
+  text-align: center;
+  font-family: 'Rubik'; 
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+
+
+
+
+/*  - - - - - - - - - MEDIA QUERIES - - - - - - - - - */
+
+@media (max-width: 1200px) {
+
+  .footer-legal-text{
+    width: 300px;
+    margin-top: -6px;
+  }
+
+  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .payment-logos-container.d-flex.d-sm-flex.d-md-flex.d-lg-flex.d-xl-flex.flex-grow-1.justify-content-between.justify-content-center
+  {
+    padding-left: 0px;
+    padding-right: 40px;
+  }
+
+  #facebook.social-item, #instagram.social-item, #twitter.social-item{
+    height: 22px;
+    width: 22px;
+    background-size: 22px 22px;
+  }
+
+  .social-media-icons.col-12.col-sm-3.d-flex.mx-auto.justify-content-center{
+    max-width: 200px;
+    padding-left: 20px;
+  }
+
+  .payment-item#MasterCard{
+    height: 26px;
+    background-size: 26px auto;
+  }
+  
+  .payment-item#PayPal{
+    background-size: 70px auto;
+    width: 80px;
+  }
+  
+  .payment-item#Visa{
+    background-size: 50px auto;
+    width: 50px;
+  }
+  
+}
+
+
+@media (max-width: 1199px) {
+  .centred-smol-logo {
+    width: 40px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Short.svg);
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-dark .navbar-nav .nav-link {
+    /*font-weight: 400;*/
+    /*font-size: 19px;*/
+    /*line-height: 17px;*/
+    /*text-transform: uppercase;*/
+    /*color: #FFFFFF;*/
+    /*opacity: 0.4;*/
+    padding-top: 30px;
+
+      /* WHAT IS THE MEANING */
+  background: none;
+  background-color: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .d-flex.justify-content-center.align-items-center.sign-in-mobile-right {
+    width: 56px;
+    height: 48px;
+  }
+
+  .nav.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+
+  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar-dark .navbar-nav .nav-link.footer{
+    font-size: 14px;
+    letter-spacing: 1.08px;
+    padding-top: 2px;
+  }
+
+  p.footer-legal-text{
+    font-size: 10px;
+    width: 240px;
+    }
+
+}
+
+/* Delete Me - Fix Me
+
+@media screen and (min-width: 575px){
+  .row.footer-content.no-gutters.d-xl-flex.justify-content-xl-start.mobile-footer{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1201px){
+  .row.footer-content.no-gutters.d-xl-flex.justify-content-xl-start.mobile-footer{
+    background-color: blue;
+    display: none;
+
+  }
+}
+
+*/ 
+
+@media (min-width: 576px) {
+
+  .mobile-footer.footer-background.d-sm-flex.d-md-flex.d-lg-flex.d-xl-flex.mx-auto{
+    display: none; /* Doesn't want to work*/
+
+    /* Fix Me */
+    opacity: 0%;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+
+
+
+@media (max-width: 575px) { /* Most for Mobile Footer */
+
+  .desk-and-tab-footer{  /* FIX ME */
+    display: none;
+  }
+
+  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    padding-top: 60px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    padding-top: 40px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.5;
+    letter-spacing: 1.5px;
+  }
+
+  .first-row-mobile{
+    width: 100%;
+    height: 68px;
+    align-content: left;
+  }
+
+  .footer-logo-container{
+    height: 100%;
+    width: 140px;
+    background-position: left;
+    position: absolute;
+    left: 0px;
+  }
+
+  .social-media-icons-mobile{
+    height: 100%;
+    width: 120px;
+    align-content: right;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+  }
+
+  .social-media-icons{ /* Can Delete */
+    height: 100%;
+    width: auto;
+  }
+
+  .social-media-icons-container{
+    width: 100%;
+    padding-top: 0px;
+    position: absolute;
+    right: 0px;
+    margin-top: 23px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    padding-top: 0px;
+  }
+
+  .footer-background{
+    padding: 0px;
+  }
+
+  .footer-content{
+    padding: 0px;
+    height: 380px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
+    padding: 0px;
+    margin: 0px;
+    padding-left: 10px;
+    height: auto;
+    width: 100%;
+    float: left;
+  }
+
+  .legal-text{
+    height: 66px;
+    text-align: center;
+  }
+
+  p.footer-legal-text{
+    font-size: 10px;
+    width: 220px;
+    height: auto;
+
+    top: 10px;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .payment-logos{
+    height: 66px;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+
+    align-content: center;
+    text-align: center;
+  }
+
+  .payment-logos-container-center-align{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .payment-logos-container{
+    width: 280px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    max-width: none;
+    position: relative;
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/*           MAKE MOBILE CLASS          */

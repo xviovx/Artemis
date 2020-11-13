@@ -1,3 +1,7 @@
+body {
+  background-color: #131414;
+}
+
 .poster-ratio {
   width: 100%;
   /* background: rgb(73,164,255); */
@@ -68,10 +72,6 @@
   padding-right: 20px;
 }
 
-body {
-  background-color: #131414;
-}
-
 .top-10-label{
   font-style: normal; /*      Maybe Change to Avenir     */
   font-family: Rubik;
@@ -132,29 +132,9 @@ h2{
   opacity: 0.8;
 }
 
-
-
-
-
-/* DRAW ME LIKE ONE OF YOUR FENCH GIRLS JACK
-- Use these a lil later
-
-$grid-breakpoints: (
-  sm: 480px,
-  md: 768px,
-  lg: 1024px
-);
-
-$container-max-widths: (
-  sm: 420px,
-  md: 720px,
-  lg: 960px
-);
-
-*/
-
 #movies-page{
-  padding-top: 77px;
+  padding: 0px;
+  padding-top: 62px;
   /* Space For Nav Bar */
 }
 
