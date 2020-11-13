@@ -278,6 +278,13 @@ button:active{
     cursor: pointer;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #description_text{
+        font-size: 18px;
+        width: 600px;
+    }
+}
+
 @media screen and (max-width: 544px) {
 
       .movie-content-container{
