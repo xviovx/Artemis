@@ -3,7 +3,8 @@
   /* background: rgb(73,164,255); */
   border-radius: 10px;
   padding-top: 147.7124183%;
-  box-shadow: 0 28px 29px 0 rgba(0,0,0,.8);
+  margin-bottom: 10px;
+  /*box-shadow: 0 28px 29px 0 rgba(0,0,0,.8);*/
   position: relative;
 }
 
@@ -16,7 +17,12 @@
 }
 
 @media (max-width: 515px) {
-  .col-sm-6.col-md-4.col-lg-3.grid-4-desktop {
+  .col-sm-6.col-md-4.col-lg-3.grid-4-desktop, .col-sm-6.col-md-3.grid-4-desktop {
+    padding: 10px;
+  }
+
+  /* Less Padding */
+  .col-sm-6.col-md-4.col-lg-3.grid-4-desktop, .col-sm-6.col-md-3.grid-4-desktop-stacked {
     padding: 10px;
   }
 
@@ -30,22 +36,37 @@
   }
 }
 
-.col-sm-6.col-md-4.col-lg-3.grid-4-desktop {
-  padding: 20px;
+/* POSTER GRID PADDING */
+
+.col-sm-6.col-md-4.col-lg-3.grid-4-desktop, .col-sm-6.col-md-3.grid-4-desktop {
+  padding: 13.5px;
   padding-top: 34px;
   padding-bottom: 34px;
 }
 
-.row.no-gutters.d-xl-flex.justify-content-xl-start.container-1440px {
-  min-width: 360px;
-  max-width: 1440px;
-  width: 1440px;
+/* Less Padding */
+.col-sm-6.col-md-4.col-lg-3.grid-4-desktop, .col-sm-6.col-md-3.grid-4-desktop-stacked {
+  padding: 13.5px;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
 }
 
-@media (max-width: 1440px) {
-  .row.no-gutters.d-xl-flex.justify-content-xl-start.container-1440px {
-    width: 900px;
-  }
+.col-md-4.grid-3-desktop {
+  padding: 17.5px;
+  padding-top: 34px;
+}
+
+.col.mx-1.grid-5-desktop {
+  padding: 6.5px;
+  padding-top: 12px;
+}
+
+.row.no-gutters.d-xl-flex.justify-content-xl-start.container-1440px, .section-heading.container-1440px {
+  min-width: 360px;
+  /* max-width: 1440px; */
+  width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 body {
@@ -56,7 +77,7 @@ body {
   font-style: normal; /*      Maybe Change to Avenir     */
   font-family: Rubik;
   font-weight: 700;
-  font-size: 170px;
+  font-size: 160px;
   line-height: 195px;
   letter-spacing: 8.46087px;
 
@@ -95,21 +116,21 @@ h2{
   color: #FFFFFF;
 }
 
+
 .sub-section-heading-info{
 
-font-family: Rubik;
-font-style: normal;
-font-weight: semi-bold;
-font-size: 26px;
-line-height: 30px;
-margin-top: 6px;
-letter-spacing: 1px;
-text-transform: uppercase;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: semi-bold;
+  font-size: 26px;
+  line-height: 30px;
+  margin-top: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-color: #9DA3A9;
+  color: #9DA3A9;
 
-opacity: 0.8;
-
+  opacity: 0.8;
 }
 
 
@@ -138,13 +159,6 @@ $container-max-widths: (
   /* Space For Nav Bar */
 }
 
-.section-heading{
-  height: auto;
-  padding-top: 120px;
-  padding-bottom: 50px;
-  width: 1400px;
-}
-
 .centre-align-stuff{
   height: auto;
   width: 100%;
@@ -168,3 +182,94 @@ $container-max-widths: (
   color: #9DA3A9;
   position: absolute;
 }
+
+/*-------- MEDIA QUERIES --------*/
+
+@media screen and (max-width: 1200px) {
+
+  .release-date-label{
+    font-size: 17px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  h2{
+    font-size: 36px;
+    padding-top: 6px;
+    padding-bottom: 0px;
+  }
+
+
+  .sub-section-heading-info{
+    font-size: 21px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  .section-heading.container-1440px{
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  h2{
+    font-size: 30px;
+    padding-top: 6px;
+    padding-top: 22px;
+  }
+
+  .sub-section-heading-info{
+    font-size: 17px;
+  }
+
+  .section-heading.container-1440px{
+    padding-top: 56px;
+    padding-bottom: 12px;
+    width: 500px;
+  }
+
+}
+
+
+@media screen and (max-width: 515px) {
+
+  h2{
+    font-size: 30px;
+    padding-top: 22px;
+    text-align: center;
+  }
+
+  .sub-section-heading-info{
+    font-size: 17px;
+    text-align: center;
+  }
+  
+
+  .section-heading.container-1440px{
+    padding-top: 46px;
+    padding-bottom: 10px;
+  }
+
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+  .row.no-gutters.d-xl-flex.justify-content-xl-start.container-1440px {
+    width: 500px;
+    max-width: 500px;
+  }
+}
+
+/*
+.row.test .col.test { 
+  height: 100px; 
+  background: green; 
+  width: 1440px;
+}
+*/

@@ -24,10 +24,11 @@ html,body {
     align-items: center;
     justify-content: center;
 }
+
 .box.flex {
     display: flex;
     justify-content: center;
-  }
+}
 
 .top-ten{
     padding: 15px 0 0 25px; 
@@ -46,6 +47,7 @@ h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
     font-weight: 400;
 }
 
+<<<<<<< HEAD
 
 a{
     font-family: Rubik;
@@ -66,6 +68,8 @@ a:hover {
 }
 
 
+=======
+>>>>>>> Ronald-McDonald-the-Sequel
 .col-md-6, .col-sm-6, .col-sm-4, .col-sm-3{
     padding: 0px;
 }
@@ -81,6 +85,8 @@ body {
     margin: 0;   
 }
 
+
+/* DELETE ME???????
 
 li{
     display: inline;
@@ -100,43 +106,11 @@ li{
     color: #FFFFFF;
 }
 
-.nav-link{
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    text-decoration: none;
 
-    font-family: Titillium Web;
-    font-weight: 400;
-    letter-spacing: 1.08px;
-    margin-top: 22px;
-    padding-left: 86px;
-    padding-right: 86px;
-    opacity: 0.5;
-}
+*/
 
-.nav-link:hover{
-    color: white;
-    opacity: 0.9;
-}
 
-.active{
-    color: rgb(255, 255, 255);
-    font-weight: Bold;
-    opacity: 1;
-}
 
-.ham-button{
-    background-color: transparent;
-    border: 0;
-    color: white;
-    font-size: 20px;
-    display: none;
-}
-
-.ham-button:focus{
-    outline: none;
-}
 
 .carousel-caption{
     display: none;
@@ -159,34 +133,36 @@ li{
     
 }
 
-#main-heading{
+.main-heading{
     text-align: center;
     color: white;
     font-weight: 900;
     font-size: 60px;
     letter-spacing: 8.46087px;
     display: block;
-    font-family: URW Dock, Titillium Web;
-
+    font-family: Rubik;
+    font-weight: 600;
+    margin: 0 auto;
 }
 
-#topten-text{
+.sub-title-text{
     color: white;
     text-align: center;
     margin-top: 5px;
     display: block;
-
-    font-family: URW Dock, Titillium Web;
+  
+    font-family: Rubik;
     font-style: normal;
-    font-weight: bold;
-
-    font-size: 16px;
+    font-weight: 500;
+  
+    font-size: 20px;
     line-height: 23px;
-    text-align: center;
     letter-spacing: 8.46087px;
     text-transform: uppercase;
     color: #9DA3A9;
     opacity: 0.7;
+  
+    margin: 0 auto;
 }
 
 #image_Poster_One{
@@ -221,51 +197,7 @@ li{
 
 
 /* Medium Nav for Tablet */
-@media screen and (min-width: 1200px) { /* Between Tablet and Mobile */
-
-
-    .logo-container-full {
-        display: block;
-    }
-
-    .logo-container-medium {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: none;
-    }
-
-    .sign-in-button-large {
-        display: block;
-    }
-
-    .sign-in-button-small {
-        display: none;
-    }
-
-}
-
-/* Medium Nav for Tablet */
 @media screen and (min-width: 992px) and (max-width: 1200px) { 
-
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-    }
-
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-    }
 
     #artemisImg{
         width: 800px;
@@ -276,12 +208,12 @@ li{
         font-size: 24px;
     }
 
-    #main-heading{
+    .main-heading{
         font-size: 48px;
     
     }
     
-    #topten-text{
+    .sub-title-text{
         font-size: 13px;
         
     }
@@ -291,32 +223,6 @@ li{
 
 /* Medium Nav for Tablet */
 @media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
-    
-    .nav-link{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-        float: left;
-        float: left;
-        margin-left: none;
-    }
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-        float: right;
-        margin-right: 10px;
-    }
 
     #artemisImg{
         width: 600px;
@@ -331,45 +237,18 @@ li{
         
     }
 
-    #main-heading{
+    .main-heading{
         font-size: 48px;
     
     }
     
-    #topten-text{
+    .sub-title-text{
         font-size: 13px;
-        
     }
-
 
 }
 
 @media screen and (max-width: 544px) { /* mobile */
-
-    .logo-container-full {
-        display: none;
-    }
-
-    .logo-container-short {
-        display: block;
-    }
-
-    .sign-in-button-large {
-        display: none;
-    }
-
-    .sign-in-button-small {
-        display: block;
-    }
-
-    .ham-button{
-        display: block;
-        margin-left: 20px;
-    }
-
-    .nav-link {
-        display: none;
-    }
 
     #artemisImg{
         width: 210px;
@@ -382,12 +261,12 @@ li{
         display: block;
     }
 
-    #main-heading{
+    .main-heading{
         font-size: 30px;
     
     }
     
-    #topten-text{
+    .sub-title-text{
         font-size: 10px;
         
     }
@@ -400,6 +279,7 @@ li{
 
 
 
+<<<<<<< HEAD
 .nav{
     height: 77px;
     background: rgba(21, 22, 22, 0.8);
@@ -468,6 +348,12 @@ li{
     opacity: 0.9;
     background: rgba(255, 255, 255, .2);
 }
+=======
+/* MOVE ME */
+
+
+
+>>>>>>> Ronald-McDonald-the-Sequel
 
 .sign-in-button-small{
     width: 28px;
@@ -491,52 +377,19 @@ li{
 
 
 
-.bye-padding-left{
-    padding-left: 0px;
-}
-
-.bye-padding-right{
-    padding-right: 0px;
-}
-
-/*------ FOOTER ------*/
-
-.footer-background{
-    width: 100%;
-    height: auto;
-    background-color: #1E1E20;
-    margin-top: 80px;
-}
-
-.footer-content{
-    background-image: url(../assets/temporary/footer-large.png);
-    height: 314px;
-    width: 1558px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: auto 100% ;
-}
-
-@media screen and (max-width: 1560px) { /* Between Tablet and Mobile */
 
 
-    .footer-content{
-        background-image: url(../assets/temporary/footer-medium.png);
-        width: 738px;
-        overflow: hidden;
-        height: 356px;
-    }
-
-}
-
-@media screen and (max-width: 740px) { /* Between Tablet and Mobile */
 
 
-    .footer-content{
-        background-image: url(../assets/temporary/footer-small.png);
-        width: 335px;
-        overflow: hidden;
-        height: 610px;
-    }
 
-}
+
+
+
+
+
+
+
+
+
+
+
