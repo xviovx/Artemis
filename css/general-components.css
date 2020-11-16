@@ -6,6 +6,13 @@ body {
   margin-top: 60px;
 }
 
+<<<<<<< Updated upstream
+=======
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  margin-top: 20px;
+}
+
+>>>>>>> Stashed changes
 .sign-in-button-smol-background {
   background-color: rgba(255,255,255,0.1);
   height: 25px;
@@ -14,7 +21,11 @@ body {
 
   background-repeat: no-repeat;
   background-image: url(../assets/account-icon.svg);
+<<<<<<< Updated upstream
   background-position: center;
+=======
+  background-position: center; /* was centre */
+>>>>>>> Stashed changes
 }
 
 .sign-in-mobile {
@@ -25,6 +36,21 @@ body {
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: #ffffff;
   opacity: 1;
+<<<<<<< Updated upstream
+=======
+  
+}
+
+.navbar-light .navbar-toggler {
+  border-radius: 0px;
+  width: 50px;
+
+
+    /* IM HERE TO TEST */
+    background: none;
+    background-color: none;
+    color: none;
+>>>>>>> Stashed changes
 }
 
 /* DELETE ME? */
@@ -52,8 +78,15 @@ body {
 
 .heading-section{
   width: 100%;
+<<<<<<< Updated upstream
   text-align: center;
   padding-top: 7%;
+=======
+    text-align: center;
+
+  padding-top: 7%;
+  /*background-color: blue;*/
+>>>>>>> Stashed changes
   padding-bottom: 7%;
   
 }
@@ -136,6 +169,14 @@ body {
 
 
 
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+>>>>>>> Stashed changes
 /*------ FOOTER ------*/
 
 .footer-background{
@@ -189,6 +230,7 @@ body {
     width: auto;
   }
 
+<<<<<<< Updated upstream
   .footer-legal-text{
     max-width: 500px;
     height: 16px;
@@ -206,6 +248,25 @@ body {
     opacity: 0.3;
     text-align: center;
   }
+=======
+      .footer-legal-text{
+      max-width: 500px;
+      height: 16px;
+      padding-top: 36px;
+
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      opacity: 0.3;
+      text-align: center;
+      }
+>>>>>>> Stashed changes
 
   .payment-logos{
     height: 100%;
@@ -337,7 +398,10 @@ li.social-item, li.payment-item{
 /*    BACKGROUND COLOR FOR NAV    */
 .navbar.navbar-dark.navbar-expand-md.fixed-top.flex-grow-1.justify-content-between{
   backdrop-filter: blur(61px);
+<<<<<<< Updated upstream
   -webkit-backdrop-filter: blur(40px);
+=======
+>>>>>>> Stashed changes
   min-width: 360px;
   min-height: 77px auto;
   background-color: rgba(21, 22, 22, 0.8);
@@ -543,6 +607,13 @@ li.social-item, li.payment-item{
     display: none;
   }
 
+<<<<<<< Updated upstream
+=======
+  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    padding-top: 60px;
+  }
+
+>>>>>>> Stashed changes
   .navbar-light .navbar-nav .nav-link {
     padding-top: 40px;
     font-family: Rubik;
@@ -660,4 +731,20 @@ li.social-item, li.payment-item{
     position: relative;
   }
 
+<<<<<<< Updated upstream
 }
+=======
+
+
+
+}
+
+
+
+
+
+
+
+
+/*           MAKE MOBILE CLASS          */
+>>>>>>> Stashed changes
