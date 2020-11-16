@@ -45,13 +45,13 @@ button a:hover{
 
 .header{
     
+/* Delete me? */
 /* Add padding top */
 
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-color: turquoise;
 }
 
 
@@ -292,7 +292,6 @@ form label{
     }
 
     .sign_up_form_con{
-        background-color: cadetblue;
         background-image: url(../assets/signUpSectionBackground.png);
         background-position: center;
         background-size: cover;

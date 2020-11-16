@@ -6,10 +6,6 @@ body {
   margin-top: 60px;
 }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  margin-top: 20px;
-}
-
 .sign-in-button-smol-background {
   background-color: rgba(255,255,255,0.1);
   height: 25px;
@@ -18,7 +14,7 @@ body {
 
   background-repeat: no-repeat;
   background-image: url(../assets/account-icon.svg);
-  background-position: center; /* was centre */
+  background-position: center;
 }
 
 .sign-in-mobile {
@@ -29,18 +25,6 @@ body {
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: #ffffff;
   opacity: 1;
-  
-}
-
-.navbar-light .navbar-toggler {
-  border-radius: 0px;
-  width: 50px;
-
-
-    /* IM HERE TO TEST */
-    background: none;
-    background-color: none;
-    color: none;
 }
 
 /* DELETE ME? */
@@ -68,10 +52,8 @@ body {
 
 .heading-section{
   width: 100%;
-    text-align: center;
-
+  text-align: center;
   padding-top: 7%;
-  /*background-color: blue;*/
   padding-bottom: 7%;
   
 }
@@ -151,11 +133,6 @@ body {
 }
   
 }
-
-
-
-
-
 
 
 
@@ -360,6 +337,7 @@ li.social-item, li.payment-item{
 /*    BACKGROUND COLOR FOR NAV    */
 .navbar.navbar-dark.navbar-expand-md.fixed-top.flex-grow-1.justify-content-between{
   backdrop-filter: blur(61px);
+  -webkit-backdrop-filter: blur(40px);
   min-width: 360px;
   min-height: 77px auto;
   background-color: rgba(21, 22, 22, 0.8);
@@ -563,10 +541,6 @@ li.social-item, li.payment-item{
 
   .desk-and-tab-footer{  /* FIX ME */
     display: none;
-  }
-
-  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
-    padding-top: 60px;
   }
 
   .navbar-light .navbar-nav .nav-link {
