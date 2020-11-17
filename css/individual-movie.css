@@ -1,4 +1,5 @@
 #individual-movie-page{
+    /* margin-top: 62px; */
     height: 1700px;
     margin-top: 62px;
 }
@@ -57,7 +58,22 @@
 .movie-content-container{
     width: 1190px;
     height: 700px;
+<<<<<<< HEAD
+    margin-top: 116px;
+    background-color: darkblue;
+}
+
+.background-filter-cover{
+    background-color: chartreuse;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -100vh;
+=======
     margin-top: -116px;
+>>>>>>> main
 }
 
 .individual-movie-header{
@@ -113,6 +129,10 @@
     height: inherit;
     align-content: left;
     margin-top: 25px;
+<<<<<<< HEAD
+    background-color: cyan;
+=======
+>>>>>>> main
 }
 
 .body-text{
@@ -134,7 +154,11 @@
   
     float: left;
 
+<<<<<<< HEAD
+    margin-top: 10px;
+=======
     margin-top: 5px;
+>>>>>>> main
     margin-left: 43px;
 
 }
@@ -199,6 +223,10 @@
     font-family: rubik;
     border-left: 3px solid white;
     padding-left: 17px;
+<<<<<<< HEAD
+    opacity: .5;
+=======
+>>>>>>> main
 }
 
 .star-symbol{
@@ -278,6 +306,8 @@ button:active{
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     #description_text{
         font-size: 18px;
@@ -347,4 +377,5 @@ button:active{
 
 
 
+>>>>>>> main
 
