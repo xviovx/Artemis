@@ -102,9 +102,9 @@ body {
   z-index: 1;
 }
 
-/* HEADING STYLES */
 
-/* h1, h2, h3, p, span? or whatever */
+
+/* HEADING STYLES */
 
 h2{
   /* COMING SOON */
@@ -138,27 +138,6 @@ h2{
   opacity: 0.8;
 }
 
-
-
-
-
-/* DRAW ME LIKE ONE OF YOUR FENCH GIRLS JACK
-- Use these a lil later
-
-$grid-breakpoints: (
-  sm: 480px,
-  md: 768px,
-  lg: 1024px
-);
-
-$container-max-widths: (
-  sm: 420px,
-  md: 720px,
-  lg: 960px
-);
-
-*/
-
 #movies-page{
   padding-top: 77px;
   /* Space For Nav Bar */
@@ -188,7 +167,10 @@ $container-max-widths: (
   position: absolute;
 }
 
-/*-------- MEDIA QUERIES --------*/
+
+
+
+/*--------------- MEDIA QUERIES ---------------*/
 
 @media screen and (max-width: 1200px) {
 
