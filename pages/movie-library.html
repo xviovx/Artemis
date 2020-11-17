@@ -31,6 +31,8 @@
     <script src="../js/main.js"></script>
     <script src="../js/movie-library-functionality.js"></script>
     <script src="../js/individual_page.js"></script>
+
+    <!-- CSS Style Sheets-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/general-components.css">
     <link rel="stylesheet" href="../css/movie-library-filter.css">
@@ -45,32 +47,33 @@
 <body>
     <div class="container-fluid" id="movies-page">
 
-    <!--------- NAV BAR (To be added once fixed completely with Bootsrap)------------>
-    <nav class="navbar navbar-dark navbar-expand-md fixed-top flex-grow-1 justify-content-between">
-        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
-            <a href="../index.html"><div class="d-lg-none centred-smol-logo"></div></a>
-            <a href="../index.html"><div class="d-none d-lg-block left-full-logo"></div></a>
-            <a href="pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile" href="#">
-                <div class="sign-in-button-smol-background"></div>
-            </a>
-            <div class="collapse navbar-collapse d-md-flex d-xl-flex flex-grow-0 flex-md-grow-1 justify-content-md-center" id="navcol-1">
-                <ul class="nav navbar-nav d-flex d-md-flex flex-grow-1 justify-content-between">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html" style="opacity: 0.6;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="movie-library.html" style="opacity: 1;">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="my-list.html">My List</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" id="#bottom-link">About Us</a></li>
-                </ul>
-            </div>
-            <a href="pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
-                <div class="sign-in-button-smol-background"></div>
-            </a>
-            <div class="d-none d-lg-block sign-in-large-container">
-                <div class="sign-in-button-large d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">
-                    <a href="signin.html" class="sign-in-button-text d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto" style="font-family: Titillium Web; opacity: 1;" id="sign-in-text">SIGN IN</a>
-                </div>
+<!----------------- NAV BAR ----------------->
+
+<nav class="navbar navbar-dark navbar-expand-md fixed-top flex-grow-1 justify-content-between">
+    <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler d-flex d-md-none" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon d-flex"></span></button>
+        <div class="d-lg-none centred-smol-logo"></div>
+        <div class="d-none d-lg-block left-full-logo"></div>
+        <a href="../pages/signin.html" class="d-flex d-md-none justify-content-center align-items-center sign-in-mobile">
+            <div class="sign-in-button-smol-background"></div>
+        </a>
+        <div class="collapse navbar-collapse d-md-flex d-xl-flex flex-grow-0 flex-md-grow-1 justify-content-md-center" id="navcol-1">
+            <ul class="nav navbar-nav d-flex d-md-flex flex-grow-1 justify-content-between">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../pages/movie-library.html">Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/my-list.html">My List</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="#bottom-link">About Us</a></li>
+            </ul>
+        </div>
+        <a href="../pages/signin.html" class="d-none d-sm-none d-md-flex d-lg-none d-xl-none justify-content-center align-items-center sign-in-mobile" href="#">
+            <div class="sign-in-button-smol-background"></div>
+        </a>
+        <div class="d-none d-lg-block sign-in-large-container">
+            <div class="sign-in-button-large d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">
+                <a href="../pages/signin.html" class="sign-in-button-text d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto" id="sign-in-text">SIGN IN</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     
     <!------------- TOP MOVIES SECTION ------------->
@@ -92,66 +95,22 @@
 
     <!------------- MOVIES NOW SHOWING SECTION ------------->
 
+    <!--    Heading    -->
+
     <div class="centre-align-stuff d-flex justify-content-center">
         <div class="section-heading container-1440px">
             <h2>Now Showing</h2>
-            <p class="sub-section-heading-info"></p>
+            <p class="sub-section-heading-info">Movies Now on Circuit</p>
         </div>
     </div>
 
-    <!------ Movies Now Showing Posters ------>
-    <div class="filter-section mx-auto">
-        <label for="genres" id="genre-label">Genre:</label>
-        <select id="genres" name="genres">
-            <option value="Genre-Title" class="genre-title">Genre</option>
-            <option value="All" class="all-movies">All</option>
-            <option value="Action" class="action-movies">Action</option>
-            <option value="Adventure" class="adventure-movies">Adventure</option>
-            <option value="Animation" class="animation-movies">Animation</option>
-            <option value="Comedy" class="comedy-movies">Comedy</option>
-            <option value="Crime" class="crime-movies">Crime</option>
-            <option value="Documentary" class="documentary-movies">Documentary</option>
-            <option value="Drama" class="drama-movies">Drama</option>
-            <option value="Family" class="family-movies">Family</option>
-            <option value="Fantasy" class="fantasy-movies">Fantasy</option>
-            <option value="History" class="history-movies">History</option>
-            <option value="Sci-Fi" class="sci-fi-movies">Sci-Fi</option>
-        </select>
-
-        <label for="release-year" id="release-label">Release year:</label>
-        <select id="release-year" name="release-year">
-            <option value="Release-Year-Title" id="release-title">Release year</option>
-            <option value="2020" id="year2020">2020</option>
-            <option value="2019" id="year2019">2019</option>
-            <option value="2018" id="year2018">2018</option>
-            <option value="2017" id="year2017">2017</option>
-            <option value="2016" id="year2016">2016</option>
-            <option value="2015" id="year2015">2015</option>
-            <option value="2014" id="year2014">2014</option>
-            <option value="2013" id="year2013">2013</option>
-            <option value="2012" id="year2012">2012</option>
-            <option value="2011" id="year2011">2011</option>
-            <option value="2010" id="year2010">2010</option>
-            <option value="2009" id="year2009">2009</option>
-        </select>
-
-        <label for="average-vote" id="vote-label">Average vote:</label>
-        <select id="average_vote" name="average_vote">
-            <option value="Average-Vote" id="vote-title">Average vote</option>
-            <option value="1" id="one">1</option>
-            <option value="2" id="two">2</option>
-            <option value="3" id="three">3</option>
-            <option value="4" id="four">4</option>
-            <option value="5" id="five">5</option>
-            <option value="6" id="six">6</option>
-            <option value="7" id="seven">7</option>
-            <option value="8" id="eight">8</option>
-            <option value="9" id="nine">9</option>
-            <option value="10" id="ten">10</option>
-        </select>
+    <!--    Movie Filter   -->
 
 
-        <!--<div class="btn all-movies">All</div>
+
+
+        <!--
+        <div class="btn all-movies">All</div>
         <div class="btn action-movies">Action</div>
         <div class="btn adventure-movies">Adventure</div>
         <div class="btn animation-movies">Animation</div>
@@ -162,45 +121,212 @@
         <div class="btn family-movies">Family</div>
         <div class="btn fantasy-movies">Fantasy</div>
         <div class="btn history-movies">History</div>
-        <div class="btn sci-fi-movies">Sci-Fi</div>-->
-    </div>
-    <br>
-    
-    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
+        <div class="btn sci-fi-movies">Sci-Fi</div>
+        -->
+
+
+
+
+
+
+
         
-        
+    <!-- TESTING -->
 
-        <div id="now-showing-movies" class="row no-gutters d-xl-flex justify-content-xl-start container-1440px">
+    <div class="centre-align-stuff d-flex justify-content-center">
+        <div class="row container-1440px filter-container d-flex" id="movie-filter">
 
-            <!--CONTENT DYNAMICALLY GENERATED WITH APPEND FUNCTION-->
+            <div class="filter-label-section d-none d-md-block col-md-3 col-lg-6">
+                <p class="filter-label">Filter Movies</p>
+                <p class="filter-label short">Filter</p>
+            </div>
 
-            <!--DO NOT ADD CONTENT HERE-->
+            <!-- Genres Filter -->
+            <div class="filter-button col-4 col-md-3 col-lg-2">
+                <label for="genres" id="genre-label">Genre:</label>
+                <select id="genres" name="genres">
+                    <option disabled selected value="Genre-Title" class="genre-title">Genre</option>
+                    <option value="All" class="all-movies">All</option>
+                    <option value="Action" class="action-movies">Action</option>
+                    <option value="Adventure" class="adventure-movies">Adventure</option>
+                    <option value="Animation" class="animation-movies">Animation</option>
+                    <option value="Comedy" class="comedy-movies">Comedy</option>
+                    <option value="Crime" class="crime-movies">Crime</option>
+                    <option value="Documentary" class="documentary-movies">Documentary</option>
+                    <option value="Drama" class="drama-movies">Drama</option>
+                    <option value="Family" class="family-movies">Family</option>
+                    <option value="Fantasy" class="fantasy-movies">Fantasy</option>
+                    <option value="History" class="history-movies">History</option>
+                    <option value="Sci-Fi" class="sci-fi-movies">Sci-Fi</option>
+                </select>
+            </div>
+
+            <!-- Release Year Filter -->
+            <div class="filter-button col-4 col-md-3 col-lg-2">
+                <label for="release-year" id="release-label">Release year:</label>
+                <select id="release-year" name="release-year">
+                    <option disabled selected value="Release-Year-Title" id="release-title">Year</option>
+                    <option value="2020" id="year2020">2020</option>
+                    <option value="2019" id="year2019">2019</option>
+                    <option value="2018" id="year2018">2018</option>
+                    <option value="2017" id="year2017">2017</option>
+                    <option value="2016" id="year2016">2016</option>
+                    <option value="2015" id="year2015">2015</option>
+                    <option value="2014" id="year2014">2014</option>
+                    <option value="2013" id="year2013">2013</option>
+                    <option value="2012" id="year2012">2012</option>
+                    <option value="2011" id="year2011">2011</option>
+                    <option value="2010" id="year2010">2010</option>
+                    <option value="2009" id="year2009">2009</option>
+                </select>
+            </div>
+
+            <!-- Average Vote Filter -->
+            <div class="filter-button col-4 col-md-3 col-lg-2">
+                <label for="average-vote" id="vote-label">Average vote:</label>
+                <select id="average_vote" name="average_vote">
+                    <option disabled selected value="Average-Vote" id="vote-title">Vote</option>
+                    <option value="1" id="one">1</option>
+                    <option value="2" id="two">2</option>
+                    <option value="3" id="three">3</option>
+                    <option value="4" id="four">4</option>
+                    <option value="5" id="five">5</option>
+                    <option value="6" id="six">6</option>
+                    <option value="7" id="seven">7</option>
+                    <option value="8" id="eight">8</option>
+                    <option value="9" id="nine">9</option>
+                    <option value="10" id="ten">10</option>
+                </select>
+            </div>
             
-
-
 
 
         </div>
     </div>
 
+
+
     
+    <!--    POSTERS - DYNAMIC CONTENT   -->
 
-    <!------------- FOOTER ------------->
+    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
+        
+        <div id="now-showing-movies" class="row no-gutters d-xl-flex justify-content-xl-start container-1440px">
 
-    <div class="footer-background d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
-        <!--    Centre Align Footer    -->
-        <div class="row footer-content no-gutters d-xl-flex justify-content-xl-start">
-            <div class="col-12 d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
-                <div class="footer-logo-container col-12"></div>
+            <!--CONTENT DYNAMICALLY GENERATED WITH APPEND FUNCTION-->
+
+            <!--DO NOT ADD CONTENT HERE-->
+
+
+        </div>
+    </div>
+
+<!------------- FOOTER ------------->
+
+<!------------- MOBILE FOOTER ------------->
+
+<div class="mobile-footer footer-background d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto">
+
+    <!--    Centre Align Footer - Content Container   -->
+    <div class="row footer-content no-gutters d-xl-flex justify-content-xl-start">
+        
+    <!-- - - - - LOGO AND SOCIAL MEDIA BUTTONS - - - - -->
+        <div class="col-12 first-row-mobile">
+
+            <!-- Footer Logo -->
+            <a href="index.html"><div class="footer-logo-container"></div></a>
+
+            <!--    Social Media Icons -->
+            <div class="social-media-icons-mobile">
+                <ul class="social-media-icons-container d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-grow-1 justify-content-between justify-content-right">
+                    <a class="social-link footer" href="https://www.facebook.com/"><li class="social-item" id="facebook"></li></a>
+                    <a class="social-link footer" href="https://www.instagram.com"><li class="social-item" id="instagram"></li></a>
+                    <a class="social-link footer" href="https://www.twitter.com"><li class="social-item" id="twitter"></li></a>
+                </ul>
             </div>
+
+        </div><!-- End First Row Mobile -->
+
+        <div class="footer-line col-12"></div>
+
+    <!-- - - - - NAV ELEMENTS - - - - -->
+        
+        <!--    Nav Links   -->
+        <nav class="footer-navbar navbar navbar-dark navbar-expand-sm flex-grow-1 justify-content-between justify-content-center">
+            <div class="d-md-flex d-xl-flex flex-grow-0 flex-sm-grow-1 justify-content-sm-center">
+                <ul class="nav navbar-nav d-flex d-sm-flex flex-grow-1 justify-content-between">
+                    <li class="nav-item"><a class="nav-link footer" href="pages/movie-library.html">Book a Movie</a></li>
+                    <li class="nav-item"><a class="nav-link footer" href="#">Find a Cinema</a></li>
+                    <li class="nav-item"><a class="nav-link footer" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link footer" href="#">View Your Booking</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="footer-line col-12"></div>
+
+
+    <!-- - - - - PAYMENT LOGOS - - - - -->  
+
+        <div class="payment-logos col-12">
+            <div class="payment-logos-container-center-align d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center">
+                <div class="payment-logos-container d-flex flex-grow-1 justify-content-between justify-content-sm-center justify-content-center">
+                    <li class="payment-item" id="MasterCard"></li>
+                    <li class="payment-item" id="PayPal"></li>
+                    <li class="payment-item" id="Visa"></li>
+                </div>
+            </div>
+        </div>
+
+        <!--    Legal Text  -->
+        <div class="legal-text col-12 justify-content-center">
+            <p class="footer-legal-text">copyright © Artemis Cinemas 2020. All Rights reserved.</p>
+        </div>
+            
+
+        </div><!--  bottom section of footer    -->
+
+    </div><!-- end footer content -->
+
+</div><!-- end footer background -->
+
+
+
+
+<!------------- DESKTOP AND TABLET FOOTER ------------->
+
+    <div class="footer-background d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center desk-and-tab-footer">
+
+        <!--    Centre Align Footer - Content Container   -->
+        <div class="row footer-content no-gutters d-xl-flex justify-content-xl-start">
+            
+
+
+
+
+
+        <!-- - - - - FIRST ROW - - - - -->
+            <div class="col-12 d-sm-flex d-md-flex d-lg-flex d-xl-flex mx-auto justify-content-center">
+
+                <!-- Footer Logo -->
+                <a href="index.html"><div class="footer-logo-container col-12"></div></a>
+
+                <!-- Mobile Social Media Icons - Only Shows on Mobile -->
+            
+
+
+            </div>
+
             <div class="footer-line col-12"></div>
 
-            <!--    LINKS   -->
+
+        <!-- - - - - SECOND ROW - - - - -->
             
+            <!--    Nav Links   -->
             <nav class="footer-navbar navbar navbar-dark navbar-expand-sm flex-grow-1 justify-content-between justify-content-center">
                 <div class="d-md-flex d-xl-flex flex-grow-0 flex-sm-grow-1 justify-content-sm-center">
                     <ul class="nav navbar-nav d-flex d-sm-flex flex-grow-1 justify-content-between">
-                        <li class="nav-item"><a class="nav-link footer" href="#">Book a Movie</a></li>
+                        <li class="nav-item"><a class="nav-link footer" href="pages/movie-library.html">Book a Movie</a></li>
                         <li class="nav-item"><a class="nav-link footer" href="#">Find a Cinema</a></li>
                         <li class="nav-item"><a class="nav-link footer" href="#">Contact Us</a></li>
                         <li class="nav-item"><a class="nav-link footer" href="#">View Your Booking</a></li>
@@ -240,11 +366,9 @@
 
             </div><!--  bottom section of footer    -->
 
+        </div><!-- end footer content -->
 
-        </div>
-
-
-    </div>
+    </div><!-- end footer background -->
 
     </div> <!-- END OF CONTAINER FLUID-->
 </body>

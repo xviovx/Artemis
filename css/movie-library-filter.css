@@ -7,6 +7,59 @@
     border-radius: 10px;
 }
 
+.container-fluid{
+    padding: 0px;
+}
+
+.section-heading{
+    margin-top: 80px;
+}
+
+
+
+
+/* New Filter Aesthetic */
+
+.filter-container{
+    height: 82px;
+    background-color: #0A0909;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    min-width: 320px;
+}
+
+.filter-button{
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.filter-label{
+    /* Filter Movies */
+
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+
+    letter-spacing: 4.93043px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-top: 18px;
+}
+
+#movie-filter{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+
 label{
     font-family: rubik, sans-serif;
     color: white;
@@ -14,37 +67,50 @@ label{
     display: none;
 }
 
+/* 
+Active Filter 
+    background-color: 06286B;
+    border: 2px;
+    border: #0057FF;
+*/
+
 select{
-    margin-left: 5px;
     font-family: rubik, sans-serif;
     border: none;
-    border-radius: 10px;
-}
-
-#genre-label{
-    margin-left: 15px;
-}
-
-#release-label{
-    margin-left: 15px;
-}
-
-#vote-label{
-    margin-left: 15px;
+    border-radius: 5px;
 }
 
 #genres, #release-year, #average_vote{
-    width: 12em;
-    height: 50px;
-    background-color: #002369;
-    color: white;
-    margin-right: 25px;
+
+    width: 100%;
+    height: 100%;
     font-size: 17px;
+    background-color: #1E2020;
+    color: #999FA5;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.255em;
+    text-transform: uppercase;
+
+    color: #999FA5;
+    appearance: none;
+    text-align-last: center
 }
 
 #genres:hover, #release-year:hover, #average_vote:hover{
-    background-color: #002c85;
+    width: 100%;
+    height: 100%;
+
+    padding: 0px;
+    margin: 0px;
     cursor: pointer;
+
+    border: 2px;
+    border: #0057FF;
+
 }
 
 .big-top-three{
@@ -56,6 +122,7 @@ select{
   /*box-shadow: 0 28px 29px 0 rgba(0,0,0,.8);*/
   position: relative;
 }
+
 /*REVERT BACK TO THIS FILTER IF THE NEW ONE DOESNT WORK*/
 /*.btn{
     width: 120px;
@@ -70,12 +137,7 @@ select{
     font-weight: 400;
 }
 */
-.section-heading.container-1440px{
-    height: auto;
-    padding-top: 120px;
-    padding-bottom: 50px;
-    padding-left: 36px;
-  }
+
 
 /*form{
     background-color: #212223;
@@ -168,16 +230,55 @@ option{
     color: rgba(255, 255, 255, 0.486);
 }
 
+
+@media screen and (max-width: 1500px) {
+    .section-heading{
+        margin-top: 80px;
+    }
+    
+    /* New Filter Aesthetic */
+    
+    .filter-container{
+        max-width: 1340px;
+        margin-bottom: 40px;
+
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    #genres, #release-year, #average_vote{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    .section-heading{
+        margin-top: 0px;
+    }
+
+    #genres, #release-year, #average_vote{
+        font-size: 12px;
+    }
+
+    .filter-container{
+        height: 70px;
+    }
+
+    .filter-label{
+        margin-top: 14px;
+        font-size: 16px;
+    }
+
+}
+
+
 @media screen and (min-width: 992px) and (max-width: 1200px) { 
     .poster-ratio button{
        font-size: 14px;
        padding: 5px;
     }
-
-    .filter-section{
-        width: 95%; 
-    }
-    
 
 }
 
@@ -187,42 +288,93 @@ option{
     .poster-ratio button{
         font-size: 14px;
         padding: 5px;
-     }
-
-     .filter-section{
-        width: 95%;
-        height: 130px;
-        padding-left: 30px;
     }
-
-    #genres, #release-year, #average_vote{
-        display: inline-flex;
-        margin-top: 25px;
-    }
-
 
 }
 
-@media screen and (min-width: 545px) and (max-width: 841px) { /*BETWEEN TABLET AND MOBILE*/
-    .filter-section{
-        height: 270px;
-        padding-left: 40px;
-        text-align: center;
+@media screen and (min-width: 992px) {
+
+    .filter-label{
+        visibility: visible;
     }
+
+    .filter-label.short{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .filter-label{
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+
+    .filter-label.short{
+        text-align: center;
+        font-size: 13px;
+        visibility: visible;
+        width: auto;
+        height: auto;
+        margin-top: -16px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 841px) { /*BETWEEN TABLET AND MOBILE*/
 
     .section-heading.container-1440px{
         text-align: center;
-      }
-
-      #genres, #release-year, #average_vote{
-        display: block;
-        margin-bottom: 15px;
-        margin-left: 50px;
-        width: 400px;
     }
 
-
 }
+
+/* Maybe Delete */
+@media screen and (max-width: 767px) {
+
+    #genres, #release-year, #average_vote{
+        font-size: 10px;
+        padding-top: 2px;
+    }
+
+    .filter-container{
+        max-width: 500px;
+    }
+}
+
+
+@media screen and (min-width: 575px) {
+
+    .sm-show{
+        visibility: visible;
+    }
+
+    .sm-show{
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .filter-container{
+        height: 60px;
+    }
+
+    .sm-show{
+        visibility: hidden;
+    }
+
+    .sm-hide{
+        visibility: visible;
+    }
+}
+
+
 
 @media screen and (max-width: 544px) { /* mobile */
 
@@ -231,64 +383,6 @@ option{
         padding: 5px;
         float: none;
         width: 100%;
-     }
-
-     .filter-section{
-        width: 95%;
-        height: 260px;
-        padding-left: 15px;
     }
 
-    .section-heading.container-1440px{
-        height: auto;
-        padding-top: 0px;
-        padding-bottom: 10px;
-        padding-left: 50px;
-      }
-
-      .btn{
-        padding: 15px;
-        padding-bottom: 35px;
-    }  
-
-    .filter-section{
-        width: 60%;
-        height: 320px;
-        background-color: #212223;
-        padding-top: 30px;
-        padding-left: 20px;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    
-    label{
-        font-family: rubik, sans-serif;
-        color: white;
-        font-size: 17px;
-    }
-    
-    #release-label{
-        margin-left: 15px;
-    }
-    
-    #vote-label{
-        margin-left: 15px;
-    }
-
-    #genre-label{
-        line-break: auto;
-    }
-    
-    #genres, #release-year, #average_vote{
-        width: 13em;
-        height: 50px;
-        background-color: #002369;
-        color: white;
-        margin-bottom: 30px;
-        margin-top: 10px;
-    }
-    
-
-    
 }

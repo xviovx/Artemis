@@ -8,6 +8,11 @@
   position: relative;
 }
 
+.form-control:focus{
+  box-shadow: none;
+  outline: none;
+}
+
 .poster-ratio-image-container{
   height: inherit;
   width: inherit;
@@ -61,7 +66,7 @@
   padding-top: 12px;
 }
 
-.row.no-gutters.d-xl-flex.justify-content-xl-start.container-1440px, .section-heading.container-1440px {
+.row.no-gutters.d-xl-flex.justify-content-xl-start.container-1440px, .section-heading.container-1440px, .container-1440px {
   min-width: 360px;
   /* max-width: 1440px; */
   width: 1440px;
@@ -97,9 +102,9 @@ body {
   z-index: 1;
 }
 
-/* HEADING STYLES */
 
-/* h1, h2, h3, p, span? or whatever */
+
+/* HEADING STYLES */
 
 h2{
   /* COMING SOON */
@@ -133,28 +138,6 @@ h2{
   opacity: 0.8;
 }
 
-
-
-
-
-
-/* DRAW ME LIKE ONE OF YOUR FENCH GIRLS JACK
-- Use these a lil later
-
-$grid-breakpoints: (
-  sm: 480px,
-  md: 768px,
-  lg: 1024px
-);
-
-$container-max-widths: (
-  sm: 420px,
-  md: 720px,
-  lg: 960px
-);
-
-*/
-
 #movies-page{
   padding-top: 77px;
   /* Space For Nav Bar */
@@ -184,7 +167,10 @@ $container-max-widths: (
   position: absolute;
 }
 
-/*-------- MEDIA QUERIES --------*/
+
+
+
+/*--------------- MEDIA QUERIES ---------------*/
 
 @media screen and (max-width: 1200px) {
 

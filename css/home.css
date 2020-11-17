@@ -133,34 +133,36 @@ li{
     
 }
 
-#main-heading{
+.main-heading{
     text-align: center;
     color: white;
     font-weight: 900;
     font-size: 60px;
     letter-spacing: 8.46087px;
     display: block;
-    font-family: URW Dock, Titillium Web;
-
+    font-family: Rubik;
+    font-weight: 600;
+    margin: 0 auto;
 }
 
-#topten-text{
+.sub-title-text{
     color: white;
     text-align: center;
     margin-top: 5px;
     display: block;
-
-    font-family: URW Dock, Titillium Web;
+  
+    font-family: Rubik;
     font-style: normal;
-    font-weight: bold;
-
-    font-size: 16px;
+    font-weight: 500;
+  
+    font-size: 20px;
     line-height: 23px;
-    text-align: center;
     letter-spacing: 8.46087px;
     text-transform: uppercase;
     color: #9DA3A9;
     opacity: 0.7;
+  
+    margin: 0 auto;
 }
 
 #image_Poster_One{
@@ -206,12 +208,12 @@ li{
         font-size: 24px;
     }
 
-    #main-heading{
+    .main-heading{
         font-size: 48px;
     
     }
     
-    #topten-text{
+    .sub-title-text{
         font-size: 13px;
         
     }
@@ -235,12 +237,12 @@ li{
         
     }
 
-    #main-heading{
+    .main-heading{
         font-size: 48px;
     
     }
     
-    #topten-text{
+    .sub-title-text{
         font-size: 13px;
     }
 
@@ -259,12 +261,12 @@ li{
         display: block;
     }
 
-    #main-heading{
+    .main-heading{
         font-size: 30px;
     
     }
     
-    #topten-text{
+    .sub-title-text{
         font-size: 10px;
         
     }
