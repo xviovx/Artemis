@@ -1,7 +1,9 @@
+body {
+  background-color: #131414;
+}
 
-
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  margin-top: 20px;
+.margin-top{
+  margin-top: 60px;
 }
 
 .sign-in-button-smol-background {
@@ -12,7 +14,7 @@
 
   background-repeat: no-repeat;
   background-image: url(../assets/account-icon.svg);
-  background-position: center; /* was centre */
+  background-position: center;
 }
 
 .sign-in-mobile {
@@ -23,33 +25,285 @@
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: #ffffff;
   opacity: 1;
+}
+
+/* DELETE ME? */
+.sign-in-button-text:hover{
+  text-align: center;
+  font-family: 'Rubik'; 
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.sign-in-button-large:hover{
+  cursor: pointer;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, .2);
+  color: rgb(255, 255, 255);
+}
+
+.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between{
+  max-width: 1040px;
+}
+
+/* Heading Section */
+
+.heading-section{
+  width: 100%;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
   
 }
 
-.navbar-light .navbar-toggler {
-  border-radius: 0px;
-  width: 50px;
+.main-heading{
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: 8.46087px;
+  display: block;
+  font-family: Rubik;
+  font-weight: 600;
 
-
-    /* IM HERE TO TEST */
-    background: none;
-    background-color: none;
-    color: none;
+  margin: 0 auto;
 }
 
-@media (max-width: 576px) {
-  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
-    /*font-family: Rubik;*/
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*font-size: 19px;*/
-    /*line-height: 17px;*/
-    /*text-transform: uppercase;*/
-    /*color: #FFFFFF;*/
-    /*opacity: 1;*/
-    padding-top: 60px;
+.sub-title-text{
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  display: block;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 8.46087px;
+  text-transform: uppercase;
+  color: #9DA3A9;
+  opacity: 0.7;
+
+  margin: 0 auto;
+}
+
+/* Medium Nav for Tablet */
+@media screen and (max-width: 1200px) { 
+
+  .main-heading{
+      font-size: 44px;
   }
+  
+  .sub-title-text{
+      font-size: 18px;
+  }
+
 }
+
+
+/* Medium Nav for Tablet */
+@media screen and (max-width: 768px) { /* Between Tablet and Mobile */
+
+  .main-heading{
+      font-size: 42px;
+  
+  }
+  
+  .sub-title-text{
+      font-size: 16px;
+      width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 515px) { /* mobile */
+
+  .main-heading{
+    font-size: 38px;
+
+}
+
+.sub-title-text{
+    font-size: 12px;
+    width: 300px;
+}
+  
+}
+
+
+
+/*------ FOOTER ------*/
+
+.footer-background{
+  width: 100%;
+  height: auto;
+  background-color: #1E1E20;
+  overflow: hidden;
+}
+
+.footer-content{
+  height: auto;
+  max-width: 1502px;
+  padding: 0px;
+}
+
+/*  footer content  */
+
+.footer-line{
+  width: 100%;
+  height: 2px;
+  background-color: #2A2A2A;
+}
+
+.footer-logo-container{
+  height: 80px;
+  width: 160px;
+  max-width: 160px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/logo/Artemis-Full.svg);
+  background-position: center;
+  background-size: auto 40%;
+}
+
+.footer-link-bar.col-12{
+  height: 76px;
+  width: auto;
+  background-color: red;
+}
+
+.footer-bottom-section{
+  height: 84px; /* FIX ME */
+  width: 100%;
+}
+  .social-media-icons{
+    height: 100%;
+    width: auto;
+  }
+
+  .legal-text{
+    height: 100%;
+    width: auto;
+  }
+
+  .footer-legal-text{
+    max-width: 500px;
+    height: 16px;
+    padding-top: 36px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    opacity: 0.3;
+    text-align: center;
+  }
+
+  .payment-logos{
+    height: 100%;
+    width: auto;
+  }
+
+.social-item{
+  height: 28px;
+  width: 28px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px 28px;
+}
+
+a.social-link footer{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.social-item:hover{
+  opacity: .5;
+}
+
+.payment-item{
+  height: 28px;
+  width: auto;
+
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px auto;
+}
+
+li.social-item, li.payment-item{
+  list-style: none;
+}
+
+.social-media-icons-container{
+  max-width: 180px;
+  padding-top: 30px;
+}
+
+.payment-logos-container{
+  max-width: 280px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+.col-12{
+  padding: 0;
+}
+
+
+
+/*  SOCIAL MEDIA ICONS  */
+
+#facebook{
+  background-image: url(../assets/social-media-icons/facebook.svg);
+}
+
+#instagram{
+  background-image: url(../assets/social-media-icons/instagram.svg);
+}
+
+#twitter{
+  background-image: url(../assets/social-media-icons/twitter.svg);
+}
+
+
+
+/*  PAYMENT LOGOS  */
+
+#MasterCard{
+  background-image: url(../assets/payment-methods/Master-Card.svg);
+  background-size: 36px auto;
+  width: 36px;
+}
+
+#PayPal{
+  background-image: url(../assets/payment-methods/PayPal.svg);
+  background-size: 100px auto;
+  width: 110px;
+}
+
+#Visa{
+  background-image: url(../assets/payment-methods/Visa.svg);
+  background-size: 60px auto;
+  width: 60px;
+}
+
+
+
+/* NAV BAR */
 
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
   color: #FFFFFF;
@@ -73,73 +327,77 @@
 .navbar-dark .navbar-nav .nav-link:hover {
   opacity: 1;
 
-
+    /* FIX ME */
     /* WHAT IS THE MEANING */
     background: none;
     background-color: none;
 }
 
-@media (max-width: 767px) {
-  .navbar-dark .navbar-nav .nav-link {
-    /*font-weight: 400;*/
-    /*font-size: 19px;*/
-    /*line-height: 17px;*/
-    /*text-transform: uppercase;*/
-    /*color: #FFFFFF;*/
-    /*opacity: 0.4;*/
-    padding-top: 30px;
-
-      /* WHAT IS THE MEANING */
-  background: none;
-  background-color: none;
-  }
-}
-
-
-
-
-/* THIS THING IS MISBEHAVING */
 
 /*    BACKGROUND COLOR FOR NAV    */
 .navbar.navbar-dark.navbar-expand-md.fixed-top.flex-grow-1.justify-content-between{
   backdrop-filter: blur(61px);
+  -webkit-backdrop-filter: blur(40px);
   min-width: 360px;
   min-height: 77px auto;
   background-color: rgba(21, 22, 22, 0.8);
 }
 
-
-
-
-/*  NOT WORKING YET   */
-#bottom-link {
-  /* padding-bottom: 190px; */
-}
-
 .navbar-dark .navbar-toggler {
   border: 0px;
-  
 }
 
-@media (min-width: 767px) {
-  .d-flex.justify-content-center.align-items-center.sign-in-mobile-right {
-    width: 56px;
-    height: 48px;
-  }
+.footer-navbar{
+  padding-left: 160px;
+  padding-right: 160px;
 }
 
-@media (min-width: 768px) {
-  .nav.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between {
-    padding-right: 6%;
-    padding-left: 6%;
-  }
-
-  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
+.d-flex.justify-content-center.align-items-center.sign-in-mobile {
+  width: 56px;
+  height: 48px;
 }
+
+.left-full-logo {
+  height: 46px;
+  width: 216px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/logo/Artemis-Full.svg);
+  background-position: center; /* was centre */
+}
+
+.sign-in-large-container {
+  height: 46px;
+  width: 216px;
+  background-position: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.sign-in-button-large{
+  width: 94px;
+  height: 30px;  
+
+  /*      position: absolute; */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-top: 8px;
+  padding-top: 4px;
+}
+
+.sign-in-button-text{
+  text-align: center;
+  font-family: 'Rubik'; 
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+
+
+
+
+/*  - - - - - - - - - MEDIA QUERIES - - - - - - - - - */
 
 @media (max-width: 1200px) {
 
@@ -187,46 +445,48 @@
   
 }
 
-@media (max-width: 575px) {
 
-  .footer-logo-container{
-    margin-left: 10px;
+@media (max-width: 1199px) {
+  .centred-smol-logo {
+    width: 40px;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Short.svg);
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-dark .navbar-nav .nav-link {
+    /*font-weight: 400;*/
+    /*font-size: 19px;*/
+    /*line-height: 17px;*/
+    /*text-transform: uppercase;*/
+    /*color: #FFFFFF;*/
+    /*opacity: 0.4;*/
+    padding-top: 30px;
+
+      /* WHAT IS THE MEANING */
+  background: none;
+  background-color: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .d-flex.justify-content-center.align-items-center.sign-in-mobile-right {
+    width: 56px;
+    height: 48px;
   }
 
-  .navbar-dark .navbar-nav .nav-link.footer{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: 16px;
-  }
-
-  .footer-background .footer-content{
-    /*background-color: red;*/
-    padding: 0px;
+  .nav.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between {
+    padding-right: 6%;
+    padding-left: 6%;
   }
 
   .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
-    padding-left: 20px;
-    padding-right: 0px;
-    height: auto;
-    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
   }
-
-  /* Social Media, Legal Text, P*/
-
-  /* Fix Me x3 */
-  .social-media-icons{
-    height: 100%;
-  }
-
-  .legal-text{
-    height: 66px;
-  }
-
-  .payment-logos{
-    height: 66px;
-  }
-
-
 }
 
 @media (max-width: 768px) {
@@ -244,17 +504,45 @@
 
 }
 
-@media (max-width: 1199px) {
-  .centred-smol-logo {
-    width: 40px;
-    height: 46px;
-    background-repeat: no-repeat;
-    background-image: url(../assets/logo/Artemis-Short.svg);
-    background-position: center;
+/* Delete Me - Fix Me
+
+@media screen and (min-width: 575px){
+  .row.footer-content.no-gutters.d-xl-flex.justify-content-xl-start.mobile-footer{
+    display: none;
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (min-width: 1201px){
+  .row.footer-content.no-gutters.d-xl-flex.justify-content-xl-start.mobile-footer{
+    background-color: blue;
+    display: none;
+
+  }
+}
+
+*/ 
+
+@media (min-width: 576px) {
+
+  .mobile-footer.footer-background.d-sm-flex.d-md-flex.d-lg-flex.d-xl-flex.mx-auto{
+    display: none; /* Doesn't want to work*/
+
+    /* Fix Me */
+    opacity: 0%;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+
+
+
+@media (max-width: 575px) { /* Most for Mobile Footer */
+
+  .desk-and-tab-footer{  /* FIX ME */
+    display: none;
+  }
+
   .navbar-light .navbar-nav .nav-link {
     padding-top: 40px;
     font-family: Rubik;
@@ -267,254 +555,109 @@
     opacity: 0.5;
     letter-spacing: 1.5px;
   }
-}
 
-.footer-navbar{
-  padding-left: 160px;
-  padding-right: 160px;
-}
+  .first-row-mobile{
+    width: 100%;
+    height: 68px;
+    align-content: left;
+  }
 
+  .footer-logo-container{
+    height: 100%;
+    width: 140px;
+    background-position: left;
+    position: absolute;
+    left: 0px;
+  }
 
-.d-flex.justify-content-center.align-items-center.sign-in-mobile {
-  width: 56px;
-  height: 48px;
-}
+  .social-media-icons-mobile{
+    height: 100%;
+    width: 120px;
+    align-content: right;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+  }
 
-.left-full-logo {
-  height: 46px;
-  width: 216px;
-  background-repeat: no-repeat;
-  background-image: url(../assets/logo/Artemis-Full.svg);
-  background-position: center; /* was centre */
-}
-
-.sign-in-large-container {
-  height: 46px;
-  width: 216px;
-  background-position: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.sign-in-button-large{
-  width: 94px;
-  height: 30px;  
-
-  /*      position: absolute; */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  margin-top: 8px;
-  padding-top: 4px;
-}
-
-.sign-in-button-text{
-  text-align: center;
-  font-family: 'Rubik'; 
-  letter-spacing: 1px;
-  color: white;
-  font-weight: 400;
-  opacity: 0.75;
-}
-
-
-/* DELETE ME? */
-.sign-in-button-text:hover{
-  text-align: center;
-  font-family: 'Rubik'; 
-  letter-spacing: 1px;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.sign-in-button-large:hover{
-  cursor: pointer;
-  opacity: 0.9;
-  background: rgba(255, 255, 255, .2);
-  color: rgb(255, 255, 255);
-}
-
-.navbar-nav.d-flex.d-md-flex.flex-grow-1.justify-content-between{
-  max-width: 1040px;
-}
-
-
-
-
-
-/*------ FOOTER ------*/
-
-.footer-background{
-  width: 100%;
-  height: auto;
-  background-color: #1E1E20;
-  margin-top: 80px;
-  overflow: hidden;
-  bottom: 0;
-}
-
-
-.footer-content{
-  height: auto;
-  max-width: 1502px;
-  padding: 0px;
-}
-
-
-
-/*  footer content  */
-
-.footer-line{
-  width: 100%;
-  height: 2px;
-  background-color: #2A2A2A;
-}
-
-.footer-logo-container{
-  height: 80px;
-  width: 160px;
-  max-width: 160px;
-  background-repeat: no-repeat;
-  background-image: url(../assets/logo/Artemis-Full.svg);
-  background-position: center; /* was centre */
-  background-size: auto 40%;
-}
-
-.footer-link-bar.col-12{
-  height: 76px;
-  width: auto;
-  background-color: red;
-}
-
-
-
-
-.footer-bottom-section{
-  height: 84px; /* FIX ME */
-  width: 100%;
-}
-
-
-  .social-media-icons{
+  .social-media-icons{ /* Can Delete */
     height: 100%;
     width: auto;
+  }
+
+  .social-media-icons-container{
+    width: 100%;
+    padding-top: 0px;
+    position: absolute;
+    right: 0px;
+    margin-top: 23px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 16px;
+    padding-top: 0px;
+  }
+
+  .footer-background{
+    padding: 0px;
+  }
+
+  .footer-content{
+    padding: 0px;
+    height: 380px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .footer-navbar.navbar.navbar-dark.navbar-expand-sm.flex-grow-1.justify-content-between.justify-content-center{
+    padding: 0px;
+    margin: 0px;
+    padding-left: 10px;
+    height: auto;
+    width: 100%;
+    float: left;
   }
 
   .legal-text{
-    height: 100%;
-    width: auto;
+    height: 66px;
+    text-align: center;
   }
 
-      .footer-legal-text{
-      max-width: 500px;
-      height: 16px;
-      padding-top: 36px;
+  p.footer-legal-text{
+    font-size: 10px;
+    width: 220px;
+    height: auto;
 
-      font-family: Rubik;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #FFFFFF;
-
-      opacity: 0.3;
-      text-align: center;
-      }
+    top: 10px;
+    padding: 0px;
+    margin: auto;
+  }
 
   .payment-logos{
-    height: 100%;
+    height: 66px;
+    padding: 0px;
+    margin: 0px;
     width: auto;
+
+    align-content: center;
+    text-align: center;
   }
 
-.social-item{
-  height: 28px;
-  width: 28px;
+  .payment-logos-container-center-align{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 28px 28px;
+  .payment-logos-container{
+    width: 280px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    max-width: none;
+    position: relative;
+  }
+
 }
-
-a.social-link footer{
-  width: 100%;
-  height: 100%;
-  /*background-color: red;*/
-}
-
-.social-item:hover{
-  opacity: .5;
-}
-
-.payment-item{
-  height: 28px;
-  width: auto;
-
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 28px auto;
-}
-
-
-
-li.social-item, li.payment-item{
-  list-style: none;
-}
-
-.social-media-icons-container{
-  max-width: 180px;
-  padding-top: 30px;
-}
-
-.payment-logos-container{
-  max-width: 280px;
-  padding-top: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-.col-12{
-  padding: 0;
-}
-
-
-
-/*  SOCIAL MEDIA ICONS  */
-
-#facebook{
-  background-image: url(../assets/social-media-icons/facebook.svg);
-}
-
-#instagram{
-  background-image: url(../assets/social-media-icons/instagram.svg);
-}
-
-#twitter{
-  background-image: url(../assets/social-media-icons/twitter.svg);
-}
-
-
-
-/*  PAYMENT LOGOS  */
-
-#MasterCard{
-  background-image: url(../assets/payment-methods/Master-Card.svg);
-  background-size: 36px auto;
-  width: 36px;
-}
-
-#PayPal{
-  background-image: url(../assets/payment-methods/PayPal.svg);
-  background-size: 100px auto;
-  width: 110px;
-}
-
-#Visa{
-  background-image: url(../assets/payment-methods/Visa.svg);
-  background-size: 60px auto;
-  width: 60px;
-}
-
