@@ -1,0 +1,395 @@
+/*---------- OVERIDES ----------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 700px;
+    background-color: turquoise;
+}
+
+.carousel-caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.top-ten{
+    padding: 15px 0 0 25px; 
+    margin: 0;
+    width: 100%;
+    height: 1080px;
+    background-color: rgb(0, 0, 0);
+}
+
+h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 400;
+}
+
+<<<<<<< HEAD
+
+a{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.08px;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;    
+}
+
+a:hover {
+    text-decoration: none;    
+    color: #FFFFFF;    
+}
+
+
+=======
+>>>>>>> Ronald-McDonald-the-Sequel
+.col-md-6, .col-sm-6, .col-sm-4, .col-sm-3{
+    padding: 0px;
+}
+
+.container-fluid, .container, html{
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;   
+}
+
+
+/* DELETE ME???????
+
+li{
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    letter-spacing: 1.08px;
+
+    font-family: Titillium Web;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+
+    color: #FFFFFF;
+}
+
+
+*/
+
+
+
+
+.carousel-caption{
+    display: none;
+}
+
+#artemisImg{
+    width: 1000px;
+    height: 200px;
+}
+
+#artemisSlogan{
+    font-size: 30px;
+}
+
+.heading-section{
+    width: 100%;
+    padding-top: 7%;
+    /*background-color: blue;*/
+    padding-bottom: 7%;
+    
+}
+
+.main-heading{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 8.46087px;
+    display: block;
+    font-family: Rubik;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.sub-title-text{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+  
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+  
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 8.46087px;
+    text-transform: uppercase;
+    color: #9DA3A9;
+    opacity: 0.7;
+  
+    margin: 0 auto;
+}
+
+#image_Poster_One{
+    height: 1080px;
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+#image_Poster_Two{
+    height: 1080px;
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+#image_Poster_Three{
+    height: 1080px;
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/*---------- LABEL THIS ----------*/
+
+
+
+/* Medium Nav for Tablet */
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+
+    #artemisImg{
+        width: 800px;
+        height: 140px;
+    }
+    
+    #artemisSlogan{
+        font-size: 24px;
+    }
+
+    .main-heading{
+        font-size: 48px;
+    
+    }
+    
+    .sub-title-text{
+        font-size: 13px;
+        
+    }
+
+}
+
+
+/* Medium Nav for Tablet */
+@media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
+
+    #artemisImg{
+        width: 600px;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #artemisSlogan{
+        font-size: 0px;
+        
+    }
+
+    .main-heading{
+        font-size: 48px;
+    
+    }
+    
+    .sub-title-text{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 544px) { /* mobile */
+
+    #artemisImg{
+        width: 210px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    #artemisSlogan{
+        font-size: 0px;
+        display: block;
+    }
+
+    .main-heading{
+        font-size: 30px;
+    
+    }
+    
+    .sub-title-text{
+        font-size: 10px;
+        
+    }
+
+    
+}
+
+
+
+
+
+
+<<<<<<< HEAD
+.nav{
+    height: 77px;
+    background: rgba(21, 22, 22, 0.8);
+    backdrop-filter: blur(61px);
+    mix-blend-mode: normal;
+    width: 100%;
+}
+
+.test{
+    width: 75%;
+    margin-left: 12.5%;
+    height: 220px;
+    background-color: aquamarine;
+    float: left;
+}
+
+
+
+.logo-container-full{
+    width: 170px;
+    height: flex;
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Full.svg);
+    /* background-size: 40px 40px; */
+    margin-right: 4.6%;
+    margin-top: 20px;
+}
+
+.logo-container-short{
+    width: 28px;
+    height: flex;
+
+    background-repeat: no-repeat;
+    background-image: url(../assets/logo/Artemis-Short.svg);
+    /* background-size: 40px 40px; */
+    float: left;    
+    margin-left: 10px;
+    margin-right: 80px;
+    margin-top: 22px;
+}
+
+
+
+
+
+
+.sign-in-button-large{
+    width: 94px;
+    height: 31px;  
+    margin-left: 6%;
+    padding-top: 2px;
+
+    margin-right: 83px;
+    margin-left: 80px + 4.6%;
+    margin-top: 23px;
+    padding-top: 3px;
+    /*      position: absolute; */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.sign-in-button-large:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, .2);
+}
+=======
+/* MOVE ME */
+
+
+
+>>>>>>> Ronald-McDonald-the-Sequel
+
+.sign-in-button-small{
+    width: 28px;
+    height: flex;
+    margin-left: 4.6%;
+    /*background-color: royalblue;*/
+    background-image: url(../assets/logo/account-icon.svg);
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    margin-left: 100px;
+    float: right;
+    margin-top: 30px;
+    opacity: 0.75;
+}
+
+.sign-in-button-small:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
