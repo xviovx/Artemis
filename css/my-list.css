@@ -31,23 +31,37 @@
     
 }
 
-.poster-title-x{
+h2.poster-title-x{
+    width: 100%;
     font-size: 28px;
     line-height: 1.2;
-    margin-bottom: 32px;
+    height: auto;
+    background-color: khaki;
 }
 
-.genre-text-display{
-    margin-top: 10px;
+h4.genre-text-display{
+
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 11px;
+    letter-spacing: 3.2246px;
     text-transform: uppercase;
-    color: white;
-    font-size: 23px;
+
+    color: #FFFFFF;
+
+    opacity: 0.3;
+
+    background-color: lawngreen;
+
 }
 
 .release-date-display{
     margin-top: 10px;
     color: white;
-    font-size: 16px
+    font-size: 16px;
+    background-color: blue;
 }
 
 .synopsis-text{

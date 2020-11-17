@@ -386,7 +386,7 @@ li.social-item, li.payment-item{
 
 .sign-in-button-text{
   text-align: center;
-  font-family: 'Rubik'; 
+  font-family: 'Rubik', sans-serif; 
   letter-spacing: 1px;
   color: white;
   font-weight: 400;
