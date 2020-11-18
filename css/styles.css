@@ -95,6 +95,7 @@ body {
   height: 145px;
 
   color: rgb(255,255,255);
+  
   /* color: linear-gradient(90deg, rgba(255,255,255,1) 38%, rgba(112,112,112,1) 100%); */    /*  FIX ME  */     
 
   text-shadow: 0px 6px 32px rgba(0, 0, 0, 0.6);
@@ -139,6 +140,7 @@ h2{
 }
 
 #movies-page{
+  padding: 0px;
   padding-top: 77px;
   /* Space For Nav Bar */
 }

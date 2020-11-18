@@ -1,0 +1,241 @@
+.footer-background{
+    width: 100%;
+    height: auto;
+    background-color: #1E1E20;
+    margin-top: 80px;
+    overflow: hidden;
+    bottom: 0;
+  }
+
+.one{
+    background-color: #171919;
+    height: 25em;
+    margin-top: 15px;
+}
+
+.poster-container{
+    height: 95%;
+    margin-top: 1%;
+    /*background-color: rosybrown;*/
+    width: 19em;
+    margin-left: 30%;
+    float: left;
+    border-radius: 10px;
+}
+
+.text-container-list{
+    height: 100%;
+    /*background-color: springgreen;*/
+    float: left;
+    width: 21em;
+    
+}
+
+h2.poster-title-x{
+    width: 100%;
+    font-size: 28px;
+    line-height: 1.2;
+    height: auto;
+    background-color: khaki;
+}
+
+h4.genre-text-display{
+
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 11px;
+    letter-spacing: 3.2246px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    opacity: 0.3;
+
+    background-color: lawngreen;
+
+}
+
+.release-date-display{
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: blue;
+}
+
+.synopsis-text{
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    display: block;
+}
+
+.remove-from-list-button{
+    border: none;
+    margin-top: 3%;
+    background-color: #0057FF;
+    color: white;
+    padding: 15px;
+    font-family: URW Dock, Titillium Web;
+    font-weight: 700;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.remove-from-list-button:hover{
+    background-color: #00205f;
+}
+
+
+
+.poster-container img{
+    width: 100%;
+    height: auto;
+  }
+  @supports(object-fit: cover){
+      .poster-container img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+
+.p-text-for-mobile{
+    width: 0;
+    height: 0;
+    color: white;
+    display: none;
+}
+
+/*WAS TOO LAZY FOR BOOTSTRAP SO I MADE MY LIFE 1000x HARDER WITH THESE SEXY MEDIA QUERIES*/
+@media screen and (min-width: 1200px) and (max-width: 1879px) {
+    .poster-container{
+        margin-left: 5em;
+        width: 17em;
+    }
+
+    .remove-from-list-button{
+        margin-top: 29%;
+    }
+    
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    .poster-container{
+        margin-left: 15em;
+        width: 17em;
+
+
+    }
+
+    .text-container-list{
+        height: 100%;
+        float: left;
+        width: 19em;  
+    }
+
+    .remove-from-list-button{
+        margin-top: 27%;
+    }
+   
+
+}
+
+
+/* Medium Nav for Tablet */
+@media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
+    .one{
+        
+        width: 100%;
+    }
+
+    .poster-container{
+        margin-left: 15em;
+        width: 17em;
+    }
+
+    .text-container-list{
+        height: 100%;
+        
+        float: left;
+        width: 19em;  
+    }
+
+    .remove-from-list-button{
+        margin-top: 29%;
+    }
+   
+}
+/*le fucky one*/
+@media screen and (min-width: 545px) and (max-width: 841px) {
+    .poster-container{
+        margin-left: 0px;
+        width: 17em;
+    }
+
+    .text-container-list{
+        height: 100%;
+        
+        float: left;
+        width: 15em;  
+    }
+
+    .poster-title-x{
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .genre-text-display{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 544px) { /* mobile */
+    .poster-container{
+        margin-left: 0px;
+        width: 15em;
+    }
+
+    .text-container-list{
+        height: 100%;
+        
+        float: left;
+        width: 15em;  
+    }
+    
+    .p-text-for-mobile{
+        display: inline-flex;
+        width: 100%;
+        height: 10em;
+        /*background-color: purple;*/
+        color: white;
+        
+    }
+
+    .one{
+        margin-bottom: 80px;
+    }
+
+    .remove-from-list-button{
+        margin-top: 68%;
+    }
+
+    .poster-title-x{
+        font-size: 34px;
+        text-align: left;
+    }
+    
+    .genre-text-display{
+        font-size: 22px;
+    }
+    
+    .cast-names{
+        font-size: 16px;
+    }
+    
+    .synopsis-text{
+        display: none;
+    }
+}
