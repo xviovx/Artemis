@@ -4,13 +4,6 @@
     padding: 0;
 }
 
-html,body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-
 .header{
     margin: 0;
     padding: 0;
@@ -45,6 +38,10 @@ h1,h2,h3,h4,h5,h6,a,p,li,ul,a{
     font-family: Titillium Web;
     font-style: normal;
     font-weight: 400;
+}
+
+.footer-background{
+    margin-top: 30px;
 }
 
 <<<<<<< HEAD

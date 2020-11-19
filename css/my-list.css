@@ -1,87 +1,121 @@
 .footer-background{
+    margin-top: 20px;
+}
+
+/* NEW STUFF */
+
+
+
+.ml-poster-con{
     width: 100%;
-    height: auto;
-    background-color: #1E1E20;
-    margin-top: 80px;
-    overflow: hidden;
-    bottom: 0;
-    display: block;
-  } 
-
-.one{
-    background-color: #171919;
-    height: 25em;
-    margin-top: 15px;
-    display: block;
-}
-
-.poster-container{
-    height: 95%;
-    margin-top: 1%;
-    /*background-color: rosybrown;*/
-    width: 19em;
-    margin-left: 30%;
-    float: left;
-    border-radius: 10px;
-}
-
-#my-list-content-con{
-    /*background-color: #0057FF;*/
-    height: 830px;
-}
-
-.text-container-list{
     height: 100%;
-    /*background-color: springgreen;*/
-    float: left;
-    width: 21em;
-    
+    margin-bottom: 30px;
 }
+
+.movie-poster-container{
+    height: fit-content;
+    width: 50%;
+    float: left;
+    padding: 3%;
+}
+
+.movie-info-container{
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    padding-right: 0px;
+    padding-left: 10px;
+}
+
+
+
+
 
 .poster-title-x{
-    font-size: 28px;
-    line-height: 1.2;
-    margin-bottom: 32px;
-}
-
-.genre-text-display{
-    margin-top: 10px;
+    font-family: Rubik, Titilium, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 48px;
+    letter-spacing: 6px;
     text-transform: uppercase;
-    color: white;
-    font-size: 23px;
-}
 
-.release-date-display{
-    margin-top: 10px;
-    color: white;
-    font-size: 16px
-}
-
-.synopsis-text{
-    margin-top: 10px;
-    font-size: 16px;
-    color: white;
-    display: block;
+    color: #FFFFFF;
 }
 
 .remove-from-list-button{
+    width: 178px;
+    height: 58px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
     border: none;
-    margin-top: 3%;
-    background-color: #0057FF;
-    color: white;
-    padding: 15px;
-    font-family: URW Dock, Titillium Web;
-    font-weight: 700;
-    border-radius: 10px;
+
+    /* Just for Desktop */
     position: absolute;
+    bottom: 11%;
+
+    align-self: baseline;
+    /* Text */
+    color: #FF004D;
+    text-align: center;
+    font-family: Rubik, Titilium, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    align-items: center;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+
+    background-color: rgba(255, 0, 77, 0.2);
 }
 
-.remove-from-list-button:hover{
-    background-color: #00205f;
+.genre-text-display{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    letter-spacing: 2.46px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
+
+.release-date-display{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    opacity: 0.4;
+}
+
+.synopsis-text{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 1.03478px;
+
+    color: #A3B0B2;
 }
 
 
 
+
+/* Old Code that migth be important */
 .poster-container img{
     width: 100%;
     height: auto;
@@ -92,146 +126,164 @@
         object-fit: cover;
         object-position: center center;
       }
-  }
-
-.p-text-for-mobile{
-    width: 0;
-    height: 0;
-    color: white;
-    display: none;
 }
 
-/*WAS TOO LAZY FOR BOOTSTRAP SO I MADE MY LIFE 1000x HARDER WITH THESE SEXY MEDIA QUERIES*/
-@media screen and (min-width: 1200px) and (max-width: 1879px) {
-    .poster-container{
-        margin-left: 5em;
-        width: 17em;
-    }
-
+@media screen and (max-width: 1400px){
     .remove-from-list-button{
-        margin-top: 29%;
-    }
+        width: 138px;
+        height: 48px;
     
-
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) { 
-    .poster-container{
-        margin-left: 15em;
-        width: 17em;
-
-
-    }
-
-    .text-container-list{
-        height: 100%;
-        float: left;
-        width: 19em;  
-    }
-
-    .remove-from-list-button{
-        margin-top: 27%;
-    }
-   
-
-}
-
-
-/* Medium Nav for Tablet */
-@media screen and (min-width: 544px) and (max-width: 992px) { /* Between Tablet and Mobile */
-    .one{
-        
-        width: 100%;
-    }
-
-    .poster-container{
-        margin-left: 15em;
-        width: 17em;
-    }
-
-    .text-container-list{
-        height: 100%;
-        
-        float: left;
-        width: 19em;  
-    }
-
-    .remove-from-list-button{
-        margin-top: 29%;
-    }
-   
-}
-/*le fucky one*/
-@media screen and (min-width: 545px) and (max-width: 841px) {
-    .poster-container{
-        margin-left: 0px;
-        width: 17em;
-    }
-
-    .text-container-list{
-        height: 100%;
-        
-        float: left;
-        width: 15em;  
-    }
-
-    .poster-title-x{
-        font-size: 32px;
-        text-align: left;
+        /* Text */
+        font-size: 17px;
+        margin-bottom: 6px;
     }
 
     .genre-text-display{
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 544px) { /* mobile */
-    .poster-container{
-        margin-left: 0px;
-        width: 15em;
+        font-family: Rubik;
+        font-style: normal;
+        line-height: 15px;
+        font-size: 15px;
     }
 
-    .text-container-list{
-        height: 100%;
-        width: 15em;  
-    }
-    
-    .p-text-for-mobile{
-        display: block;
-        width: 100%;
-        height: 10em;
-        /*background-color: purple;*/
-        color: white;
-        
+    .release-date-display{
+        font-size: 12px;
+        line-height: 10px;
+        letter-spacing: 3px;      
+        margin-bottom: 10px;
     }
 
-    .one{
-        margin-bottom: 100px;
-        display: block;
-    }
-
-    .footer-background{
-        background-color: pink;
-      } 
-
-    .remove-from-list-button{
-        margin-top: 68%;
-    }
-
-    .poster-title-x{
-        font-size: 34px;
-        text-align: left;
-    }
-    
-    .genre-text-display{
-        font-size: 22px;
-    }
-    
-    .cast-names{
-        font-size: 16px;
-    }
-    
     .synopsis-text{
-        display: none;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 1.03478px;
     }
+}
+
+@media screen and (max-width: 1200px){
+    
+    .genre-text-display{
+        font-family: Rubik;
+        font-style: normal;
+        line-height: 10px;
+        font-size: 12px;
+    }
+
+    .release-date-display{
+        font-size: 12px;
+        line-height: 10px;
+        letter-spacing: 3px;      
+        margin-bottom: 8px;
+    }
+
+    .poster-title-x{
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 6px;
+    }
+
+    .remove-from-list-button{
+        width: 108px;
+        height: 42px;
+    
+        /* Text */
+        bottom: 40px;
+        font-size: 15px;
+    }
+
+    .movie-poster-container{
+        padding: 1%;
+        padding-right: 2%;
+    }
+
+    .movie-info-container{
+        padding-top: 1%;
+    }
+
+    .synopsis-text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+}
+
+/*
+@media screen and (max-width: 767px) {
+    .row.no-gutters.d-xl-flex.justify-content-xl-start.container-1440px{
+        width: 100%;
+        max-width: 100%;
+        background-color: lightseagreen;
+    }
+}
+*/
+
+@media screen and (max-width: 991px){
+    .row.no-gutters.d-xl-flex.justify-content-xl-start.container-1440px{
+        width: 576px;
+        max-width: 100%;
+        height: fit-content;
+        padding: 20px;
+    }
+    
+    .movie-info-container{
+        height: fit-content;
+    }
+
+    .remove-from-list-button{
+        bottom: 10px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .d-flex.d-sm-flex.d-md-flex.d-lg-flex.d-xl-flex.justify-content-center.justify-content-sm-center.justify-content-md-center.justify-content-lg-center.justify-content-xl-center{
+        height: fit-content;
+        width: 360px;
+        margin: 0 auto;
+    }
+
+
+    .ml-poster-con{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .movie-poster-container{
+        height: fit-content;
+        width: 100%;
+        float: left;
+        padding: 0px;
+        padding-top: 20px;
+    }
+    
+    .movie-info-container{
+        height: 26%;
+        width: 100%;
+        float: left;
+        padding: 0px;
+    }
+
+    /* Movie Info */
+
+    .poster-title-x{
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: 6px;
+        width: 320px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .remove-from-list-button{
+
+        position: relative;
+        float: left;
+        bottom: auto;
+        margin-bottom: 30px;
+    }
+    
 }
