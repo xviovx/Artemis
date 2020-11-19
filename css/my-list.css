@@ -5,12 +5,14 @@
     margin-top: 80px;
     overflow: hidden;
     bottom: 0;
-  }
+    display: block;
+  } 
 
 .one{
     background-color: #171919;
     height: 25em;
     margin-top: 15px;
+    display: block;
 }
 
 .poster-container{
@@ -21,6 +23,11 @@
     margin-left: 30%;
     float: left;
     border-radius: 10px;
+}
+
+#my-list-content-con{
+    /*background-color: #0057FF;*/
+    height: 830px;
 }
 
 .text-container-list{
@@ -186,13 +193,11 @@
 
     .text-container-list{
         height: 100%;
-        
-        float: left;
         width: 15em;  
     }
     
     .p-text-for-mobile{
-        display: inline-flex;
+        display: block;
         width: 100%;
         height: 10em;
         /*background-color: purple;*/
@@ -201,8 +206,13 @@
     }
 
     .one{
-        margin-bottom: 80px;
+        margin-bottom: 100px;
+        display: block;
     }
+
+    .footer-background{
+        background-color: pink;
+      } 
 
     .remove-from-list-button{
         margin-top: 68%;

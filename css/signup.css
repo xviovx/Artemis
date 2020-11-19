@@ -71,10 +71,14 @@ Orignal Code
     font-family: Rubik;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 15px;
     width: 7rem;
-    padding: 3%;
+    padding: 4%;
+}
+
+.btn.btn-default:hover{
+    color: rgba(255, 255, 255, 0.329);
 }
 
 @media screen and (max-width: 1000px){

@@ -74,7 +74,7 @@ button a:hover{
 
 /* Right Side of Page */
 .sign_up_form_con{
-    background-image: url(../assets/signinSectionBackground.png);
+    background-image: url(../assets/signinSectionBackground.png) !important;
     background-size: cover;
     background-repeat: none;
     height: 100%;
