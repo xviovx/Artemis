@@ -1,9 +1,8 @@
 .footer-background{
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 /* NEW STUFF */
-
 
 
 .ml-poster-con{
@@ -28,6 +27,10 @@
     padding-left: 10px;
 }
 
+.set{
+    float: left;
+    display: inline-flex;
+}
 
 
 
@@ -57,7 +60,7 @@
 
     align-self: baseline;
     /* Text */
-    color: #FF004D;
+    color: #ffffff;
     text-align: center;
     font-family: Rubik, Titilium, sans-serif;
     font-style: normal;
@@ -68,7 +71,12 @@
     letter-spacing: 0.155em;
     text-transform: uppercase;
 
-    background-color: rgba(255, 0, 77, 0.2);
+    background-color: #0057FF;
+}
+
+.remove-from-list-button:hover{
+    color: rgba(255, 255, 255, 0.671);
+    box-shadow: 1px 1px 4px #666666;
 }
 
 .genre-text-display{

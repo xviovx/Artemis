@@ -45,15 +45,14 @@ $(function(){
                     };
 
 
-                $("#my-list-content-con").append("<div class='col col-sm-12 col-md-12 col-xl-6 set one'><div class='poster-container col-md-5'> <img src='https://image.tmdb.org/t/p/w500/"+poster+"' style='border-radius: 10px;'></div><div class='text-container-list col-lg-5'><h2 class='poster-title-x'>"+title+"</h2><h4 class='genre-text-display'>"+genreName+"</h4><p class='release-date-display'><b>Release date: </b><span id='list-release-date'>"+releaseDate+"</span></p><p class='synopsis-text'>"+description+"</p><button class='remove-from-list-button'>REMOVE FROM LIST</button></div><div class='p-text-for-mobile col-sm-12'><p class='synopsis-text-mobile'>"+description+"</p></div></div>")
-
-                    
+                $("#my-list-content-con").append("<div class='ml-poster-con col-12 col-lg-6 set one'><div class='movie-poster-container'><div class='poster-ratio'><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+poster+"' class='poster-ratio-image-container'></div></div><div class='movie-info-container'><h1 class='poster-title-x'>"+title+"</h1><p class='genre-text-display'>"+genreName+"</p><p class='release-date-display'>Release date: <b><span id='list-release-date'>"+releaseDate+"</span></p></b><p class='synopsis-text'>"+description+"</p><button class='remove-from-list-button'>Remove</button></div></div>")    
             };
         };
 
         //REMOVE FROM LIST
         $(".remove-from-list-button").click(function(){
             $(this).closest(".set").fadeOut(500);
+
 });
 
     });
