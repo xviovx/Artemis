@@ -59,7 +59,7 @@
 
     align-self: baseline;
     /* Text */
-    color: #FF004D;
+    color: white;
     text-align: center;
     font-family: Rubik, Titilium, sans-serif;
     font-style: normal;
@@ -70,7 +70,7 @@
     letter-spacing: 0.155em;
     text-transform: uppercase;
 
-    background-color: #431120;
+    background-color: #0057FF;
 }
 
 .remove-from-list-button:hover{

@@ -44,8 +44,22 @@ $(function(){
                         genreName = "Unknown";
                     };
 
+            $("my-list-content-con").append("<div class='ml-poster-con col-12 col-lg-6 set'><div class='ml-movie-poster-container'><div class='poster-ratio'><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+poster+"' class='poster-ratio-image-container'>
+                </div>
+            </div>
+            
+            <div class='movie-info-container'>
+                <h1 class='poster-title-x'>Star Wars: The Force Awakens</h1>
+                <p class='genre-text-display'>Sci-fi</p>
+                <p class='release-date-display'>Release date: <b><span id='list-release-date'>2020-12-18</span></p></b>
+                <p class='synopsis-text'>As a new threat to the galaxy rises, Rey, a desert scavenger, and Finn, an ex-stormtrooper, must join Han Solo and Chewbacca to search for the one hope of restoring peace.</p>
+                
+                <button class='remove-from-list-button'>Remove</button>
+            </div>
+        </div>")
 
-                $("#my-list-content-con").append("<div class='ml-poster-con col-12 col-lg-6 set one'><div class='movie-poster-container'><div class='poster-ratio'><img id='coming-later-poster-1' src='https://image.tmdb.org/t/p/w500/"+poster+"' class='poster-ratio-image-container'></div></div><div class='movie-info-container'><h1 class='poster-title-x'>"+title+"</h1><p class='genre-text-display'>"+genreName+"</p><p class='release-date-display'>Release date: <b><span id='list-release-date'>"+releaseDate+"</span></p></b><p class='synopsis-text'>"+description+"</p><button class='remove-from-list-button'>Remove</button></div></div>")    
+
+                
             };
         };
 
@@ -56,5 +70,7 @@ $(function(){
 });
 
     });
-})
+});
+
+
 
