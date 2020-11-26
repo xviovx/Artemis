@@ -9,7 +9,7 @@
     background-image: url(../assets/signinSectionBackground.png) !important;
     background-size: cover;
     background-repeat: none;
-    height: 100%;
+    height: 100vh;
 }
 
 .form-container{
